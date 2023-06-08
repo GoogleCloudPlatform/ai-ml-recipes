@@ -1,0 +1,27 @@
+# Intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+.DS_Store
+
+# Eclipse
+build/
+.classpath
+.project
+.settings
+.worksheet
+.cache
+
+# VSCode
+.vscode/
+
+__pycache__/
+.pytest_cache
+target
+dist
+pipeline.json
+.ipynb_checkpoints/
+.venv/
+metastore_db/
