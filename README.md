@@ -13,6 +13,9 @@ Please refer to each notebooks folder documentation for more information:
 * Summarization
   * Large PDF documents
     * [OCR and PDF summarization using LLM](./summarization/large_pdf_documents/ocr_contract_summarization_llm.ipynb)
+* Regression
+  * Decision Tree Regression
+    * [Housing Prices Prediction](./regression/decision_tree_regression/housing_prices_prediction.ipynb)
 
 ## Getting Started 
 
