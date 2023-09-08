@@ -16,6 +16,8 @@ Please refer to each notebooks folder documentation for more information:
 * Regression
   * Decision Tree Regression
     * [Housing Prices Prediction](./regression/decision_tree_regression/housing_prices_prediction.ipynb)
+  * Random Forest Regression
+    * [Bike Trip Duration Prediction](./regression/random_forest_regression/bike_trip_duration_prediction.ipynb)
 
 ## Getting Started 
 
