@@ -1,0 +1,8 @@
+jupyterlab
+notebook
+dataproc-jupyter-plugin
+pyspark
+google-cloud
+numpy
+seaborn
+pandas
