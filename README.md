@@ -21,10 +21,13 @@ Please refer to each notebooks folder documentation for more information:
 
 ## Getting Started 
 
-0) Create a Dataproc cluster or Dataproc Workspaces runtime
-1) If needed, clone this repository in a Jupyter environment backed by Dataproc
-   ```git clone https://github.com/GoogleCloudPlatform/dataproc-workspaces-notebooks.git```
-2) Or open Dataproc Workspaces UI quickstarts Jupyter environment
+1) Install [gcloud cli](https://cloud.google.com/sdk/docs/install)
+2) Clone this repository by running  
+     ```git clone https://github.com/GoogleCloudPlatform/dataproc-workspaces-notebooks.git```
+3) Setup your local environment by installing the packages in requirements.txt
+4) Option 1) Create a Dataproc Serverless Notebooks, after creating a Runtime Template with your desired Dataproc config, and use it as a Jupyter kernel  
+   Option 2) Create a Dataproc Cluster with your desired Dataproc config, and use it as a Jupyter kernel  
+   Option 3) Create a Dataproc Workspaces environment using the Console UI  
 
 ## Contributing
 See the contributing [instructions](./CONTRIBUTING.md) to get started contributing.
