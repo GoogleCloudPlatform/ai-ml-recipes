@@ -1,6 +1,6 @@
-# Dataproc Workspaces quickstart notebooks
+# Dataproc ML Quickstart Notebooks
 
-Dataproc Workspaces quickstart notebooks are an effort to assist you to jumpstart the development of data processing and machine learning notebooks using [Dataproc](https://cloud.google.com/dataproc/)'s distributed processing capabilities.  
+Dataproc ML Quickstart Notebooks are an effort to assist you to jumpstart the development of data processing and machine learning notebooks using [Dataproc](https://cloud.google.com/dataproc/)'s distributed processing capabilities.  
 
 We are release a set of machine learning focused notebooks, for you to adapt, extend, and use to solve your use cases using your own data.  
 Also, we are releasing a public read-only Dataproc Metastore, for you to easily have access to several curated public datasets in this managed metastore using Spark.  
