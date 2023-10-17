@@ -6,3 +6,4 @@ google-cloud
 numpy
 seaborn
 pandas
+scikit-learn
