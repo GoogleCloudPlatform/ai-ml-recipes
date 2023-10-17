@@ -12,15 +12,19 @@ Please refer to [Metastore Public Datasets quickstart](./public_datasets/datapro
 
 ## Notebooks
 Please refer to each notebooks folder documentation for more information:
-
-* Summarization
-  * Large PDF documents
-    * [OCR and PDF summarization using LLM](./summarization/large_pdf_documents/ocr_contract_summarization_llm.ipynb)
+* Classification
+    * Logistic Regression
+        * [Wine Quality Classification](./classification/logistic_regression/wine_quality_classification_mlr.ipynb)
+    * Multilayer Perceptron Classifier
+        * [SMS Spam Filtering](./classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb)
 * Regression
   * Decision Tree Regression
     * [Housing Prices Prediction](./regression/decision_tree_regression/housing_prices_prediction.ipynb)
   * Random Forest Regression
     * [Bike Trip Duration Prediction](./regression/random_forest_regression/bike_trip_duration_prediction.ipynb)
+* Summarization
+    * Large PDF documents
+        * [OCR and PDF summarization using LLM](./summarization/large_pdf_documents/ocr_contract_summarization_llm.ipynb)
 
 ### Dataproc Jupyter Plugin
 
