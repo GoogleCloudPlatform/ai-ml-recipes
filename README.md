@@ -25,6 +25,9 @@ Please refer to each notebooks folder documentation for more information:
 * Summarization
     * Large PDF documents
         * [OCR and PDF summarization using LLM](./summarization/large_pdf_documents/ocr_contract_summarization_llm.ipynb)
+* Sampling
+  * Monte Carlo method
+    * [HCustomer Price Index simulation](./sampling/monte_carlo/customer_price_index.ipynb)
 
 ### Dataproc Jupyter Plugin
 
