@@ -49,10 +49,9 @@ We recommend leveraging the [Dataproc Jupyter Plugin](https://github.com/GoogleC
 3) Clone this repository by running  
      ```git clone https://github.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks.git```
 4) Install requirements by running ```pip install -r requirements.txt```
-5) Start running the notebooks using one of the approaches:  
-   5.1) Dataproc Jupyter Plugin - Create a Dataproc Serverless Notebooks, after creating a Runtime Template with your desired Dataproc config, and use it as a Jupyter kernel when executing the notebooks    
-   5.2) Dataproc Jupyter Plugin - Create a Dataproc Cluster with your desired Dataproc config, and use it as a Jupyter kernel when executing the notebooks  
-   5.3) Dataproc Workspaces - Create a Dataproc Workspaces environment using the Console UI  
+5) Start running the notebooks using one of the approaches using the Dataproc Jupyter Plugin:  
+   5.1) Create a Dataproc Serverless Notebooks, after creating a Runtime Template with your desired Dataproc config, and use it as a Jupyter kernel when executing the notebooks    
+   5.2) Create a Dataproc Cluster with your desired Dataproc config, and use it as a Jupyter kernel when executing the notebooks  
 
 ## Contributing
 See the contributing [instructions](./CONTRIBUTING.md) to get started contributing.
