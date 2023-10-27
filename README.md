@@ -22,6 +22,9 @@ Please refer to each notebooks folder documentation for more information:
     * [Housing Prices Prediction](./regression/decision_tree_regression/housing_prices_prediction.ipynb)
   * Random Forest Regression
     * [Bike Trip Duration Prediction](./regression/random_forest_regression/bike_trip_duration_prediction.ipynb)
+* Sampling
+    * Monte Carlo method
+      * [Customer Price Index](./sampling/monte_carlo/customer_price_index.ipynb)
 * Generative AI
     * Summarization
         * [OCR and PDF summarization using LLM](generative_ai/summarization/large_pdf_documents/ocr_contract_summarization_llm.ipynb)
