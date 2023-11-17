@@ -17,6 +17,8 @@ Please refer to each notebooks folder documentation for more information:
         * [Wine Quality Classification](./classification/logistic_regression/wine_quality_classification_mlr.ipynb)
     * Multilayer Perceptron Classifier
         * [SMS Spam Filtering](./classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb)
+    * Linear Support Vector Machine
+        * [Predictive Maintenance](./classification/linear_support_vector_machine/predictive_maintenance.ipynb)
 * Regression
   * Decision Tree Regression
     * [Housing Prices Prediction](./regression/decision_tree_regression/housing_prices_prediction.ipynb)
