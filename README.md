@@ -34,6 +34,8 @@ Please refer to each notebooks folder documentation for more information:
         * [Movie Reviews sentiment analysis using LLM](generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb)
     * Multimodal Content Generation
         * [Product attributes and description from image](generative_ai/multimodel_content_generation/product_attributes_from_image.ipynb)
+    * Content Generation
+        * [Generate video description](generative_ai/content_generation/description_from_video.ipynb)
 
 ### Dataproc Jupyter Plugin
 
