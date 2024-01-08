@@ -3,12 +3,17 @@
 Dataproc ML Quickstart Notebooks are an effort to assist you to jumpstart the development of data processing and machine learning notebooks using [Dataproc](https://cloud.google.com/dataproc/)'s distributed processing capabilities.  
 
 We are release a set of machine learning focused notebooks, for you to adapt, extend, and use to solve your use cases using your own data.  
-Also, we are releasing a public read-only Dataproc Metastore, for you to easily have access to several curated public datasets in this managed metastore using Spark.  
+You can easily clone the repo and start executing the notebooks right way using your Dataproc cluster or Dataproc Serverless Runtime.  
+
+The notebooks read datasets from our public GCS bucket containing several publicly available datasets.  
+We are aslo releasing a public read-only Dataproc Metastore with these datasets, if you wish to connect you Dataproc cluster or runtime with the metastore.  
 
 [![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor)
 
 ## Public Datasets
-Please refer to [Metastore Public Datasets quickstart](./public_datasets/dataproc_metastore/metastore_public_datasets_quickstart.ipynb) to learn how you can quickly integrate your Spark application with a managed Dataproc Metastore and use one of our curated public datasets. Later on, you will be able to create your own Dataproc Metastore and centralize your own datasets.
+The public datasets are available in [gs://dataproc-metastore-public-binaries](https://console.cloud.google.com/storage/browser/dataproc-metastore-public-binaries)  
+Please refer to [Metastore Public Datasets quickstart](./public_datasets/dataproc_metastore/metastore_public_datasets_quickstart.ipynb) to see the available datasets and learn how you can quickly integrate your Spark application with a managed Dataproc Metastore.
+Also, the documentation above has details about the datasets, and links to their original pages, containing their LICENSES, etc.  
 
 ## Notebooks
 Please refer to each notebooks folder documentation for more information:
