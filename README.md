@@ -5,14 +5,14 @@ Dataproc ML Quickstart Notebooks are an effort to assist you to jumpstart the de
 We are release a set of machine learning focused notebooks, for you to adapt, extend, and use to solve your use cases using your own data.  
 You can easily clone the repo and start executing the notebooks right way using your Dataproc cluster or Dataproc Serverless Runtime.  
 
-The notebooks read datasets from our public GCS bucket containing several publicly available datasets.  
-We are aslo releasing a public read-only Dataproc Metastore with these datasets, if you wish to connect you Dataproc cluster or runtime with the metastore.  
-
 [![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor)
 
 ## Public Datasets
-The public datasets are available in [gs://dataproc-metastore-public-binaries](https://console.cloud.google.com/storage/browser/dataproc-metastore-public-binaries)  
-Please refer to [Metastore Public Datasets quickstart](./public_datasets/dataproc_metastore/metastore_public_datasets_quickstart.ipynb) to see the available datasets and learn how you can quickly integrate your Spark application with a managed Dataproc Metastore.
+The notebooks read datasets from our public GCS bucket containing several publicly available datasets.  
+We are also releasing a public read-only Dataproc Metastore with these datasets, if you wish to connect you Dataproc cluster or runtime with the metastore.  
+
+The public datasets are available in [gs://dataproc-metastore-public-binaries](https://console.cloud.google.com/storage/browser/dataproc-metastore-public-binaries)   
+Please refer to [Public Datasets quickstart](./public_datasets/dataproc_metastore/metastore_public_datasets_quickstart.ipynb) to see the available datasets and also learn how you can quickly integrate your Spark application with a managed Dataproc Metastore.  
 Also, the documentation above has details about the datasets, and links to their original pages, containing their LICENSES, etc.  
 
 ## Notebooks
