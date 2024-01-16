@@ -37,8 +37,9 @@ Please refer to each notebooks folder documentation for more information:
         * [OCR and PDF summarization using LLM](generative_ai/summarization/ocr_contract_summarization_llm.ipynb)
     * Sentiment Analysis
         * [Movie Reviews sentiment analysis using LLM](generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb)
-    * Multimodal Content Generation
-        * [Product attributes and description from image](generative_ai/multimodel_content_generation/product_attributes_from_image.ipynb)
+    * Content Generation
+        * [Product attributes and description from image](generative_ai/content_generation/product_attributes_from_image.ipynb)
+        * [Generate description from videos](generative_ai/content_generation/description_from_video.ipynb)
 
 ### Dataproc Jupyter Plugin
 
