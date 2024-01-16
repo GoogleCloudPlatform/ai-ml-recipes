@@ -67,8 +67,16 @@
     "title": "Product attributes and description from image",
     "description": "This notebook shows how to generate attributes and descriptions of products based on product images in a GCS bucket.\nIt uses the Stanford Online Products dataset and uses the Vertex AI Imagen for Captioning & VQA model to generate product attributes and the PaLM2 for Text to generate product descriptions, using Spark UDFs to parallelize processing.",
     "category": "Generative AI",
-    "sub_category": "Multimodal Content Generation",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/multimodel_content_generation/product_attributes_from_image.ipynb",
+    "sub_category": "Content Generation",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/content_generation/product_attributes_from_image.ipynb",
     "created_at": "12-14-2023"
+  },
+  {
+    "title": "Generate descriptions from videos",
+    "description": "This notebook shows how to generate descriptions of videos in a GCS bucket. It uses the Youtube UGC dataset and uses the Gemini to generate video descriptions for each video.",
+    "category": "Generative AI",
+    "sub_category": "Content Generation",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/content_generation/description_from_video.ipynb",
+    "created_at": "01-16-2024"
   }
 ]
