@@ -1,7 +1,7 @@
 [
   {
     "title": "Wine Quality Classification",
-    "description": "This notebook shows how to classify wine quality based on wine attributes. Imagine you are a wine specialist who is looking for an automated way to categorize the wines you find based on wine quality data from physicochemical tests. You could use a machine learning algorithm to train a model that would be able to predict the quality of a wine based on its physicochemical properties. This would allow you to quickly and easily categorize new wines that you find, without having to manually taste them.\nHere are some of the benefits of using an automated wine categorization system:\nSpeed: An automated system can categorize wines much faster than a human can. This is especially beneficial for wine retailers and distributors who need to quickly categorize large numbers of wines.\nAccuracy: An automated system can be more accurate than a human when it comes to categorizing wines. This is because the system is not influenced by personal biases or preferences.\nConsistency: An automated system will consistently categorize wines in the same way, which can help to ensure that customers are getting the wines they expect.\nIf you are a wine specialist who is looking for an efficient and accurate way to categorize wines, then an automated system may be the perfect solution for you.",
+    "description": "This notebook shows how to classify wine quality based on wine attributes. Imagine you are a wine specialist who is looking for an automated way to categorize the wines you find based on wine quality data from physicochemical tests. You could use a machine learning algorithm to train a model that would be able to predict the quality of a wine based on its physicochemical properties. This would allow you to quickly and easily categorize new wines that you find, without having to manually taste them.",
     "category": "Classification",
     "sub_category": "Logistic Regression",
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/classification/logistic_regression/wine_quality_classification_mlr.ipynb",
@@ -9,7 +9,7 @@
   },
   {
     "title": "SMS Spam Filtering",
-    "description": "This notebook shows how to predict if an SMS is spam or not using SparkML’s Multilayer Perceptron Classifier\nSteps\nUsing Spark,\nIt reads the table SMS Spam Collection from the public_datasets dataset located in the metastore (notebook should be connected with the public metastore if using this specific dataset).\nIt parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value. Features: text Target: spam or ham\nIt evaluates and plot the results.\nDetails of the dataset\nA collection of 425 SMS spam messages was manually extracted from the Grumbletext Web site. This is a UK forum in which cell phone users make public claims about SMS spam messages, most of them without reporting the very spam message received. The identification of the text of spam messages in the claims is a very hard and time-consuming task, and it involved carefully scanning hundreds of web pages. The Grumbletext Web site is: http://www.grumbletext.co.uk/.\nA subset of 3,375 SMS randomly chosen ham messages of the NUS SMS Corpus (NSC), which is a dataset of about 10,000 legitimate messages collected for research at the Department of Computer Science at the National University of Singapore. The messages largely originate from Singaporeans and mostly from students attending the University. These messages were collected from volunteers who were made aware that their contributions were going to be made publicly available. The NUS SMS Corpus is avalaible at: http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/.\nA list of 450 SMS ham messages collected from Caroline Tag’s PhD Thesis available at http://etheses.bham.ac.uk/253/1/Tagg09PhD.pdf.",
+    "description": "This notebook shows how to predict if an SMS is spam or not using SparkML’s Multilayer Perceptron Classifier. Using Spark, it reads the dataset SMS Spam Collection, parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value.",
     "category": "Classification",
     "sub_category": "Multilayer Perceptron Classifier",
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Predictive Maintenance",
-    "description": "This notebook shows how to predict if a machine will fail or not using SparkML’s Linear SVM Classifier\nSteps\nUsing Spark,\nIt reads the table AI4I 2020 Predictive Maintenance Dataset from the public_datasets dataset located in the metastore (notebook should be connected with the public metastore if using this specific dataset).\nIt parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value. Features: air temperature [K], process temperature [K], rotational speed [rpm], torque [Nm], tool wear [min] Target: machine failure\nIt evaluates and plot the results.\nDetails of the dataset\nSince real predictive maintenance datasets are generally difficult to obtain and in particular difficult to publish, this dataset presents and provides a synthetic dataset that reflects real predictive maintenance encountered in industry to the best of knowledge.\nThere are no missing values",
+    "description": "This notebook shows how to predict if a machine will fail or not using SparkML’s Linear SVM Classifier. Using Spark, it reads the table AI4I 2020 Predictive Maintenance Dataset, parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value.",
     "category": "Classification",
     "sub_category": "Linear Support Vector Machine",
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/classification/linear_support_vector_machine/predictive_maintenance.ipynb",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Housing Prices Prediction",
-    "description": "This notebook shows how to predict housing prices based on location and other characteristics using Decision Tree Regression.\nSteps\nUsing Spark,\nIt reads the table State of Connecticut - Real Estate Sales from the public_datasets dataset located in the metastore (notebook should be connected with the public metastore if using this specific dataset).\nIt parses process the dataset to choose features and train the ML model (fits the decision tree regression model) to predict a target value. Features: list_year, property_type, residential_type, X, Y Target: assessed_value\nIt evaluates and plot the results.\nDetails of the dataset\nThe dataset contains listing of real estate sales with a sales price of $2,000 or greater that occur between October 1 and September 30 of each year (2001 to 2020).\nThe dataset contains data for some towns from the State of Connecticut, like:\nDanbury, New Milford, New Haven, Norwalk, Hartford, East Haven, Montville, Bridgeport, Southington, Vernon, Wolcott, …\nFor each sale record, the file includes information such as town, property address, location, date of sale, property type (residential, apartment, commercial, industrial or vacant land), sales price, and property assessment.",
+    "description": "This notebook shows how to predict housing prices based on location and other characteristics using Decision Tree Regression. Using Spark, it reads the dataset of the State of Connecticut - Real Estate Sales, it parses process the dataset to choose features and train the ML model (fits the decision tree regression model) to predict a target value.",
     "category": "Regression",
     "sub_category": "Decision Tree Regression",
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/regression/decision_tree_regression/housing_prices_prediction.ipynb",
@@ -33,7 +33,7 @@
   },
   {
     "title": "Bike Trip Duration Prediction",
-    "description": "This notebook shows how to predict Bike trip duration using SparkML’s Random Forest Regression\nSteps\nUsing Spark,\nIt reads the table nyc-citi-bike from the BigQuery public datasets\nIt parses process the dataset to choose features and train the ML model (fits the regression model) to predict a target value. Features: month day hour start_station_name distance_lat distance_lon Target: tripduration_minutes\nIt evaluates and plot the results.\nDetails of the dataset\nThanks to NYC Open Data, which makes public data generated by city agencies available for public use, and Citi Bike, over 150 GB of data in 5 open datasets into Google BigQuery Public Datasets was incorporated, including:\nOver 8 million 311 service requests since 2012 (updated daily)\nOver a million motor vehicle collisions since 2012 (updated regularly)\nCiti Bike stations and 30 million trips since 2013 (updated regularly)\nOver 1 billion Yellow and Green Taxi rides since 2009 (updated regularly)\nOver 600,000 trees surveyed decennially in 1995, 2005, and 2015\nRead more about it on Reto Meier’s Investigating New York City Public Datasets with BigQuery blogpost.",
+    "description": "This notebook shows how to predict Bike trip duration using SparkML’s Random Forest Regression. Using Spark, it reads the table nyc-citi-bike from the BigQuery public datasets, parses process the dataset to choose features and train the ML model (fits the regression model) to predict a target value.",
     "category": "Regression",
     "sub_category": "Decision Tree Regression",
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/regression/random_forest_regression/bike_trip_duration_prediction.ipynb",
@@ -41,7 +41,7 @@
   },
   {
     "title": "Customer Price Index",
-    "description": "This notebook shows how to use the Monte Carlo method to simulate the future path of the Consumer Price Index (CPI).",
+    "description": "This notebook shows how to use the Monte Carlo method to simulate the future path of the Consumer Price Index (CPI), and estimate the probability that inflation rate in 2025 would be less than 2%. It uses the Pandas API on Spark (PySpark library that allows users to write code using the familiar Pandas DataFrame API on Spark DataFrames)",
     "category": "Sampling",
     "sub_category": "Monte Carlo method",
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/sampling/monte_carlo/customer_price_index.ipynb",
@@ -49,7 +49,7 @@
   },
   {
     "title": "OCR and PDF summarization",
-    "description": "This notebook shows how to perform OCR and summarization using LLM for a large number of contract PDF files in a GCS bucket\nSteps\nUsing Spark,\nIt reads a metadata table of the Contract Understanding Atticus Dataset (CUAD) from the public_datasets dataset located in the metastore (notebook should be connected with the public metastore if using this specific dataset). This metadata table contains the paths of the pdf files in the bucket. If you want to apply this to a different dataset, you can read the pdf files in your bucket with spark.read.format(“binaryFile”) (no need of the metastore) - more details here.\nIt runs OCR using Vision API - it start a series of async operations and then checks its completion status.\nIt calls Vertex AI PaLM API to summarize each text page.\nIt saves the output to BigQuery",
+    "description": "This notebook shows how to perform OCR and summarization using LLM for a large number of contract PDF files in a GCS bucket. Using Spark,it reads a metadata table of the Contract Understanding Atticus Dataset (CUAD), runs OCR using Vision API,  calls Vertex AI PaLM API to summarize each text page, and saves the output to BigQuery",
     "category": "Generative AI",
     "sub_category": "Summarization",
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/summarization/ocr_contract_summarization_llm.ipynb",
@@ -57,7 +57,7 @@
   },
   {
     "title": "Movie Reviews sentiment analysis",
-    "description": "This notebook shows how to perform sentimental analysis on large scale data using LLM. The dataset used is a public dataset from Bigquery Public Datasets.\nSteps\nUsing Spark,\nThis notebook reads data from Bigquery public dataset bigquery-public-data.imdb.reviews\nIt calls Vertex AI Text Bison to find the sentiment of each review (positive vs negative)\nWe compare the result side by side\nFind accuracy, and again trim the input and observe the accuracy increase",
+    "description": "This notebook shows how to perform sentiment analysis on large scale data using LLM. The dataset used is a public dataset from Bigquery Public Datasets. Using Spark, it reads data from Bigquery public dataset bigquery-public-data.imdb.reviews, calls Vertex AI Text Bison to find the sentiment of each review (positive vs negative), compare the result side by side and the find accuracy",
     "category": "Generative AI",
     "sub_category": "Sentiment Analysis",
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb",
@@ -65,7 +65,7 @@
   },
   {
     "title": "Product attributes and description from image",
-    "description": "This notebook shows how to generate attributes and descriptions of products based on product images in a GCS bucket.\nIt uses the Stanford Online Products dataset and uses the Vertex AI Imagen for Captioning & VQA model to generate product attributes and the PaLM2 for Text to generate product descriptions, using Spark UDFs to parallelize processing.",
+    "description": "This notebook shows how to generate attributes and descriptions of products based on product images in a GCS bucket.\nIt uses the Stanford Online Products dataset and uses the Vertex AI Imagen for Captioning & VQA model to generate product attributes and the Gemini to generate product descriptions, using Spark UDFs to parallelize processing.",
     "category": "Generative AI",
     "sub_category": "Content Generation",
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/content_generation/product_attributes_from_image.ipynb",
