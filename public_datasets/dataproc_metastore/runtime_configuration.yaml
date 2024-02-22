@@ -1,0 +1,15 @@
+environmentConfig:
+  executionConfig:
+    subnetworkUri: projects/dataproc-workspaces-notebooks/regions/us-central1/subnetworks/subnet
+  peripheralsConfig:
+    metastoreService: projects/dataproc-workspaces-notebooks/locations/us-central1/services/public-metastore-v1
+jupyterSession:
+  kernel: PYTHON
+  displayName: Team A
+labels:
+  purpose: testing
+runtimeConfig:
+  properties:
+    spark.jars: gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.13-0.32.2.jar
+  version: '2.1'
+description: Team A Development Environment
