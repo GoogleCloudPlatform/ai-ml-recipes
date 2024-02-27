@@ -11,7 +11,7 @@ You can easily clone the repo and start executing the notebooks right way using 
 The notebooks read datasets from our public GCS bucket containing several publicly available datasets.  
 We are also releasing a public read-only Dataproc Metastore with these datasets, if you wish to connect you Dataproc cluster or runtime with the metastore.  
 
-In this [documentation](./public_datasets/README.md) you can see the list of available datasets, which are located in [gs://dataproc-metastore-public-binaries](https://console.cloud.google.com/storage/browser/dataproc-metastore-public-binaries).  
+In this [documentation](./public_datasets/public_datasets.ipynb) you can see the list of available datasets, which are located in [gs://dataproc-metastore-public-binaries](https://console.cloud.google.com/storage/browser/dataproc-metastore-public-binaries).  
 The documentation above has details about the datasets, and links to their original pages, containing their LICENSES, etc.  
 
 If you want to use the public datasets using the Dataproc Metastore, take a look at this [quickstart](./public_datasets/dataproc_metastore/metastore_spark_quickstart.ipynb) to learn how you can quickly integrate your Spark application with a managed Dataproc Metastore.  

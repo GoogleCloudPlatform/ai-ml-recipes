@@ -78,5 +78,21 @@
     "sub_category": "Content Generation",
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/content_generation/description_from_video.ipynb",
     "created_at": "01-16-2024"
+  },
+  { 
+    "title": "Dataproc Metastore quickstart", 
+    "description": "This notebook demonstrates how you can quickly integrate your Spark application with a managed Dataproc Metastore, and additinally, read the available public datasets in our public Dataproc Metastore instance.", 
+    "category": "Public Datasets",
+    "sub_category": "Dataproc Metastore",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/public_datasets/dataproc_metastore/metastore_spark_quickstart.ipynb",
+    "created_at": "02-27-2024"
+  },
+  { 
+    "title": "Public Datasets in Google Cloud Storage", 
+    "description": "This notebook shows the available public datasets available in our public datasets public and how you read them using Spark.",
+    "category": "Public Datasets", 
+    "sub_category": "Google Cloud Storage", 
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/public_datasets/public_datasets.ipynb",
+    "created_at": "02-27-2024"
   }
 ]
