@@ -94,5 +94,13 @@
     "sub_category": "Google Cloud Storage", 
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/public_datasets/public_datasets.ipynb",
     "created_at": "02-27-2024"
+  },
+  { 
+    "title": "Banner advertising understanding", 
+    "description": "This notebook shows how to process ads banners images and generate enriched information classifications using a taxonomy using Bigframes and Gemini.",
+    "category": "Generative AI", 
+    "sub_category": "Content Generation", 
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/content_generation/banner_advertising_understanding.ipynb",
+    "created_at": "04-17-2024"
   }
 ]
