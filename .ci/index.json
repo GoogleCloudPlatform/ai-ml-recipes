@@ -102,5 +102,13 @@
     "sub_category": "Content Generation", 
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/content_generation/banner_advertising_understanding.ipynb",
     "created_at": "04-17-2024"
+  },
+  { 
+    "title": "Delta format in GCS quickstart", 
+    "description": "This notebook shows how to read and write files in GCS using the delta format.",
+    "category": "Public Datasets", 
+    "sub_category": "Delta", 
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/public_datasets/delta/delta_quickstart.ipynb",
+    "created_at": "04-26-2024"
   }
 ]
