@@ -39,6 +39,9 @@ Please refer to each notebooks folder documentation for more information:
 * Generative AI
     * [Banner advertising understanding](generative_ai/content_generation/banner_advertising_understanding.ipynb)
     * [Museum Art Translation Using Claude](https://github.com/googleapis/python-bigquery-dataframes/blob/main/notebooks/generative_ai/bq_dataframes_llm_claude3_museum_art.ipynb)
+    * [Drug name generation](https://raw.githubusercontent.com/googleapis/python-bigquery-dataframes/refs/heads/main/notebooks/generative_ai/bq_dataframes_ml_drug_name_generation.ipynb)
+* Regression
+    * [Predict penguim weight](https://raw.githubusercontent.com/googleapis/python-bigquery-dataframes/refs/heads/main/notebooks/regression/bq_dataframes_ml_linear_regression.ipynb)
 
 
 ## Public Datasets
