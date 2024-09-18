@@ -110,5 +110,13 @@
     "sub_category": "Delta", 
     "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/public_datasets/delta/delta_quickstart.ipynb",
     "created_at": "04-26-2024"
+  },
+  {
+    "title": "Art translation using Claude",
+    "description": "This notebook shows how to use BigQuery Dataframes and Anthropic Claude model to translate art descriptions.",
+    "category": "Generative AI",
+    "sub_category": "Translation",
+    "url": "https://raw.githubusercontent.com/googleapis/python-bigquery-dataframes/refs/heads/main/notebooks/generative_ai/bq_dataframes_llm_claude3_museum_art.ipynb",
+    "created_at": "09-18-2024"
   }
 ]
