@@ -4,7 +4,7 @@
     "description": "This notebook shows how to classify wine quality based on wine attributes. Imagine you are a wine specialist who is looking for an automated way to categorize the wines you find based on wine quality data from physicochemical tests. You could use a machine learning algorithm to train a model that would be able to predict the quality of a wine based on its physicochemical properties. This would allow you to quickly and easily categorize new wines that you find, without having to manually taste them.",
     "category": "Classification",
     "sub_category": "Logistic Regression",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/classification/logistic_regression/wine_quality_classification_mlr.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/classification/logistic_regression/wine_quality_classification_mlr.ipynb",
     "created_at": "12-14-2023"
   },
   {
@@ -12,7 +12,7 @@
     "description": "This notebook shows how to predict if an SMS is spam or not using SparkML’s Multilayer Perceptron Classifier. Using Spark, it reads the dataset SMS Spam Collection, parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value.",
     "category": "Classification",
     "sub_category": "Multilayer Perceptron Classifier",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb",
     "created_at": "12-14-2023"
   },
   {
@@ -20,7 +20,7 @@
     "description": "This notebook shows how to predict if a machine will fail or not using SparkML’s Linear SVM Classifier. Using Spark, it reads the table AI4I 2020 Predictive Maintenance Dataset, parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value.",
     "category": "Classification",
     "sub_category": "Linear Support Vector Machine",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/classification/linear_support_vector_machine/predictive_maintenance.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/classification/linear_support_vector_machine/predictive_maintenance.ipynb",
     "created_at": "12-14-2023"
   },
   {
@@ -28,7 +28,7 @@
     "description": "This notebook shows how to predict housing prices based on location and other characteristics using Decision Tree Regression. Using Spark, it reads the dataset of the State of Connecticut - Real Estate Sales, it parses process the dataset to choose features and train the ML model (fits the decision tree regression model) to predict a target value.",
     "category": "Regression",
     "sub_category": "Decision Tree Regression",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/regression/decision_tree_regression/housing_prices_prediction.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/decision_tree_regression/housing_prices_prediction.ipynb",
     "created_at": "12-14-2023"
   },
   {
@@ -36,7 +36,7 @@
     "description": "This notebook shows how to predict Bike trip duration using SparkML’s Random Forest Regression. Using Spark, it reads the table nyc-citi-bike from the BigQuery public datasets, parses process the dataset to choose features and train the ML model (fits the regression model) to predict a target value.",
     "category": "Regression",
     "sub_category": "Decision Tree Regression",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/regression/random_forest_regression/bike_trip_duration_prediction.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/random_forest_regression/bike_trip_duration_prediction.ipynb",
     "created_at": "12-14-2023"
   },
   {
@@ -44,7 +44,7 @@
     "description": "This notebook shows how to use the Monte Carlo method to simulate the future path of the Consumer Price Index (CPI), and estimate the probability that inflation rate in 2025 would be less than 2%. It uses the Pandas API on Spark (PySpark library that allows users to write code using the familiar Pandas DataFrame API on Spark DataFrames)",
     "category": "Sampling",
     "sub_category": "Monte Carlo method",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/sampling/monte_carlo/customer_price_index.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/sampling/monte_carlo/customer_price_index.ipynb",
     "created_at": "12-14-2023"
   },
   {
@@ -52,7 +52,7 @@
     "description": "This notebook shows how to perform OCR and summarization using LLM for a large number of contract PDF files in a GCS bucket. Using Spark,it reads a metadata table of the Contract Understanding Atticus Dataset (CUAD), runs OCR using Vision API,  calls Vertex AI PaLM API to summarize each text page, and saves the output to BigQuery",
     "category": "Generative AI",
     "sub_category": "Summarization",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/summarization/ocr_contract_summarization_llm.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/ocr_contract_summarization_llm.ipynb",
     "created_at": "12-14-2023"
   },
   {
@@ -60,7 +60,7 @@
     "description": "This notebook shows how to perform sentiment analysis on large scale data using LLM. The dataset used is a public dataset from Bigquery Public Datasets. Using Spark, it reads data from Bigquery public dataset bigquery-public-data.imdb.reviews, calls Vertex AI Text Bison to find the sentiment of each review (positive vs negative), compare the result side by side and the find accuracy",
     "category": "Generative AI",
     "sub_category": "Sentiment Analysis",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb",
     "created_at": "12-14-2023"
   },
   {
@@ -68,7 +68,7 @@
     "description": "This notebook shows how to generate attributes and descriptions of products based on product images in a GCS bucket.\nIt uses the Stanford Online Products dataset and uses the Vertex AI Imagen for Captioning & VQA model to generate product attributes and the Gemini to generate product descriptions, using Spark UDFs to parallelize processing.",
     "category": "Generative AI",
     "sub_category": "Content Generation",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/content_generation/product_attributes_from_image.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb",
     "created_at": "12-14-2023"
   },
   {
@@ -76,7 +76,7 @@
     "description": "This notebook shows how to generate descriptions of videos in a GCS bucket. It uses the Youtube UGC dataset and uses the Gemini to generate video descriptions for each video.",
     "category": "Generative AI",
     "sub_category": "Content Generation",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/content_generation/description_from_video.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/description_from_video.ipynb",
     "created_at": "01-16-2024"
   },
   { 
@@ -84,7 +84,7 @@
     "description": "This notebook demonstrates how you can quickly integrate your Spark application with a managed Dataproc Metastore, and additinally, read the available public datasets in our public Dataproc Metastore instance.", 
     "category": "Public Datasets",
     "sub_category": "Dataproc Metastore",
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/public_datasets/dataproc_metastore/metastore_spark_quickstart.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/public_datasets/dataproc_metastore/metastore_spark_quickstart.ipynb",
     "created_at": "02-27-2024"
   },
   { 
@@ -92,7 +92,7 @@
     "description": "This notebook shows the available public datasets available in our public datasets public and how you read them using Spark.",
     "category": "Public Datasets", 
     "sub_category": "Google Cloud Storage", 
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/public_datasets/public_datasets.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/public_datasets/public_datasets.ipynb",
     "created_at": "02-27-2024"
   },
   { 
@@ -100,7 +100,7 @@
     "description": "This notebook shows how to process ads banners images and generate enriched information classifications using a taxonomy using Bigframes and Gemini.",
     "category": "Generative AI", 
     "sub_category": "Content Generation", 
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/generative_ai/content_generation/banner_advertising_understanding.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb",
     "created_at": "04-17-2024"
   },
   { 
@@ -108,7 +108,7 @@
     "description": "This notebook shows how to read and write files in GCS using the delta format.",
     "category": "Public Datasets", 
     "sub_category": "Delta", 
-    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks/main/public_datasets/delta/delta_quickstart.ipynb",
+    "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/foundational/delta_format/delta_quickstart.ipynb",
     "created_at": "04-26-2024"
   },
   {
