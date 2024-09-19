@@ -22,4 +22,4 @@ jobs:
 
     - name: Validate notebook and JSON
       run: |
-        python test/validate_entry.py
+        python test/validate_entries.py
