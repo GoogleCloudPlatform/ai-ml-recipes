@@ -13,31 +13,31 @@ Please refer to each notebooks folder documentation for more information:
 **PySpark**
 * Classification
     * Logistic Regression
-        * [Wine Quality Classification](./classification/logistic_regression/wine_quality_classification_mlr.ipynb)
+        * [Wine Quality Classification](./notebooks/classification/logistic_regression/wine_quality_classification_mlr.ipynb)
     * Multilayer Perceptron Classifier
-        * [SMS Spam Filtering](./classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb)
+        * [SMS Spam Filtering](./notebooks/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb)
     * Linear Support Vector Machine
-        * [Predictive Maintenance](./classification/linear_support_vector_machine/predictive_maintenance.ipynb)
+        * [Predictive Maintenance](./notebooks/classification/linear_support_vector_machine/predictive_maintenance.ipynb)
 * Regression
     * Decision Tree Regression
-        * [Housing Prices Prediction](./regression/decision_tree_regression/housing_prices_prediction.ipynb)
+        * [Housing Prices Prediction](./notebooks/regression/decision_tree_regression/housing_prices_prediction.ipynb)
     * Random Forest Regression
-        * [Bike Trip Duration Prediction](./regression/random_forest_regression/bike_trip_duration_prediction.ipynb)
+        * [Bike Trip Duration Prediction](./notebooks/regression/random_forest_regression/bike_trip_duration_prediction.ipynb)
 * Sampling
     * Monte Carlo method
-        * [Customer Price Index](./sampling/monte_carlo/customer_price_index.ipynb)
+        * [Customer Price Index](./notebooks/sampling/monte_carlo/customer_price_index.ipynb)
 * Generative AI
     * Summarization
-        * [OCR and PDF summarization using LLM](generative_ai/summarization/ocr_contract_summarization_llm.ipynb)
+        * [OCR and PDF summarization using LLM](./notebooks/generative_ai/summarization/ocr_contract_summarization_llm.ipynb)
     * Sentiment Analysis
-        * [Movie Reviews sentiment analysis using LLM](generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb)
+        * [Movie Reviews sentiment analysis using LLM](./notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb)
     * Content Generation
-        * [Product attributes and description from image](generative_ai/content_generation/product_attributes_from_image.ipynb)
-        * [Generate description from videos](generative_ai/content_generation/description_from_video.ipynb)
+        * [Product attributes and description from image](./notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb)
+        * [Generate description from videos](./notebooks/generative_ai/content_generation/description_from_video.ipynb)
 
 **BigFrames (BigQuery Dataframes)**
 * Generative AI
-    * [Banner advertising understanding](generative_ai/content_generation/banner_advertising_understanding.ipynb)
+    * [Banner advertising understanding](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb)
     * [Museum Art Translation Using Claude](https://github.com/googleapis/python-bigquery-dataframes/blob/main/notebooks/generative_ai/bq_dataframes_llm_claude3_museum_art.ipynb)
     * [Drug name generation](https://github.com/googleapis/python-bigquery-dataframes/blob/main/notebooks/regression/bq_dataframes_ml_linear_regression.ipynb)
 * Regression
