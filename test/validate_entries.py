@@ -2,7 +2,7 @@ import json
 import glob
 
 EXCEPTIONS = [
-    "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/foundational/bigframes/bigframes_quickstart.ipynb"
+    "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/public_datasets/bigframes/bigframes_quickstart.ipynb"
 ]
 
 
