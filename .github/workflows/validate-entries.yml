@@ -7,28 +7,6 @@ on:
   pull_request:
     branches:
     - main
-  workflow_call:
-    inputs:
-      title:
-        description: 'Title of the notebook'
-        required: true
-        type: string
-        default: ''
-      description:
-        description: 'Description of the notebook'
-        required: true
-        type: string
-        default: ''
-      category:
-        description: 'Category of the notebook'
-        required: true
-        type: string
-        default: ''
-      sub_category:
-        description: 'Sub-category of the notebook'
-        required: false
-        type: string
-        default: ''
 
 jobs:
   validate:
@@ -41,16 +19,6 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
-
-    - name: Check if new notebook entry is needed
-      run: |
-        python .ci/scripts/check_new_notebook.py '${{ github.inputs.title }}' '${{ github.inputs.description }}' '${{ github.inputs.category }}' '${{ github.inputs.sub_category }}'
-      id: check_notebook
-
-    - name: If needed, add new entry of a notebook to index.json file
-      if: steps.check_notebook.outputs.new_notebook == 'true'
-      run: |
-        python .ci/scripts/add_new_entry.py '${{ github.event.inputs.title }}' '${{ github.event.inputs.description }}' '${{ github.event.inputs.category }}' '${{ github.event.inputs.sub_category }}'
 
     - name: Validate notebooks and index.json file
       run: |
