@@ -1,0 +1,35 @@
+name: Validate entries in index.json file
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Check if new notebook entry is needed
+      run: |
+        python .ci/scripts/check_new_notebook.py
+      id: check_new_notebook
+
+    - name: If needed, add new entry of a notebook to index.json file
+      if: steps.check_new_notebook.outputs.new_notebook == 'true'
+      run: |
+        python .ci/scripts/add_new_entry.py '${{ github.event.inputs.title }}' '${{ github.event.inputs.description }}' '${{ github.event.inputs.category }}' '${{ github.event.inputs.sub_category }}'
+
+    - name: Validate notebooks and index.json file
+      run: |
+        python .ci/scripts/validate_entries.py
