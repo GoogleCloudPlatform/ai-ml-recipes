@@ -1,4 +1,4 @@
-name: Validate Notebook and JSON
+name: Validate entries in index.json file
 
 on:
   push:
@@ -20,6 +20,6 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Validate notebook and JSON
+    - name: Validate notebooks and index.json file
       run: |
-        python test/validate_entries.py
+        python .ci/scripts/validate_entries.py
