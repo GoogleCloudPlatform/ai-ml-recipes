@@ -1,6 +1,7 @@
 jupyterlab
 notebook
 dataproc-jupyter-plugin
+bigquery-jupyter-plugin
 pyspark
 google-cloud
 numpy
