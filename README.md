@@ -1,6 +1,6 @@
-# AI/ML Recipes Repo for Vertex AI, BigQuery, and Spark
+# AI/ML Recipes for Vertex AI, BigQuery, and Spark on Dataproc
 
-AI/ML Recipes Repo for Vertex AI, BigQuery, and Spark open-source project is an effort to assist customers to jumpstart the development of data processing and machine learning notebooks using VertexAI, BigQuery and Dataproc's distributed processing capabilities.
+AI/ML Recipes for Vertex AI, BigQuery, and Spark on Dataproc open-source project is an effort to jumpstart your development of data processing and machine learning notebooks using VertexAI, BigQuery and Dataproc's distributed processing capabilities.
 
 We are release a set of machine learning focused notebooks, for you to adapt, extend, and use to solve your use cases using your own data.  
 You can easily clone the repo and start executing the notebooks right way using your Dataproc cluster or Dataproc Serverless Runtime for the PySpark notebooks, and any environment for the [BigQuery Dataframes](https://cloud.google.com/python/docs/reference/bigframes/latest) (Bigframes) notebooks.
@@ -57,6 +57,7 @@ These notebooks are available from within the Vertex AI Workbench notebooks envi
 Navigate to JupyterLab home screen and click on Notebooks to see the list of notebooks and a button for you to download/copy them into your environment.
 
 ![Vertex Notebooks Templates](docs/images/vertex-notebook-templates.png)
+![Vertex Notebooks Templates List](docs/images/vertex-notebook-templates-list.png)
 
 ## Usage in your local environment
 
@@ -72,16 +73,18 @@ Navigate to JupyterLab home screen and click on Notebooks to see the list of not
 6) For the **Bigframes notebooks**, you do not need PySpark, just any kernel/environment, and the processing will leverage BigQuery in your GCP project
 
 
-### Dataproc Jupyter Plugin
+#### BigQuery Jupyter Plugin
 
-We recommend leveraging the [Dataproc Jupyter Plugin](https://github.com/GoogleCloudDataproc/dataproc-jupyter-plugin), which will be available in your local environment just by installing the dependency running ```pip install -r requirements.txt```. This will enable you to:
+We recommend leveraging the [BigQuery Jupyter Plugin](https://github.com/GoogleCloudDataproc/dataproc-jupyter-plugin), which will be available in your local environment just by installing the dependency running ```pip install -r requirements.txt```. This will enable you to:
 
 - Connect your Jupyterlab notebooks from anywhere to Dataproc
 - Develop in Python, SQL, Java/Scala, and R
-- Get started within minutes with minimal setup
-- Troubleshoot your Spark code inside Jupyterlab
 - Manage Dataproc clusters and jobs
 - Run notebooks in your favorite IDE that supports Jupyter using Dataproc as kernel
+- Deploy a notebook as a recurring job
+- View cloud and spark logs inside Jupyterlab
+- View your BigQuery datasets schema inside Jupyterlab
+- Manage your files on Google Cloud Storage (GCS)
 
 ## Contributing
 See the contributing [instructions](./CONTRIBUTING.md) to get started contributing.
