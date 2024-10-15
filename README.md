@@ -41,7 +41,7 @@ Please refer to each notebooks folder documentation for more information:
     * [Museum Art Translation Using Claude](https://github.com/googleapis/python-bigquery-dataframes/blob/main/notebooks/generative_ai/bq_dataframes_llm_claude3_museum_art.ipynb)
     * [Drug name generation](https://github.com/googleapis/python-bigquery-dataframes/blob/main/notebooks/regression/bq_dataframes_ml_linear_regression.ipynb)
 * Regression
-    * [Predict penguim weight](https://github.com/googleapis/python-bigquery-dataframes/blob/main/notebooks/generative_ai/bq_dataframes_ml_drug_name_generation.ipynb)
+    * [Predict penguim weight](./notebooks/regression/linear_regression/penguim_weight_prediction.ipynb)
 
 
 ## Public Datasets

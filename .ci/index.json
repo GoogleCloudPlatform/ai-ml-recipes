@@ -132,7 +132,7 @@
         "description": "This notebook shows how to use BigQuery Dataframes to train a linear regression model to predict penguim weights.",
         "category": "Regression",
         "sub_category": "Linear Regression",
-        "url": "https://raw.githubusercontent.com/googleapis/python-bigquery-dataframes/refs/heads/main/notebooks/regression/bq_dataframes_ml_linear_regression.ipynb",
-        "created_at": "09-18-2024"
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/linear_regression/penguim_weight_prediction.ipynb",
+        "created_at": "10-15-2024"
     }
 ]
