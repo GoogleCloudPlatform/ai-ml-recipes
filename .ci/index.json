@@ -112,22 +112,6 @@
         "created_at": "04-26-2024"
     },
     {
-        "title": "Art translation using Claude",
-        "description": "This notebook shows how to use BigQuery Dataframes and Anthropic Claude model to translate art descriptions.",
-        "category": "Generative AI",
-        "sub_category": "Translation",
-        "url": "https://raw.githubusercontent.com/googleapis/python-bigquery-dataframes/refs/heads/main/notebooks/generative_ai/bq_dataframes_llm_claude3_museum_art.ipynb",
-        "created_at": "09-18-2024"
-    },
-    {
-        "title": "Drug name generation",
-        "description": "This notebook shows how to use BigQuery Dataframes and Gemini to generate drug names.",
-        "category": "Generative AI",
-        "sub_category": "Content Generation",
-        "url": "https://raw.githubusercontent.com/googleapis/python-bigquery-dataframes/refs/heads/main/notebooks/generative_ai/bq_dataframes_ml_drug_name_generation.ipynb",
-        "created_at": "09-18-2024"
-    },
-    {
         "title": "Predict penguim weight using linear regression",
         "description": "This notebook shows how to use BigQuery Dataframes to train a linear regression model to predict penguim weights.",
         "category": "Regression",
