@@ -1,7 +1,7 @@
 [
     {
         "title": "Wine Quality Classification",
-        "description": "Main technologies: PySpark, Spark ML, GCS. Description: This notebook shows how to classify wine quality based on wine attributes. Imagine you are a wine specialist who is looking for an automated way to categorize the wines you find based on wine quality data from physicochemical tests. You could use a machine learning algorithm to train a model that would be able to predict the quality of a wine based on its physicochemical properties. This would allow you to quickly and easily categorize new wines that you find, without having to manually taste them.",
+        "description": "Description: This notebook shows how to classify wine quality based on wine attributes. Imagine you are a wine specialist who is looking for an automated way to categorize the wines you find based on wine quality data from physicochemical tests. You could use a machine learning algorithm to train a model that would be able to predict the quality of a wine based on its physicochemical properties. This would allow you to quickly and easily categorize new wines that you find, without having to manually taste them. Main technologies: PySpark, Spark ML, GCS. ",
         "category": "Classification",
         "sub_category": "Logistic Regression",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/classification/logistic_regression/wine_quality_classification_mlr.ipynb",
@@ -9,7 +9,7 @@
     },
     {
         "title": "SMS Spam Filtering",
-        "description": "Main technologies: PySpark, Spark ML, GCS. Description: This notebook shows how to predict if an SMS is spam or not using SparkML\u2019s Multilayer Perceptron Classifier. Using Spark, it reads the dataset SMS Spam Collection, parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value.",
+        "description": "Description: This notebook shows how to predict if an SMS is spam or not using SparkML\u2019s Multilayer Perceptron Classifier. Using Spark, it reads the dataset SMS Spam Collection, parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value. Main technologies: PySpark, Spark ML, GCS.",
         "category": "Classification",
         "sub_category": "Multilayer Perceptron Classifier",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb",
@@ -17,7 +17,7 @@
     },
     {
         "title": "Predictive Maintenance",
-        "description": "Main technologies: PySpark, Spark ML, GCS. Description: This notebook shows how to predict if a machine will fail or not using SparkML\u2019s Linear SVM Classifier. Using Spark, it reads the table AI4I 2020 Predictive Maintenance Dataset, parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value.",
+        "description": "Description: This notebook shows how to predict if a machine will fail or not using SparkML\u2019s Linear SVM Classifier. Using Spark, it reads the table AI4I 2020 Predictive Maintenance Dataset, parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value. Main technologies: PySpark, Spark ML, GCS. ",
         "category": "Classification",
         "sub_category": "Linear Support Vector Machine",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/classification/linear_support_vector_machine/predictive_maintenance.ipynb",
@@ -25,7 +25,7 @@
     },
     {
         "title": "Housing Prices Prediction",
-        "description": "Main technologies: PySpark, Spark ML, GCS. Description: This notebook shows how to predict housing prices based on location and other characteristics using Decision Tree Regression. Using Spark, it reads the dataset of the State of Connecticut - Real Estate Sales, it parses process the dataset to choose features and train the ML model (fits the decision tree regression model) to predict a target value.",
+        "description": "Description: This notebook shows how to predict housing prices based on location and other characteristics using Decision Tree Regression. Using Spark, it reads the dataset of the State of Connecticut - Real Estate Sales, it parses process the dataset to choose features and train the ML model (fits the decision tree regression model) to predict a target value. Main technologies: PySpark, Spark ML, GCS. ",
         "category": "Regression",
         "sub_category": "Decision Tree Regression",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/decision_tree_regression/housing_prices_prediction.ipynb",
@@ -33,7 +33,7 @@
     },
     {
         "title": "Bike Trip Duration Prediction",
-        "description": "Main technologies: PySpark, Spark ML, BigQuery. Description: This notebook shows how to predict Bike trip duration using SparkML\u2019s Random Forest Regression. Using Spark, it reads the table nyc-citi-bike from the BigQuery public datasets, parses process the dataset to choose features and train the ML model (fits the regression model) to predict a target value.",
+        "description": "Description: This notebook shows how to predict Bike trip duration using SparkML\u2019s Random Forest Regression. Using Spark, it reads the table nyc-citi-bike from the BigQuery public datasets, parses process the dataset to choose features and train the ML model (fits the regression model) to predict a target value. Main technologies: PySpark, Spark ML, BigQuery. ",
         "category": "Regression",
         "sub_category": "Decision Tree Regression",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/random_forest_regression/bike_trip_duration_prediction.ipynb",
@@ -41,7 +41,7 @@
     },
     {
         "title": "Customer Price Index",
-        "description": "Main technologies: PySpark, GCS, NumPy. Description: This notebook shows how to use the Monte Carlo method to simulate the future path of the Consumer Price Index (CPI), and estimate the probability that inflation rate in 2025 would be less than 2%. It uses the Pandas API on Spark (PySpark library that allows users to write code using the familiar Pandas DataFrame API on Spark DataFrames)",
+        "description": "Description: This notebook shows how to use the Monte Carlo method to simulate the future path of the Consumer Price Index (CPI), and estimate the probability that inflation rate in 2025 would be less than 2%. It uses the Pandas API on Spark (PySpark library that allows users to write code using the familiar Pandas DataFrame API on Spark DataFrames). Main technologies: PySpark, GCS, NumPy. ",
         "category": "Sampling",
         "sub_category": "Monte Carlo method",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/sampling/monte_carlo/customer_price_index.ipynb",
@@ -49,7 +49,7 @@
     },
     {
         "title": "OCR and PDF summarization",
-        "description": "Main technologies: PySpark, GCS, Gemini, Vision API, BigQuery. Description: This notebook shows how to perform OCR and summarization using LLM for a large number of contract PDF files in a GCS bucket. Using Spark,it reads a metadata table of the Contract Understanding Atticus Dataset (CUAD), runs OCR using Vision API,  calls Vertex AI PaLM API to summarize each text page, and saves the output to BigQuery",
+        "description": "Description: This notebook shows how to perform OCR and summarization using LLM for a large number of contract PDF files in a GCS bucket. Using Spark,it reads a metadata table of the Contract Understanding Atticus Dataset (CUAD), runs OCR using Vision API,  calls Vertex AI PaLM API to summarize each text page, and saves the output to BigQuery. Main technologies: PySpark, GCS, Gemini, Vision API, BigQuery. ",
         "category": "Generative AI",
         "sub_category": "Summarization",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/ocr_contract_summarization_llm.ipynb",
@@ -57,7 +57,7 @@
     },
     {
         "title": "Movie Reviews sentiment analysis",
-        "description": "Main technologies: PySpark, SparkML, Gemini, BigQuery. Description: This notebook shows how to perform sentiment analysis on large scale data using LLM. The dataset used is a public dataset from Bigquery Public Datasets. Using Spark, it reads data from Bigquery public dataset bigquery-public-data.imdb.reviews, calls Gemini to find the sentiment of each review (positive vs negative), compare the result side by side and the find accuracy",
+        "description": "Description: This notebook shows how to perform sentiment analysis on large scale data using LLM. The dataset used is a public dataset from Bigquery Public Datasets. Using Spark, it reads data from Bigquery public dataset bigquery-public-data.imdb.reviews, calls Gemini to find the sentiment of each review (positive vs negative), compare the result side by side and the find accuracy. Main technologies: PySpark, SparkML, Gemini, BigQuery. ",
         "category": "Generative AI",
         "sub_category": "Sentiment Analysis",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb",
@@ -65,7 +65,7 @@
     },
     {
         "title": "Product attributes and description from image",
-        "description": "Main technologies: PySpark, GCS, Gemini. Description: This notebook shows how to generate attributes and descriptions of products based on product images in a GCS bucket.\nIt uses the Stanford Online Products dataset and uses the Vertex AI Imagen for Captioning & VQA model to generate product attributes and the Gemini to generate product descriptions, using Spark UDFs to parallelize processing.",
+        "description": "Description: This notebook shows how to generate attributes and descriptions of products based on product images in a GCS bucket.\nIt uses the Stanford Online Products dataset and uses the Vertex AI Imagen for Captioning & VQA model to generate product attributes and the Gemini to generate product descriptions, using Spark UDFs to parallelize processing. Main technologies: PySpark, GCS, Gemini. ",
         "category": "Generative AI",
         "sub_category": "Content Generation",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb",
@@ -73,7 +73,7 @@
     },
     {
         "title": "Generate descriptions from videos",
-        "description": "Main technologies: PySpark, GCS, Gemini. Description: This notebook shows how to generate descriptions of videos in a GCS bucket. It uses the Youtube UGC dataset and uses the Gemini to generate video descriptions for each video.",
+        "description": "Description: This notebook shows how to generate descriptions of videos in a GCS bucket. It uses the Youtube UGC dataset and uses the Gemini to generate video descriptions for each video. Main technologies: PySpark, GCS, Gemini. ",
         "category": "Generative AI",
         "sub_category": "Content Generation",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/description_from_video.ipynb",
@@ -81,7 +81,7 @@
     },
     {
         "title": "Dataproc Metastore quickstart",
-        "description": "Main technologies: PySpark, Dataproc Metastore. Description: This notebook demonstrates how you can quickly integrate your Spark application with a managed Dataproc Metastore, and additionally, read the available public datasets in our public Dataproc Metastore instance.",
+        "description": "Description: This notebook demonstrates how you can quickly integrate your Spark application with a managed Dataproc Metastore, and additionally, read the available public datasets in our public Dataproc Metastore instance. Main technologies: PySpark, Dataproc Metastore. ",
         "category": "Public Datasets",
         "sub_category": "Dataproc Metastore",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/public_datasets/dataproc_metastore/metastore_spark_quickstart.ipynb",
@@ -89,7 +89,7 @@
     },
     {
         "title": "Public Datasets in Google Cloud Storage",
-        "description": "Main technologies: PySpark, GCS. Description: This notebook shows the available public datasets available in our public datasets public and how you read them using Spark.",
+        "description": "Description: This notebook shows the available public datasets available in our public datasets public and how you read them using Spark. Main technologies: PySpark, GCS. ",
         "category": "Public Datasets",
         "sub_category": "Google Cloud Storage",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/public_datasets/public_datasets.ipynb",
@@ -97,7 +97,7 @@
     },
     {
         "title": "Banner advertising understanding",
-        "description": "Main technologies: BigFrames, GCS, Gemini, BigQuery. Description: This notebook shows how to process ads banners images and generate enriched information classifications using a taxonomy using Bigframes and Gemini. It reads ads banners images from a GCS bucket and process them using Bigframes and Gemini, leveraging BigQuery's distributed processing capabilities.",
+        "description": "Description: This notebook shows how to process ads banners images and generate enriched information classifications using a taxonomy using Bigframes and Gemini. It reads ads banners images from a GCS bucket and process them using Bigframes and Gemini, leveraging BigQuery's distributed processing capabilities. Main technologies: BigFrames, GCS, Gemini, BigQuery. ",
         "category": "Generative AI",
         "sub_category": "Content Generation",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb",
@@ -105,7 +105,7 @@
     },
     {
         "title": "Delta format in GCS quickstart",
-        "description": "Main technologies: PySpark, GCS, Delta. Description: This notebook shows how to configure Spark to read and write files in GCS using the delta format.",
+        "description": "Description: This notebook shows how to configure Spark to read and write files in GCS using the delta format. Main technologies: PySpark, GCS, Delta. ",
         "category": "Public Datasets",
         "sub_category": "Delta",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/foundational/delta_format/delta_quickstart.ipynb",
@@ -113,7 +113,7 @@
     },
     {
         "title": "Predict penguim weight using linear regression",
-        "description": "Main technologies: BigFrames, BigQuery. Description: This notebook shows how to use BigQuery Dataframes to train a linear regression model to predict penguin weights. It reads the penguins table from BigQuery Public Datasets and fits a multiple linear regression model that predicts the weight of penguins, evaluating and plotting the results.",
+        "description": "Description: This notebook shows how to use BigQuery Dataframes to train a linear regression model to predict penguin weights. It reads the penguins table from BigQuery Public Datasets and fits a multiple linear regression model that predicts the weight of penguins, evaluating and plotting the results. Main technologies: BigFrames, BigQuery. ",
         "category": "Regression",
         "sub_category": "Linear Regression",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/linear_regression/penguim_weight_prediction.ipynb",
