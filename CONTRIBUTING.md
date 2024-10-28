@@ -47,6 +47,8 @@ Here are some suggested guidelines for a pull request of a new notebook:
     ```python .ci/scripts/add_new_entry.py <NOTEBOOK_TITLE> <NOTEBOOK_DESCRIPTION> <NOTEBOOK_CATEGORY> <NOTEBOOK_SUBCATEGORY>```   
     This script will automatically add a new entry to the .ci/index.json file with the correct url reference and the current date  
     Take a look at the .ci/index.json file to see examples of how to write the necessary fields  
+    To facilitate, we also provide a simple UI for you to edit this JSON, adding new rows, etc, which you can use locally by running: ```streamlit run .ci/streamlit_edit_index.py```
+    ![Streamlit Edit JSON](docs/images/edit-index.png)
 
 3) **Make sure to put you notebook file under the correct category and sub_category subfolders**  
    As you can see in the repo, we already have some categories and subcategory folders under the notebooks folder, such as:

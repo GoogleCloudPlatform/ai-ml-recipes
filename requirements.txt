@@ -11,3 +11,4 @@ scikit-learn
 google-auth
 google-cloud-storage
 imblearn
+streamlit
