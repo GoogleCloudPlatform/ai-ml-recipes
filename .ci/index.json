@@ -89,7 +89,7 @@
     },
     {
         "title": "Public Datasets in Google Cloud Storage",
-        "description": "Description: This notebook shows the available public datasets available in our public datasets public and how you read them using Spark. Main technologies: PySpark, GCS. ",
+        "description": "Description: This notebook shows the available public datasets available in our public datasets GCS bucket and how you read them using PySpark and BigFrames. Main technologies: PySpark, GCS, BigFrames. ",
         "category": "Public Datasets",
         "sub_category": "Google Cloud Storage",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/public_datasets/public_datasets.ipynb",
