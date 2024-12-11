@@ -37,7 +37,10 @@ Please refer to each notebooks folder documentation for more information:
 
 **BigFrames (BigQuery Dataframes)**
 * Generative AI
-    * [Banner advertising understanding](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb)
+    * Content Generation
+        * [Banner advertising understanding](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb)
+    * Classification
+        * [Toxicity classification](./notebooks/generative_ai/classification/toxicity_classification.ipynb)
 * Regression
     * [Predict penguim weight](./notebooks/regression/linear_regression/penguim_weight_prediction.ipynb)
 
