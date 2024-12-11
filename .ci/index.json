@@ -118,5 +118,13 @@
         "sub_category": "Linear Regression",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/linear_regression/penguim_weight_prediction.ipynb",
         "created_at": "10-15-2024"
+    },
+    {
+        "title": "Toxicity classification using Gemini fine-tuned",
+        "description": "Description: This notebook shows how to classify human text toxic comments into different Responsible AI harms categories: toxic, severe_toxic, obscene, threat, insult, identity_hate. It reads the Jigsaw Multilingual Toxic Comment Classification dataset, runs predictions using Gemini, fine-tunes the model and evaluates F1 scores and Precision scores for both models",
+        "category": "Generative AI",
+        "sub_category": "Classification",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/classification/toxicity_classification.ipynb",
+        "created_at": "12-11-2024"
     }
 ]
