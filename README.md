@@ -10,6 +10,15 @@ You can easily clone the repo and start executing the notebooks right way using 
 ## Notebooks
 Please refer to each notebooks folder documentation for more information:
 
+**BigFrames (BigQuery Dataframes)**
+* Generative AI
+    * Content Generation
+        * [Banner advertising understanding](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb)
+    * Classification
+        * [Toxicity classification](./notebooks/generative_ai/classification/toxicity_classification.ipynb)
+* Regression
+    * [Predict penguim weight](./notebooks/regression/linear_regression/penguim_weight_prediction.ipynb)
+
 **PySpark**
 * Classification
     * Logistic Regression
@@ -34,15 +43,6 @@ Please refer to each notebooks folder documentation for more information:
     * Content Generation
         * [Product attributes and description from image](./notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb)
         * [Generate description from videos](./notebooks/generative_ai/content_generation/description_from_video.ipynb)
-
-**BigFrames (BigQuery Dataframes)**
-* Generative AI
-    * Content Generation
-        * [Banner advertising understanding](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb)
-    * Classification
-        * [Toxicity classification](./notebooks/generative_ai/classification/toxicity_classification.ipynb)
-* Regression
-    * [Predict penguim weight](./notebooks/regression/linear_regression/penguim_weight_prediction.ipynb)
 
 
 ## Public Datasets
@@ -89,6 +89,8 @@ We recommend leveraging the [BigQuery Jupyter Plugin](https://github.com/GoogleC
 
 ## Contributing
 See the contributing [instructions](./CONTRIBUTING.md) to get started contributing.
+
+Acknowledgments: Nilo Resende, Dana Soltani, Oscar Pulido James Fu, Neha Sharma, Tanya Warrier, Anish Sarangi, Diogo Kato, André Sousa, Shashank Agarwal, Samuel Schmidt, Eduardo Hruschka, Hitesh Hasija
 
 ## License
 All solutions within this repository are provided under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license. Please see the [LICENSE](/LICENSE) file for more detailed terms and conditions.
