@@ -121,7 +121,7 @@
     },
     {
         "title": "Toxicity classification using Gemini fine-tuned",
-        "description": "Description: This notebook shows how to classify human text toxic comments into different Responsible AI harms categories: toxic, severe_toxic, obscene, threat, insult, identity_hate. It reads the Jigsaw Multilingual Toxic Comment Classification dataset, runs predictions using Gemini, fine-tunes the model and evaluates F1 scores and Precision scores for both models",
+        "description": "Description: This notebook shows how to classify human text toxic comments into different Responsible AI harms categories: toxic, severe_toxic, obscene, threat, insult, identity_hate. It reads the Jigsaw Multilingual Toxic Comment Classification dataset, runs predictions using Gemini 2.0, fine-tunes Gemini 1.5 and evaluates F1 scores and Precision scores for both models. Main technologies: BigFrames, BigQuery, Gemini, Vertex AI SFT",
         "category": "Generative AI",
         "sub_category": "Classification",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/classification/toxicity_classification.ipynb",
