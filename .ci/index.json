@@ -84,7 +84,7 @@
         "description": "Description: This notebook demonstrates how you can quickly integrate your Spark application with a managed Dataproc Metastore, and additionally, read the available public datasets in our public Dataproc Metastore instance. Main technologies: PySpark, Dataproc Metastore. ",
         "category": "Public Datasets",
         "sub_category": "Dataproc Metastore",
-        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/public_datasets/dataproc_metastore/metastore_spark_quickstart.ipynb",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/dataproc_metastore/metastore_spark_quickstart.ipynb",
         "created_at": "02-27-2024"
     },
     {
@@ -108,7 +108,7 @@
         "description": "Description: This notebook shows how to configure Spark to read and write files in GCS using the delta format. Main technologies: PySpark, GCS, Delta. ",
         "category": "Public Datasets",
         "sub_category": "Delta",
-        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/foundational/delta_format/delta_quickstart.ipynb",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/delta_format/delta_quickstart.ipynb",
         "created_at": "04-26-2024"
     },
     {
@@ -126,5 +126,13 @@
         "sub_category": "Classification",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/classification/toxicity_classification.ipynb",
         "created_at": "12-11-2024"
+    },
+    {
+        "title": "Bigframes Quickstart",
+        "description": "This notebooks provides a quickstart for the BigQuery DataFrames (also known as BigFrames) provides a Pythonic DataFrame and machine learning (ML) API powered by the BigQuery engine.",
+        "category": "Foundational",
+        "sub_category": "Bigframes",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/bigframes/bigframes_quickstart.ipynb",
+        "created_at": "02-13-2025"
     }
 ]
