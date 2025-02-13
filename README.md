@@ -18,6 +18,9 @@ Please refer to each notebooks folder documentation for more information:
         * [Toxicity classification](./notebooks/generative_ai/classification/toxicity_classification.ipynb)
 * Regression
     * [Predict penguim weight](./notebooks/regression/linear_regression/penguim_weight_prediction.ipynb)
+* Quickstart
+    * BigQuery Dataframes
+        * [Bigframes quickstart](./notebooks/quickstart/bigframes/bigframes_quickstart.ipynb)
 
 **PySpark**
 * Classification
@@ -43,7 +46,11 @@ Please refer to each notebooks folder documentation for more information:
     * Content Generation
         * [Product attributes and description from image](./notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb)
         * [Generate description from videos](./notebooks/generative_ai/content_generation/description_from_video.ipynb)
-
+* Quickstart
+    * Delta
+        * [PySpark and Delta in GCS](./notebooks/quickstart/delta_format/delta_quickstart.ipynb)
+    * Dataproc Metastore
+        * [Dataproc Metastore](./notebooks/quickstart/dataproc_metastore/metastore_spark_quickstart.ipynb)
 
 ## Public Datasets
 The notebooks read datasets from our public GCS bucket containing several publicly available datasets.
