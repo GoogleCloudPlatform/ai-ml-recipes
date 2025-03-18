@@ -82,7 +82,7 @@
     {
         "title": "Dataproc Metastore quickstart",
         "description": "Description: This notebook demonstrates how you can quickly integrate your Spark application with a managed Dataproc Metastore, and additionally, read the available public datasets in our public Dataproc Metastore instance. Main technologies: PySpark, Dataproc Metastore. ",
-        "category": "Public Datasets",
+        "category": "Quickstart",
         "sub_category": "Dataproc Metastore",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/dataproc_metastore/metastore_spark_quickstart.ipynb",
         "created_at": "02-27-2024"
@@ -106,7 +106,7 @@
     {
         "title": "Delta format in GCS quickstart",
         "description": "Description: This notebook shows how to configure Spark to read and write files in GCS using the delta format. Main technologies: PySpark, GCS, Delta. ",
-        "category": "Public Datasets",
+        "category": "Quickstart",
         "sub_category": "Delta",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/delta_format/delta_quickstart.ipynb",
         "created_at": "04-26-2024"
@@ -130,9 +130,17 @@
     {
         "title": "Bigframes Quickstart",
         "description": "This notebooks provides a quickstart for the BigQuery DataFrames (also known as BigFrames) provides a Pythonic DataFrame and machine learning (ML) API powered by the BigQuery engine.",
-        "category": "Foundational",
+        "category": "Quickstart",
         "sub_category": "Bigframes",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/bigframes/bigframes_quickstart.ipynb",
         "created_at": "02-13-2025"
+    },
+    {
+        "title": "Apache Iceberg on BQ Quickstart",
+        "description": "This notebooks provides a quickstart to use BigQuery tables for Apache Iceberg.",
+        "category": "Quickstart",
+        "sub_category": "Iceberg",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/iceberg/iceberg_quickstart.ipynb",
+        "created_at": "03-18-2025"
     }
 ]
