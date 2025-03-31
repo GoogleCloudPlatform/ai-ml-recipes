@@ -23,6 +23,8 @@ Please refer to each notebooks folder documentation for more information:
         * [Bigframes quickstart](./notebooks/quickstart/bigframes/bigframes_quickstart.ipynb)
     * Apache Iceberg
         * [Iceberg quickstart](./notebooks/quickstart/iceberg/iceberg_quickstart.ipynb)
+* Analytics
+    * [Dataproc cluster insights with BigQuery](./notebooks/analytics/dataproc_cluster_insights_bigquery.ipynb)
 
 **PySpark**
 * Classification

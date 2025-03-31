@@ -142,5 +142,12 @@
         "sub_category": "Iceberg",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/iceberg/iceberg_quickstart.ipynb",
         "created_at": "03-18-2025"
+    },
+    {
+        "title": "Dataproc cluster insights on BigQuery",
+        "description": "This notebooks provides visibility into Dataproc workflows cluster utilization.",
+        "category": "Analytics",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/dataproc_cluster_insights_bigquery.ipynb",
+        "created_at": "03-18-2025"
     }
 ]
