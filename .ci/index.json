@@ -129,7 +129,7 @@
     },
     {
         "title": "Bigframes Quickstart",
-        "description": "This notebooks provides a quickstart for the BigQuery DataFrames (also known as BigFrames) provides a Pythonic DataFrame and machine learning (ML) API powered by the BigQuery engine.",
+        "description": "This notebooks provides a quickstart for the BigQuery DataFrames (also known as BigFrames) provides a Pythonic DataFrame and machine learning (ML) API powered by the BigQuery engine. Main technologies: BigFrames, BigQuery, Gemini",
         "category": "Quickstart",
         "sub_category": "Bigframes",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/bigframes/bigframes_quickstart.ipynb",
@@ -137,7 +137,7 @@
     },
     {
         "title": "Apache Iceberg on BQ Quickstart",
-        "description": "This notebooks provides a quickstart to use BigQuery tables for Apache Iceberg.",
+        "description": "This notebooks provides a quickstart to use BigQuery tables for Apache Iceberg. Main technologies: BigQuery, Apache Iceberg",
         "category": "Quickstart",
         "sub_category": "Iceberg",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/iceberg/iceberg_quickstart.ipynb",
@@ -145,9 +145,17 @@
     },
     {
         "title": "Dataproc cluster insights on BigQuery",
-        "description": "This notebooks provides visibility into Dataproc workflows cluster utilization.",
+        "description": "This notebooks provides visibility into Dataproc workflows cluster utilization. Main technologies: BigQuery, Dataproc",
         "category": "Analytics",
+        "sub_category": "Dataproc",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/dataproc_cluster_insights_bigquery.ipynb",
         "created_at": "03-18-2025"
+    },
+    {
+        "title": "Fine-tuning Gemini on translation to english",
+        "description": "This notebooks demonstrates how to fine-tune Gemini to perform translation tasks from multiple languages (DE,ES,FR,IT,PL,PT,RU,SV,UK,ZH) to English. It follows the steps: 1) Reads the dataset from a GCS bucket 2) Save it in the Iceberg format using Dataproc Serverless 3) Use Vertex AI Supervised fine-tuning job to fine-tune Gemini with the dataset 4) Register the model in Vertex AI Model Registry. Main technologies: PySpark, Apache Iceberg, Gemini, Vertex AI SFT",
+        "category": "Generative AI",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/finetuning/translation_finetuning.ipynb",
+        "created_at": "04-17-2025"
     }
 ]
