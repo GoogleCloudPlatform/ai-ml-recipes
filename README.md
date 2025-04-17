@@ -43,6 +43,8 @@ Please refer to each notebooks folder documentation for more information:
     * Monte Carlo method
         * [Customer Price Index](./notebooks/sampling/monte_carlo/customer_price_index.ipynb)
 * Generative AI
+    * Fine-tuning
+        * [Fine-tuning Gemini on translation to english](./notebooks/generative_ai/finetuning/translation_finetuning.ipynb)
     * Summarization
         * [OCR and PDF summarization using LLM](./notebooks/generative_ai/summarization/ocr_contract_summarization_llm.ipynb)
     * Sentiment Analysis
