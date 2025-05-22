@@ -146,7 +146,7 @@
     {
         "title": "Dataproc cluster insights on BigQuery",
         "description": "This notebooks provides visibility into Dataproc workflows cluster utilization. Main technologies: BigQuery, Dataproc",
-        "category": "Analytics",
+        "category": "Quickstart",
         "sub_category": "Dataproc",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/dataproc_cluster_insights_bigquery.ipynb",
         "created_at": "03-18-2025"

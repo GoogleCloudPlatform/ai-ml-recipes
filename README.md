@@ -10,53 +10,32 @@ You can easily clone the repo and start executing the notebooks right way using 
 ## Notebooks
 Please refer to each notebooks folder documentation for more information:
 
-**BigFrames (BigQuery Dataframes)**
-* Generative AI
-    * Content Generation
-        * [Banner advertising understanding](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb)
-    * Classification
-        * [Toxicity classification](./notebooks/generative_ai/classification/toxicity_classification.ipynb)
-* Regression
-    * [Predict penguim weight](./notebooks/regression/linear_regression/penguim_weight_prediction.ipynb)
-* Quickstart
-    * BigQuery Dataframes
-        * [Bigframes quickstart](./notebooks/quickstart/bigframes/bigframes_quickstart.ipynb)
-    * Apache Iceberg
-        * [Iceberg quickstart](./notebooks/quickstart/iceberg/iceberg_quickstart.ipynb)
-* Analytics
-    * [Dataproc cluster insights with BigQuery](./notebooks/analytics/dataproc_cluster_insights_bigquery.ipynb)
+| Title | Industry | Topic | Sub Topic | Main Technologies |
+|-------|----------|-------|-----------|----------------|
+| [Fine-tuning Gemini to translate multiple languages](./notebooks/generative_ai/finetuning/translation_finetuning.ipynb) | Media & Entertainment | Generative AI | Fine tuning | PySpark, Iceberg. Gemini |
+| [Toxicity classification using Gemini fine-tuned](./notebooks/generative_ai/classification/toxicity_classification.ipynb) | Gaming | Generative AI | Classification | BigFrames, Gemini, Vertex AI |
+| [SMS Spam Filtering](./notebooks/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb) | Telecom | Classification | Multilayer Perceptron Classifier | PySpark, Spark ML, GCS |
+| [Predictive Maintenance](./notebooks/classification/linear_support_vector_machine/predictive_maintenance.ipynb) | Manufacturing | Classification | Linear Support Vector Machine | PySpark, Spark ML, GCS |
+| [Wine Quality Classification](./notebooks/classification/logistic_regression/wine_quality_classification_mlr.ipynb) | Retail | Classification | Logistic Regression | PySpark, Spark ML, GCS |
+| [Housing Prices Prediction](./notebooks/regression/decision_tree_regression/housing_prices_prediction.ipynb) | Finance | Regression | Decision Tree Regression | PySpark, Spark ML, GCS |
+| [Bike Trip Duration Prediction](./notebooks/regression/random_forest_regression/bike_trip_duration_prediction.ipynb) | Mobility | Regression | Random Forest Regression | PySpark, Spark ML, BigQuery |
+| [Customer Price Index](./notebooks/sampling/monte_carlo/customer_price_index.ipynb) | Finance | Sampling | Monte Carlo method | PySpark, GCS, NumPy |
+| [OCR and PDF summarization using LLM](./notebooks/generative_ai/summarization/ocr_contract_summarization_llm.ipynb) | Finance | Generative AI | Summarization | PySpark, SparkML, Gemini, BigQuery |
+| [Movie Reviews sentiment analysis using LLM](./notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb) | Media & Entertainment | Generative AI | Sentiment Analysis | PySpark, SparkML, Gemini, BigQuery |
+| [Generate description from videos](./notebooks/generative_ai/content_generation/description_from_video.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
+| [Product attributes and description from image](./notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
+| [Banner advertising understanding](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb) | Retail | Generative AI | Content Generation | BigFrames, GCS, Gemini, BigQuery |
+| [Predict penguim weight](./notebooks/regression/linear_regression/penguim_weight_prediction.ipynb) | Environmental | Regression | Linear Regression | BigFrames, BigQuery |
 
-**PySpark**
-* Classification
-    * Logistic Regression
-        * [Wine Quality Classification](./notebooks/classification/logistic_regression/wine_quality_classification_mlr.ipynb)
-    * Multilayer Perceptron Classifier
-        * [SMS Spam Filtering](./notebooks/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb)
-    * Linear Support Vector Machine
-        * [Predictive Maintenance](./notebooks/classification/linear_support_vector_machine/predictive_maintenance.ipynb)
-* Regression
-    * Decision Tree Regression
-        * [Housing Prices Prediction](./notebooks/regression/decision_tree_regression/housing_prices_prediction.ipynb)
-    * Random Forest Regression
-        * [Bike Trip Duration Prediction](./notebooks/regression/random_forest_regression/bike_trip_duration_prediction.ipynb)
-* Sampling
-    * Monte Carlo method
-        * [Customer Price Index](./notebooks/sampling/monte_carlo/customer_price_index.ipynb)
-* Generative AI
-    * Fine-tuning
-        * [Fine-tuning Gemini on translation to english](./notebooks/generative_ai/finetuning/translation_finetuning.ipynb)
-    * Summarization
-        * [OCR and PDF summarization using LLM](./notebooks/generative_ai/summarization/ocr_contract_summarization_llm.ipynb)
-    * Sentiment Analysis
-        * [Movie Reviews sentiment analysis using LLM](./notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb)
-    * Content Generation
-        * [Product attributes and description from image](./notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb)
-        * [Generate description from videos](./notebooks/generative_ai/content_generation/description_from_video.ipynb)
-* Quickstart
-    * Delta
-        * [PySpark and Delta in GCS](./notebooks/quickstart/delta_format/delta_quickstart.ipynb)
-    * Dataproc Metastore
-        * [Dataproc Metastore](./notebooks/quickstart/dataproc_metastore/metastore_spark_quickstart.ipynb)
+Google Cloud products quickstarts:
+
+| Title | Topic | Sub Topic | Main Technologies |
+|-------|-------|-----------|----------------|
+| [Apache Iceberg on BQ Quickstart](./notebooks/quickstart/iceberg/iceberg_quickstart.ipynb) | Quickstart | Iceberg | BigQuery, Apache Iceberg |
+| [Bigframes Quickstart](./notebooks/quickstart/bigframes/bigframes_quickstart.ipynb) |  Quickstart | Bigframes | BigFrames, BigQuery, Gemini |
+| [Delta format in GCS Quickstart](./notebooks/quickstart/delta_format/delta_quickstart.ipynb) | Quickstart | Delta | PySpark, GCS, Delta |
+| [Dataproc Metastore](./notebooks/quickstart/dataproc_metastore/metastore_spark_quickstart.ipynb) | Quickstart | Dataproc Metastore | PySpark, Dataproc Metastore |
+| [Dataproc cluster insights with BigQuery](./notebooks/analytics/dataproc_cluster_insights_bigquery.ipynb) | Quickstart | Dataproc | BigQuery, Dataproc |
 
 ## Public Datasets
 The notebooks read datasets from our public GCS bucket containing several publicly available datasets.
