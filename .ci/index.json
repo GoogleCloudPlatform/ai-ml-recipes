@@ -48,12 +48,12 @@
         "created_at": "12-14-2023"
     },
     {
-        "title": "OCR and PDF summarization",
-        "description": "Description: This notebook shows how to perform OCR and summarization using LLM for a large number of contract PDF files in a GCS bucket. Using Spark,it reads a metadata table of the Contract Understanding Atticus Dataset (CUAD), runs OCR using Vision API,  calls Vertex AI PaLM API to summarize each text page, and saves the output to BigQuery. Main technologies: PySpark, GCS, Gemini, Vision API, BigQuery. ",
+        "title": "PDF summarization using Gemini",
+        "description": "Description: This notebook shows how to perform summarization using Gemini for a large number of contract PDF files in a GCS bucket. Using Spark,it reads a metadata table of the Contract Understanding Atticus Dataset (CUAD), calls Gemini to summarize the text, and saves the output to BigQuery. Main technologies: PySpark, GCS, Gemini, BigQuery. ",
         "category": "Generative AI",
         "sub_category": "Summarization",
-        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/ocr_contract_summarization_llm.ipynb",
-        "created_at": "12-14-2023"
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/pdf_contracts_summarization.ipynb",
+        "created_at": "25-05-2025"
     },
     {
         "title": "Movie Reviews sentiment analysis",

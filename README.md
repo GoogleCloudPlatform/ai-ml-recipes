@@ -13,7 +13,7 @@ Please refer to each notebooks folder documentation for more information:
 | Title | Industry | Topic | Sub Topic | Main Technologies |
 |-------|----------|-------|-----------|----------------|
 | [Fine-tuning Gemini to translate multiple languages](./notebooks/generative_ai/finetuning/translation_finetuning.ipynb) | Media & Entertainment | Generative AI | Fine tuning | PySpark, Iceberg. Gemini |
-| [OCR and PDF summarization using Gemini](./notebooks/generative_ai/summarization/ocr_contract_summarization_llm.ipynb) | Finance | Generative AI | Summarization | PySpark, SparkML, Gemini, BigQuery |
+| [PDF summarization using Gemini](./notebooks/generative_ai/summarization/pdf_contracts_summarization.ipynb) | Finance | Generative AI | Summarization | PySpark, SparkML, Gemini, BigQuery |
 | [Movie Reviews sentiment analysis using Gemini](./notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb) | Media & Entertainment | Generative AI | Sentiment Analysis | PySpark, SparkML, Gemini, BigQuery |
 | [Generate description from videos](./notebooks/generative_ai/content_generation/description_from_video.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
 | [Product attributes and description from image](./notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
