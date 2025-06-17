@@ -36,6 +36,7 @@ Google Cloud products quickstarts:
 | [Dataproc cluster insights with BigQuery](./notebooks/analytics/dataproc_cluster_insights_bigquery.ipynb) | Quickstart | Dataproc | BigQuery, Dataproc |
 | [Bigframes Quickstart](./notebooks/quickstart/bigframes/bigframes_quickstart.ipynb) |  Quickstart | Bigframes | BigFrames, BigQuery, Gemini |
 | [Apache Iceberg on BQ Quickstart](./notebooks/quickstart/iceberg/iceberg_quickstart.ipynb) | Quickstart | Iceberg | BigQuery, Apache Iceberg |
+| [Agent2Agent Quickstart](./notebooks/quickstart/agent2agent/a2a_quickstart.ipynb) | Quickstart | Agent2Agent | Gemini, Google ADK, A2A, Vertex AI |
 
 ## Public Datasets
 The notebooks read datasets from our public GCS bucket containing several publicly available datasets.
