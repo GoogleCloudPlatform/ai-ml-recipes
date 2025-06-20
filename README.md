@@ -44,26 +44,32 @@ The notebooks read datasets from our public GCS bucket containing several public
 In this [doc](./public_datasets/public_datasets.ipynb) you can see the list of available datasets, which are located in [gs://dataproc-metastore-public-binaries](https://console.cloud.google.com/storage/browser/dataproc-metastore-public-binaries).  
 The documentation above has details about the datasets, and links to their original pages, containing their LICENSES, etc.
 
+### Cloud Code VSCode extension
+
+These notebooks are available from your VSCode IDE when using the [Cloud Code extension](https://cloud.google.com/code/docs/vscode). You can go to **Notebook Templates** and download each template to your environment:
+
+<img src="docs/images/vscode-cloud-code.png" alt="drawing" width="1400"/>
 
 ### Usage in Vertex AI Workbench notebooks
 
 These notebooks are available from within the Vertex AI Workbench notebooks environment.  
 Navigate to JupyterLab home screen and click on Notebooks to see the list of notebooks and a button for you to download/copy them into your environment.
 
-![Vertex Notebooks Templates](docs/images/vertex-notebook-templates.png)
-![Vertex Notebooks Templates List](docs/images/vertex-notebook-templates-list.png)
+<img src="docs/images/vertex-notebook-templates.png" alt="drawing" width="600"/>
+<br>
+<img src="docs/images/vertex-notebook-templates-list.png" alt="drawing" width="1400"/>
 
 ## Usage in your local environment
 
 1) Install [gcloud cli](https://cloud.google.com/sdk/docs/install)
 2) Run ```gclout init``` to setup your default GCP configuration
 3) Clone this repository by running  
-   ```git clone https://github.com/GoogleCloudPlatform/dataproc-ml-quickstart-notebooks.git```
+   ```git clone https://github.com/GoogleCloudPlatform/ai-ml-recipes.git```
 4) Install requirements by running ```pip install -r requirements.txt```
 5) For the **PySpark notebooks**, use one of the approaches using the *Dataproc Jupyter Plugin*:
-    - 5.1) [*Recommended*] Create *Dataproc Serverless Notebooks*, after creating a *Runtime Template* with your desired Dataproc config, and use it as a Jupyter kernel when executing the notebooks
-        - Do not forget to ensure the correct network [configuration](https://cloud.google.com/dataproc-serverless/docs/concepts/network) (for example, you need a Cloud NAT to be able to install packages from the public PyPI)
-    - 5.2) Create a *Dataproc Cluster* with your desired Dataproc config, and use it as a Jupyter kernel when executing the notebooks
+    - 5.1) [*PySpark Serverless Runtime on Google Cloud*] Create a *[Runtime Template](https://cloud.google.com/dataproc-serverless/docs/guides/create-serverless-sessions-templates)* with your desired runtime config, and use it to run your PySpark notebooks.
+        - Do not forget to ensure the correct network [configuration](https://cloud.google.com/dataproc-serverless/docs/concepts/network) 
+    - 5.2) [*Local runtime*] Use your local PySpark runtime
 6) For the **Bigframes notebooks**, you do not need PySpark, just any kernel/environment, and the processing will leverage BigQuery in your GCP project
 
 
@@ -82,8 +88,6 @@ We recommend leveraging the [BigQuery Jupyter Plugin](https://github.com/GoogleC
 
 ## Contributing
 See the contributing [instructions](./CONTRIBUTING.md) to get started contributing.
-
-Acknowledgments: Nilo Resende, Dana Soltani, Oscar Pulido James Fu, Neha Sharma, Tanya Warrier, Anish Sarangi, Diogo Kato, André Sousa, Shashank Agarwal, Samuel Schmidt, Eduardo Hruschka, Hitesh Hasija
 
 ## License
 All solutions within this repository are provided under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license. Please see the [LICENSE](/LICENSE) file for more detailed terms and conditions.
