@@ -35,7 +35,7 @@ jobs:
           python-version: '3.x'
       
       - name: Install dependencies
-        run: pip install -r google-genai
+        run: pip install google-genai==1.30.3
 
       - name: Run AI notebook enhancement script
         run: python .ci/scripts/enhance_notebook.py
