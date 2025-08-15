@@ -44,11 +44,17 @@ Here are some suggested guidelines for a pull request of a new notebook:
    4) Show table schemas or examples ot facilitate understanding
 
 2) **To make your notebook appear on Vertex AI Workbench, run the script to add its reference to the index.json file**    
-    ```python .ci/scripts/add_new_entry.py <NOTEBOOK_TITLE> <NOTEBOOK_DESCRIPTION> <NOTEBOOK_CATEGORY> <NOTEBOOK_SUBCATEGORY>```   
-    This script will automatically add a new entry to the .ci/index.json file with the correct url reference and the current date  
-    Take a look at the .ci/index.json file to see examples of how to write the necessary fields  
-    To facilitate, we also provide a simple UI for you to edit this JSON, adding new rows, etc, which you can use locally by running: ```streamlit run .ci/streamlit_edit_index.py```
-    ![Streamlit Edit JSON](docs/images/edit-index.png)
+    Take a look at the .ci/index.json file to see examples of how to write the necessary fields, for example:
+    ```json
+    {
+        "title": "Contract Risk and Compliance Review",
+        "description": "Description: This notebook demonstrates a powerful, scalable solution for automating the analysis of legal contracts using Google BigQuery and Vertex AI's Gemini models. It showcases how to transform thousands of unstructured text documents stored in Google Cloud Storage into a structured, queryable, and insightful dataset directly within BigQuery. The process involves using SQL functions to extract key information, assess risk, generate summaries, and finally, visualize the results to enable data-driven decision-making for legal and compliance teams. Main technologies: BigQuery, SQL, Gemini",
+        "category": "Generative AI",
+        "sub_category": "Summarization",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb",
+        "created_at": "08-15-2025"
+    }
+    ```
 
 3) **Make sure to put you notebook file under the correct category and sub_category subfolders**  
    As you can see in the repo, we already have some categories and subcategory folders under the notebooks folder, such as:
@@ -58,6 +64,24 @@ Here are some suggested guidelines for a pull request of a new notebook:
 
 4) **Run ```python .ci/scripts/validate_entries.py``` to make sure the added notebook is correctly added to index.json file**  
    This script will be executed by Github Actions workflow upon a PR
+
+5) **Add the reference to your new notebook in the [README.md](./README.md) file.**
+
+6) Create a Pull Request from your feat/<new_notebook> branch to the main branch.
+
+Type |	Title	| Description  |
+----- |---------| ------------- |
+feat |	Features	| A new feature or notebook.  |
+fix |	Bug Fixes	| A bug fix.  |
+docs |	Documentation	| Changes to documentation only (e.g., README, API docs).  |
+style |	Styles	| Code style changes that do not affect the meaning of the code (e.g., white-space, formatting, missing semi-colons).  |
+refactor |	Code Refactoring	| A code change that neither fixes a bug nor adds a feature.  |
+perf |	Performance	| A code change that improves performance.  |
+test |	Tests	| Adding missing tests or correcting existing tests.  |
+chore |	Chores	| Changes to the build process, auxiliary tools, or configurations that don't relate to production code.  |
+build |	Build System	| Changes that affect the build system or external dependencies.  |
+ci |	Continuous Integration	| Changes to CI configuration files and scripts (e.g., GitHub Actions).  |
+revert |	Reverts	| Reverts a previous commit.  |
 
 ### Community Guidelines
 
