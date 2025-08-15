@@ -166,5 +166,13 @@
         "sub_category": "Agent2Agent",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/agent2agent/a2a_quickstart.ipynb",
         "created_at": "05-17-2025"
+    },
+    {
+        "title": "Contract Risk and Compliance Review",
+        "description": "Description: This notebook demonstrates a powerful, scalable solution for automating the analysis of legal contracts using Google BigQuery and Vertex AI's Gemini models. It showcases how to transform thousands of unstructured text documents stored in Google Cloud Storage into a structured, queryable, and insightful dataset directly within BigQuery. The process involves using SQL functions to extract key information, assess risk, generate summaries, and finally, visualize the results to enable data-driven decision-making for legal and compliance teams. Main technologies: BigQuery, SQL, Gemini",
+        "category": "Generative AI",
+        "sub_category": "Summarization",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb",
+        "created_at": "08-15-2025"
     }
 ]

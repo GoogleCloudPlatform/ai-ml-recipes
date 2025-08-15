@@ -13,19 +13,21 @@ Please refer to each notebooks folder documentation for more information:
 | Title | Industry | Topic | Sub Topic | Main Technologies |
 |-------|----------|-------|-----------|----------------|
 | [Fine-tuning Gemini to translate multiple languages](./notebooks/generative_ai/finetuning/translation_finetuning.ipynb) | Media & Entertainment | Generative AI | Fine tuning | PySpark, Iceberg. Gemini |
-| [PDF summarization using Gemini](./notebooks/generative_ai/summarization/pdf_contracts_summarization.ipynb) | Finance | Generative AI | Summarization | PySpark, SparkML, Gemini, BigQuery |
+| [PDF summarization using Gemini](./notebooks/generative_ai/summarization/pdf_contracts_summarization.ipynb) | Financial | Generative AI | Summarization | PySpark, SparkML, Gemini, BigQuery |
 | [Movie Reviews sentiment analysis using Gemini](./notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb) | Media & Entertainment | Generative AI | Sentiment Analysis | PySpark, SparkML, Gemini, BigQuery |
 | [Generate description from videos](./notebooks/generative_ai/content_generation/description_from_video.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
 | [Product attributes and description from image](./notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
 | [SMS Spam Filtering](./notebooks/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb) | Telecom | Classification | Multilayer Perceptron Classifier | PySpark, Spark ML, GCS |
 | [Predictive Maintenance](./notebooks/classification/linear_support_vector_machine/predictive_maintenance.ipynb) | Manufacturing | Classification | Linear Support Vector Machine | PySpark, Spark ML, GCS |
 | [Wine Quality Classification](./notebooks/classification/logistic_regression/wine_quality_classification_mlr.ipynb) | Retail | Classification | Logistic Regression | PySpark, Spark ML, GCS |
-| [Housing Prices Prediction](./notebooks/regression/decision_tree_regression/housing_prices_prediction.ipynb) | Finance | Regression | Decision Tree Regression | PySpark, Spark ML, GCS |
+| [Housing Prices Prediction](./notebooks/regression/decision_tree_regression/housing_prices_prediction.ipynb) | Financial | Regression | Decision Tree Regression | PySpark, Spark ML, GCS |
 | [Bike Trip Duration Prediction](./notebooks/regression/random_forest_regression/bike_trip_duration_prediction.ipynb) | Mobility | Regression | Random Forest Regression | PySpark, Spark ML, BigQuery |
-| [Customer Price Index](./notebooks/sampling/monte_carlo/customer_price_index.ipynb) | Finance | Sampling | Monte Carlo method | PySpark, GCS, NumPy |
+| [Customer Price Index](./notebooks/sampling/monte_carlo/customer_price_index.ipynb) | Financial | Sampling | Monte Carlo method | PySpark, GCS, NumPy |
 | [Banner advertising understanding](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb) | Retail | Generative AI | Content Generation | BigFrames, GCS, Gemini, BigQuery |
 | [Predict penguim weight](./notebooks/regression/linear_regression/penguim_weight_prediction.ipynb) | Environmental | Regression | Linear Regression | BigFrames, BigQuery |
 | [Toxicity classification using Gemini fine-tuned](./notebooks/generative_ai/classification/toxicity_classification.ipynb) | Gaming | Generative AI | Classification | BigFrames, Gemini, Vertex AI |
+| [Contract Risk and Compliance Review](./notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb) | Financial | Generative AI | Summarization | BigQuery, SQL, Gemini |
+
 
 Google Cloud products quickstarts:
 
