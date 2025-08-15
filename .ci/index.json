@@ -174,5 +174,13 @@
         "sub_category": "Summarization",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb",
         "created_at": "08-15-2025"
+    },
+    {
+        "title": "Asset Price Forecasting with Dataproc and Prophet",
+        "description": "This notebook demonstrates how to build an asset price forecasting model, specifically for gold spot prices, using historical data on Google Cloud Platform. It leverages Apache Spark on Dataproc for scalable data ingestion and preparation, Apache Iceberg for efficient data warehousing, and the Prophet library for time series forecasting. The process involves reading raw CSV data from Google Cloud Storage, cleaning and optimizing the data, persisting it as a partitioned Iceberg table, converting it to a Pandas DataFrame for Prophet model training, generating future price predictions, and finally, integrating the forecasted data back into the Iceberg table to create a unified dataset for ongoing analysis.",
+        "category": "Forecast",
+        "sub_category": "Asset Price Forecast",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/forecast/asset_price_forecast.ipynb",
+        "created_at": "08-15-2025"
     }
 ]
