@@ -28,6 +28,8 @@ jobs:
         with:
           # We need to check out the specific PR branch
           ref: ${{ github.head_ref }}
+          # A fetch-depth of 0 fetches the full history, which is required for git diff
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
