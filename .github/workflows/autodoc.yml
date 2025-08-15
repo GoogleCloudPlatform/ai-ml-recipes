@@ -1,0 +1,62 @@
+name: Validate and Auto-Generate Docs
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-entries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Validate notebooks and index.json file
+        id: validation
+        run: |
+          python .ci/scripts/validate_entries.py
+
+  autofix-docs:
+    runs-on: ubuntu-latest
+    # This job runs only if the 'validate-entries' job failed
+    if: failure() && needs.validate-entries.result == 'failure'
+    needs: validate-entries
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # We need to check out the specific PR branch
+          ref: ${{ github.head_ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run AI notebook enhancement script
+        run: python .ci/scripts/enhance_notebook.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Run AI auto-documentation script
+        run: python .ci/scripts/generate_docs.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          # Add all changed files, including notebooks, index.json, and README.md
+          git add .
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "feat: Enhance notebook and auto-generate metadata"
+            git push
+          fi
