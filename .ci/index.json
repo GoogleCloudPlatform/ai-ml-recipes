@@ -174,5 +174,13 @@
         "sub_category": "Summarization",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb",
         "created_at": "08-15-2025"
+    },
+    {
+        "title": "Asset Price Forecasting with Apache Spark and Prophet",
+        "description": "This notebook demonstrates how to forecast asset prices using Apache Spark for data preparation and storage (Iceberg table) and Facebook Prophet for time series forecasting. It covers data loading, transformation, model training, forecasting, and saving the combined historical and forecasted data.",
+        "category": "Forecast",
+        "sub_category": "Asset Price Forecast",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/forecast/asset_price_forecast.ipynb",
+        "created_at": "08-17-2025"
     }
 ]
