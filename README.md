@@ -64,7 +64,7 @@ Navigate to JupyterLab home screen and click on Notebooks to see the list of not
 ## Usage in your local environment
 
 1) Install [gcloud cli](https://cloud.google.com/sdk/docs/install)
-2) Run ```gclout init``` to setup your default GCP configuration
+2) Run ```gcloud init``` to setup your default GCP configuration
 3) Clone this repository by running  
    ```git clone https://github.com/GoogleCloudPlatform/ai-ml-recipes.git```
 4) Install requirements by running ```pip install -r requirements.txt```
