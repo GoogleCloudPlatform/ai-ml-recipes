@@ -8,39 +8,22 @@ permissions:
   contents: write
 
 jobs:
-  validate-entries:
+  validate-and-autofix:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
-          python-version: '3.11'
-      - name: Validate notebooks and index.json file
-        id: validation
-        run: |
-          python .ci/scripts/validate_entries.py
-
-  autofix-docs:
-    runs-on: ubuntu-latest
-    # This job runs only if the 'validate-entries' job failed
-    if: failure() && needs.validate-entries.result == 'failure'
-    needs: validate-entries
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          # We need to check out the specific PR branch
-          ref: ${{ github.head_ref }}
           # A fetch-depth of 0 fetches the full history, which is required for git diff
           fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.11'
       
       - name: Install dependencies
-        run: pip install google-genai==1.30.0
+        run: pip install -r requirements.txt
 
       - name: Run AI notebook enhancement script
         run: python .ci/scripts/enhance_notebook.py
@@ -56,9 +39,7 @@ jobs:
         run: |
           git config --global user.name '${{ github.actor }}'
           git config --global user.email '${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com'
-          # Add all changed files, including notebooks, index.json, and README.md
           git add .
-          # Check if there are changes to commit
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
@@ -66,7 +47,7 @@ jobs:
             git push
           fi
       
-      - name: Re-validate after auto-fix
+      - name: Index validation
         run: |
-          echo "Running validation again on the fixed files..."
+          echo "Running validation on the fixed files..."
           python .ci/scripts/validate_entries.py
