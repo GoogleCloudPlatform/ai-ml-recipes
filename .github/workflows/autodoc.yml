@@ -65,3 +65,8 @@ jobs:
             git commit -m "feat: Enhance notebook and auto-generate metadata"
             git push
           fi
+      
+      - name: Re-validate after auto-fix
+        run: |
+          echo "Running validation again on the fixed files..."
+          python .ci/scripts/validate_entries.py
