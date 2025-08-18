@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 jobs:
-  validate-and-autofix:
+    validate-and-autofix:
     if: |
       (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
       (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository)
