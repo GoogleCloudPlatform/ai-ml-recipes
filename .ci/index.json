@@ -182,5 +182,13 @@
         "sub_category": "Prophet",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/forecast/asset_price_forecast.ipynb",
         "created_at": "08-18-2025"
+    },
+    {
+        "title": "Asset Price Forecast using Iceberg and Prophet",
+        "description": "This notebook demonstrates how to build an asset price forecasting solution using Dataproc Serverless Spark Connect with Iceberg tables and the Prophet forecasting library. It covers data loading from GCS, preprocessing using PySpark and Pandas, model training with Prophet, prediction, and storing results back into Iceberg, leveraging BigQuery Metastore for catalog management and Matplotlib for visualization.",
+        "category": "Forecast",
+        "sub_category": "Prophet",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/classification/asset_price_forecast.ipynb",
+        "created_at": "08-18-2025"
     }
 ]
