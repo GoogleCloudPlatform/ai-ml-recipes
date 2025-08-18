@@ -27,6 +27,7 @@ Please refer to each notebooks folder documentation for more information:
 | [Predict penguim weight](./notebooks/regression/linear_regression/penguim_weight_prediction.ipynb) | Environmental | Regression | Linear Regression | BigFrames, BigQuery |
 | [Toxicity classification using Gemini fine-tuned](./notebooks/generative_ai/classification/toxicity_classification.ipynb) | Gaming | Generative AI | Classification | BigFrames, Gemini, Vertex AI |
 | [Contract Risk and Compliance Review](./notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb) | Financial | Generative AI | Summarization | BigQuery, SQL, Gemini |
+| [Asset Price Forecast using Iceberg and Prophet](./notebooks/forecast/asset_price_forecast.ipynb) | Finance | Forecast | Prophet | PySpark, Dataproc Serverless, Apache Iceberg, Prophet, BigQuery, GCS |
 
 
 Google Cloud products quickstarts:
