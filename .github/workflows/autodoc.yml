@@ -1,7 +1,7 @@
 name: Validate and Auto-Generate Docs
 
 on:
-  pull_request:
+  pull_request_target:
     branches: [ main ]
 
 permissions:
@@ -14,9 +14,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          # We need to check out the specific PR branch
-          ref: ${{ github.head_ref }}
-          # A fetch-depth of 0 fetches the full history, which is required for git diff
+          # This checks out the specific commit from the PR, not the main branch
+          ref: ${{ github.event.pull_request.head.sha }}
+          # A fetch-depth of 0 is still needed for git diff
           fetch-depth: 0
 
       - name: Set up Python
