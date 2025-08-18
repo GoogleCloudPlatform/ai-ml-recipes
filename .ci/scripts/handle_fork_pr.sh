@@ -12,19 +12,19 @@ fi
 DIFF_CONTENT=$(git diff --staged)
 
 # Create the comment body in a file
-cat &lt;&lt;EOF &gt; comment.md
+cat <<EOF > comment.md
 ## 🤖 AI-Powered Notebook Enhancement Suggestions
 
 I've analyzed your notebook(s) and generated some enhancements. Since this is a fork PR, I can't commit directly, but here are the suggested changes:
 
-&lt;details&gt;
-&lt;summary&gt;📋 View suggested changes&lt;/summary&gt;
+<details>
+<summary>📋 View suggested changes</summary>
 
 \`\`\`diff
 $DIFF_CONTENT
 \`\`\`
 
-&lt;/details&gt;
+</details>
 
 ### How to apply these changes:
 1. Run the enhancement scripts locally:
