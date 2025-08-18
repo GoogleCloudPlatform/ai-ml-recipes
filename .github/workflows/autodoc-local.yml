@@ -1,7 +1,7 @@
-name: Validate and Auto-Generate Docs
+name: Validate and Auto-Generate Docs (Local Branches)
 
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize, reopened]
     branches: [ main ]
 
@@ -9,17 +9,17 @@ permissions:
   contents: write
 
 jobs:
-  validate-and-autofix:
+  validate-and-autofix-local:
     runs-on: ubuntu-latest
-    # This condition ensures the workflow only runs for PRs from forks.
-    if: github.event.pull_request.head.repo.full_name != github.repository
+    # This condition ensures the workflow only runs for PRs from local branches.
+    if: github.event.pull_request.head.repo.full_name == github.repository
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          # This checks out the specific commit from the PR, not the main branch
-          ref: ${{ github.event.pull_request.head.sha }}
-          # A fetch-depth of 0 is still needed for git diff
+          # We need to check out the specific PR branch
+          ref: ${{ github.head_ref }}
+          # A fetch-depth of 0 fetches the full history, which is required for git diff
           fetch-depth: 0
 
       - name: Set up Python
