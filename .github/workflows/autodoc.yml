@@ -51,7 +51,7 @@ jobs:
             git commit -m "feat: Enhance notebook and auto-generate metadata"
             if [ "${{ github.event_name }}" = "pull_request_target" ]; then
               # For fork PRs - push detached HEAD to the PR branch
-              git push origin HEAD:${{ github.event.pull_request.head.ref }}
+              git push origin HEAD:refs/heads/${{ github.event.pull_request.head.ref }}
             else
               # For local branch PRs - normal push
               git push
