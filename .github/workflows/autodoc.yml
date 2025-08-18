@@ -2,27 +2,26 @@ name: Validate and Auto-Generate Docs
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [ main ]
+  pull_request_target:
+    types: [opened, synchronize, reopened]
     branches: [ main ]
 
 permissions:
   contents: write
 
 jobs:
-  validate-and-autofix:
+    validate-and-autofix:
+    if: |
+      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository)
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout PR from Fork
-        if: github.event.pull_request.head.repo.full_name != github.repository
+      - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
-          fetch-depth: 0
-
-      - name: Checkout PR from Local Branch
-        if: github.event.pull_request.head.repo.full_name == github.repository
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || github.head_ref }}
           fetch-depth: 0
 
       - name: Set up Python
