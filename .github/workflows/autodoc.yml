@@ -11,12 +11,18 @@ jobs:
   validate-and-autofix:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout PR from Fork
+        if: github.event.pull_request.head.repo.full_name != github.repository
         uses: actions/checkout@v3
         with:
-          # We need to check out the specific PR branch
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+
+      - name: Checkout PR from Local Branch
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        uses: actions/checkout@v3
+        with:
           ref: ${{ github.head_ref }}
-          # A fetch-depth of 0 fetches the full history, which is required for git diff
           fetch-depth: 0
 
       - name: Set up Python
