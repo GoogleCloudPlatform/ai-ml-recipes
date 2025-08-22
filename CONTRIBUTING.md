@@ -23,51 +23,64 @@ We use GitHub pull requests for this purpose.
 Consult [GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
 information on using pull requests.
 
-### Suggested guidelines to add a new notebook
+### Contribution Workflow for New Notebooks
 
-Here are some suggested guidelines for a pull request of a new notebook:
+We have an AI-powered workflow to help streamline the contribution process. You can either use the automated scripts locally or let the GitHub Actions workflow handle the heavy lifting for you.
 
-0) **Check the [README](./README.md) file to setup your development environment** 
+#### Step 1: Develop Your Notebook
 
-1) **Develop a new notebook using PySpark or [BigQuery Dataframes](https://cloud.google.com/python/docs/reference/bigframes/latest)**
-   1) The first cell of the notebook should be the Apache 2.0 license header
-   2) Following sections should be similar to, but not necessarily, like this:
-      1) Overview of the notebook
-      2) IAM configuration needed to run on GCP
-      3) Importing dependencies
-      4) Setup e.g creating Spark session
-      5) Reading the dataset from BigQuery or GCS bucket
-      6) Exploratory data analysis
-      7) Training / Evaluating / Predicting using an ML model or pretrained ML model
-      8) Demonstrating results
-   3) Clear notebook cell outputs before commit
-   4) Show table schemas or examples ot facilitate understanding
+-   Create your notebook using PySpark or BigQuery DataFrames.
+-   Focus on the logic and the value of your recipe. You can follow the general structure of existing notebooks (Overview, Setup, EDA, Modeling, etc.), but don't worry if you forget to add the license header or platform links—the AI will handle it.
+-   Place your finished notebook file in the appropriate `notebooks/<category>/<sub_category>/` folder. The folder structure is crucial as it helps the AI determine the correct metadata.
 
-2) **To make your notebook appear on Vertex AI Workbench, run the script to add its reference to the index.json file**    
-    Take a look at the .ci/index.json file to see examples of how to write the necessary fields, for example:
-    ```json
-    {
-        "title": "Contract Risk and Compliance Review",
-        "description": "Description: This notebook demonstrates a powerful, scalable solution for automating the analysis of legal contracts using Google BigQuery and Vertex AI's Gemini models. It showcases how to transform thousands of unstructured text documents stored in Google Cloud Storage into a structured, queryable, and insightful dataset directly within BigQuery. The process involves using SQL functions to extract key information, assess risk, generate summaries, and finally, visualize the results to enable data-driven decision-making for legal and compliance teams. Main technologies: BigQuery, SQL, Gemini",
-        "category": "Generative AI",
-        "sub_category": "Summarization",
-        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb",
-        "created_at": "08-15-2025"
-    }
+#### Step 2: Run the AI-Powered Scripts (Recommended Local Method)
+
+This is the easiest way to ensure your contribution is compliant and well-documented.
+
+1.  **Set up your API Key**: Make sure you have a Gemini API key and have set it as an environment variable:
+    ```bash
+    export GEMINI_API_KEY="YOUR_API_KEY"
+    ```
+2.  **Stage your new notebook**: Use `git` to add your new notebook file to the staging area.
+    ```bash
+    git add notebooks/<category>/<sub_category>/your_new_notebook.ipynb
+    ```
+3.  **Run the Enhancement Script**: This script will standardize your notebook by adding the license, platform links, and improving documentation where needed.
+    ```bash
+    python .ci/scripts/enhance_notebook.py
+    ```
+4.  **Run the Documentation Script**: This script will generate the metadata for your notebook and automatically update the `.ci/index.json` and `README.md` files.
+    ```bash
+    python .ci/scripts/generate_docs.py
+    ```
+5.  **Commit all changes**: Add all the files that were created or modified by the scripts and commit them.
+    ```bash
+    git add .
+    git commit -m "feat: Add new notebook for X"
     ```
 
-3) **Make sure to put you notebook file under the correct category and sub_category subfolders**  
-   As you can see in the repo, we already have some categories and subcategory folders under the notebooks folder, such as:
-      1) classification -> logistic_regression
-      2) regression -> decision_tree_regression
-      3) generative_ai -> content_generation
+#### Step 3: Create a Pull Request
 
-4) **Run ```python .ci/scripts/validate_entries.py``` to make sure the added notebook is correctly added to index.json file**  
-   This script will be executed by Github Actions workflow upon a PR
+-   Create a Pull Request from your `feat/<new_notebook>` branch to the `main` branch.
+-   The PR title should follow the [Conventional Commits](https://www.conventionalcommits.org/) specification (e.g., `feat: Add housing price prediction notebook`).
 
-5) **Add the reference to your new notebook in the [README.md](./README.md) file.**
+### The Automated CI/CD Workflow
 
-6) Create a Pull Request from your feat/<new_notebook> branch to the main branch.
+When you create a pull request, our GitHub Actions workflow will automatically perform the following steps:
+
+1.  **Validation**: It first runs the `.ci/scripts/validate_entries.py` script to check if the `index.json` file is valid and contains an entry for every notebook.
+2.  **AI-Powered Autofix (If Validation Fails)**: If the validation fails (e.g., you forgot to run the scripts locally), the `autofix-docs` job will be triggered. This job:
+    -   Runs the **enhancement script** to standardize your notebook.
+    -   Runs the **documentation script** to generate and add the required metadata to `index.json` and `README.md`.
+    -   Commits these changes directly to your pull request branch. The validation will then re-run and should pass.
+
+### Manual Contribution (For Reference)
+
+If you prefer to do things manually, you will need to:
+1.  Add the Apache 2.0 license and the platform links table to your notebook.
+2.  Add a new entry for your notebook to the `.ci/index.json` file.
+3.  Add a new row for your notebook to the table in the `README.md` file.
+4.  Run `.ci/scripts/validate_entries.py` to confirm your changes are valid.
 
 Type |	Title	| Description  |
 ----- |---------| ------------- |

@@ -174,5 +174,13 @@
         "sub_category": "Summarization",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb",
         "created_at": "08-15-2025"
+    },
+    {
+        "title": "Asset Price Forecast using Iceberg and Prophet",
+        "description": "This notebook demonstrates how to build an asset price forecasting solution using Dataproc Serverless Spark Connect with Iceberg tables and the Prophet forecasting library. It covers data loading, preprocessing, model training, prediction, and storing results back into Iceberg.",
+        "category": "Forecast",
+        "sub_category": "Prophet",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/forecast/asset_price_forecast.ipynb",
+        "created_at": "08-18-2025"
     }
 ]
