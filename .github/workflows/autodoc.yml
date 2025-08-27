@@ -17,6 +17,23 @@ jobs:
     if: (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) || (github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository)
     runs-on: ubuntu-latest
     steps:
+      - name: Set status to pending
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const sha = context.eventName === 'pull_request_target' 
+              ? context.payload.pull_request.head.sha 
+              : context.sha;
+            
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: sha,
+              state: 'pending',
+              context: 'validate-and-autofix',
+              description: 'Running validation and auto-fix'
+            });
+
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -63,3 +80,39 @@ jobs:
         run: |
           echo "Running validation on the fixed files..."
           python .ci/scripts/validate_entries.py
+
+      - name: Report success status
+        if: success()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const sha = context.eventName === 'pull_request_target' 
+              ? context.payload.pull_request.head.sha 
+              : context.sha;
+            
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: sha,
+              state: 'success',
+              context: 'validate-and-autofix',
+              description: 'Validation and auto-fix completed successfully'
+            });
+
+      - name: Report failure status
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const sha = context.eventName === 'pull_request_target' 
+              ? context.payload.pull_request.head.sha 
+              : context.sha;
+            
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: sha,
+              state: 'failure',
+              context: 'validate-and-autofix',
+              description: 'Validation and auto-fix failed'
+            });
