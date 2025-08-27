@@ -182,5 +182,13 @@
         "sub_category": "Prophet",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/forecast/asset_price_forecast.ipynb",
         "created_at": "08-18-2025"
+    },
+    {
+        "title": "Dataproc and BigQuery Client Setup",
+        "description": "Description: This notebook shows how to set up and use Google Cloud Dataproc and BigQuery clients within a Jupyter environment. It covers initial setup, authentication, and client initialization for interacting with these Google Cloud services.",
+        "category": "Analytics",
+        "sub_category": "Dataproc And BigQuery Clients",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/test.ipynb",
+        "created_at": "08-27-2025"
     }
 ]
