@@ -182,5 +182,13 @@
         "sub_category": "Prophet",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/forecast/asset_price_forecast.ipynb",
         "created_at": "08-18-2025"
+    },
+    {
+        "title": "Time Series Analysis with TimesFM and ARIMA in BigQuery",
+        "description": "This notebook demonstrates how to perform scalable and granular demand forecasting directly in BigQuery. It uses the public Iowa Liquor Sales dataset to compare two distinct time series forecasting approaches: training an ARIMA model with BigQuery ML and generating zero-shot predictions using the TimesFM foundation model. The tutorial covers data preparation, model training (for ARIMA), direct forecasting (for TimesFM), and scaling from a single time series to multiple series, finally visualizing and comparing the forecasts.",
+        "category": "Forecast",
+        "sub_category": "ARIMA and TimesFM",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/forecast/arima_timesfm_bigquery.ipynb",
+        "created_at": "08-26-2025"
     }
 ]
