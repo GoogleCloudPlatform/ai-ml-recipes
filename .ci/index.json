@@ -198,6 +198,13 @@
         "sub_category": "ARIMA and TimesFM",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/forecast/arima_timesfm_bigquery.ipynb",
         "created_at": "08-26-2025"
-
+    },
+    {
+        "title": "Assessing Geological Risks to Protect Agricultural Investments",
+        "description": "This notebook addresses the challenge faced by agribusinesses, financial investors, and insurers in quantifying financial risk from production shortages due to events like fires or droughts. It aims to analyze wine production in Chile to create a dynamic wildfire risk intelligence system. The notebook leverages Google Earth Engine's public satellite imagery and environmental data, available as rasterized data within BigQuery. It accesses Chilean regional data using Overture Maps, explores environmental characteristics like elevation, wildfire history, and water availability, and uses BigQuery's ST_RegionStats() function for raster analysis. The results are visualized using geospatial tools like GeoViz or GeoPandas. Finally, it uses a K-Means clustering model with BigQuery ML to segment land holdings into distinct groups based on environmental characteristics and wine production, providing actionable insights for strategic planning and risk mitigation in agriculture. For example, identifying \"drought-prone\" or \"fire-vulnerable\" clusters to implement targeted prevention programs. ",
+        "category": "Quickstart",
+        "sub_category": "Geospatial",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/geospatial/assessing_risks_geospatial_bqml.ipynb",
+        "created_at": "08-28-2025"
     }
 ]
