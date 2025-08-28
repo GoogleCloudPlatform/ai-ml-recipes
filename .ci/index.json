@@ -184,6 +184,14 @@
         "created_at": "08-18-2025"
     },
     {
+        "title": "Purchase Predictions with PySpark in BigQuery Studio",
+        "description": "This notebook demonstrates how to build a logistic regression classification model using PySpark to predict whether a user will make a purchase. It leverages PySpark within a Colab Enterprise notebook in BigQuery Studio, utilizing BigQuery data from a hypothetical e-commerce retailer (TheLook). The workflow includes data loading from BigQuery, exploration, feature engineering (deriving features and a binary label from user and order data), model training using Spark ML's Logistic Regression, and model evaluation with AUC-PR, Precision-Recall curve, and a confusion matrix. The results are then written back to BigQuery.",
+        "category": "Analytics",
+        "sub_category": "Purchase Predictions",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/purchase_predictions_spark.ipynb",
+        "created_at": "08-22-2025"
+    },
+    {
         "title": "Time Series Analysis with TimesFM and ARIMA in BigQuery",
         "description": "This notebook demonstrates how to perform scalable and granular demand forecasting directly in BigQuery. It uses the public Iowa Liquor Sales dataset to compare two distinct time series forecasting approaches: training an ARIMA model with BigQuery ML and generating zero-shot predictions using the TimesFM foundation model. The tutorial covers data preparation, model training (for ARIMA), direct forecasting (for TimesFM), and scaling from a single time series to multiple series, finally visualizing and comparing the forecasts.",
         "category": "Forecast",
