@@ -206,5 +206,13 @@
         "sub_category": "Geospatial",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/geospatial/assessing_risks_geospatial_bqml.ipynb",
         "created_at": "08-28-2025"
+    },
+    {
+        "title": "A Data Science Approach to Investigating Poor Product Sales Performance",
+        "description": "This notebook presents a data science approach to investigate the lower-than-expected sales performance of a new smart speaker (Quantum AI Speaker 2) for an electronics retailer. It begins by validating the sales shortfall through data exploration and visualization of sales growth trajectories for the new product versus its predecessor. The core of the analysis involves leveraging BigQuery's AI.SCORE function to perform sentiment analysis on unstructured product reviews, categorizing sentiment towards specific product features (AI Assistant Pro, Audio Quality, Seamless Connectivity, Smart Home Integration). This scored data is then joined with demographic, device, and session information into a comprehensive dataset. Finally, an XGBoost classification model is built and trained to determine the most influential factors contributing to shopper non-purchase decisions. The notebook concludes by visualizing feature importance, identifying key actionable insights, such as the significant impact of negative AI Assistant reviews on sales, and highlights the power of Google AI Query Engine and Data Science Agent for rapid data analysis.",
+        "category": "Analytics",
+        "sub_category": "Sales Performance Analysis",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/Investigating Poor Product Sales.ipynb",
+        "created_at": "09-02-2025"
     }
 ]
