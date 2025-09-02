@@ -206,5 +206,13 @@
         "sub_category": "Geospatial",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/geospatial/assessing_risks_geospatial_bqml.ipynb",
         "created_at": "08-28-2025"
+    },
+    {
+        "title": "Image-Based Home Search Engine with BigQuery Vector Search",
+        "description": "This notebook demonstrates how to build an image-based home search engine using BigQuery's native multimodal capabilities and vector search. It addresses the challenge faced by e-commerce platforms like real estate, where visual search is crucial but traditional keyword-based methods fall short. The approach involves converting product images into high-dimensional vector embeddings using a remote foundation model (Gemini) called from a BigQuery ML SQL query. These embeddings are then indexed using a VECTOR INDEX in BigQuery to enable fast, scalable similarity searches. Users can provide a query image, which is also converted into an embedding, and the `VECTOR_SEARCH` function is used to return a ranked list of visually similar items in real-time. Main technologies: BigQuery, Gemini, Google Cloud Storage, BigQuery ML.",
+        "category": "Analytics",
+        "sub_category": "Visual Search",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/ebook_home_search.ipynb",
+        "created_at": "09-02-2025"
     }
 ]
