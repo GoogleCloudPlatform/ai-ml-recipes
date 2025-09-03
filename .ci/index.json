@@ -217,14 +217,6 @@
     },
     {
         "title": "Creating an Image-Based Home Search Engine",
-        "description": "This notebook demonstrates how to build an image-based home search engine using BigQuery's native multimodal capabilities and vector embeddings. It addresses the business challenge faced by e-commerce platforms, particularly in real estate, where traditional keyword-based search can be inefficient for visually driven product discovery. The data science approach involves converting product images into high-dimensional vector embeddings using a remote foundation model (Gemini) called from BigQuery ML. A vector index is used for fast querying over these embeddings. When a query image is provided, it's converted into an embedding, and the VECTOR_SEARCH function is used to find and return a ranked list of visually similar items in real-time. Main technologies: BigQuery, BigQuery ML, Gemini, GCS, SQL, Python.",
-        "category": "Analytics",
-        "sub_category": "Image Search",
-        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/nive_ebook_home_search_use_case.ipynb",
-        "created_at": "09-03-2025"
-    },
-    {
-        "title": "Creating an Image-Based Home Search Engine",
         "description": "This notebook demonstrates how to build an image-based home search engine using BigQuery's native multimodal capabilities and vector embeddings. It addresses the business challenge faced by e-commerce platforms, particularly in real estate, where traditional keyword-based search can be inefficient for visually driven product discovery. The data science approach involves converting product images into high-dimensional vector embeddings using a remote foundation model (Gemini) called from BigQuery ML. A vector index is used for fast querying over these embeddings. When a query image is provided, it's converted into an embedding, and the VECTOR_SEARCH function is used to find and return a ranked list of visually similar items in real-time.",
         "category": "Analytics",
         "sub_category": "Image Search",
