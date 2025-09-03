@@ -206,5 +206,13 @@
         "sub_category": "Geospatial",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/geospatial/assessing_risks_geospatial_bqml.ipynb",
         "created_at": "08-28-2025"
+    },
+    {
+        "title": "Creating an Image-Based Home Search Engine",
+        "description": "This notebook demonstrates how to build an image-based home search engine to overcome the limitations of keyword-based search for visual products on e-commerce platforms. It leverages BigQuery's native multimodal capabilities to create a large-scale similarity search system. The notebook showcases converting product images into high-dimensional vector embeddings using a remote foundation model via BigQuery ML SQL. It then performs real-time visual search using the `VECTOR_SEARCH` function to find the most visually similar items from a catalog, aiming to improve product discovery and customer engagement.",
+        "category": "Analytics",
+        "sub_category": "Vector Search",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/nive_ebook_home_search_use_case.ipynb",
+        "created_at": "09-03-2025"
     }
 ]

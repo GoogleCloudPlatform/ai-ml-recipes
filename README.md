@@ -31,6 +31,7 @@ Please refer to each notebooks folder documentation for more information:
 | [Purchase Predictions with PySpark in BigQuery Studio](./notebooks/analytics/purchase_predictions_spark.ipynb) | Retail | Analytics | Purchase Predictions | PySpark, Spark ML, BigQuery, Dataproc, GCS |
 | [Time Series Analysis with TimesFM and ARIMA in BigQuery](./notebooks/forecast/arima_timesfm_bigquery.ipynb) | Retail | Forecast | ARIMA and TimesFM | BigQuery, BigQuery ML, ARIMA, TimesFM, Python, Matplotlib |
 | [Assessing Environmental Risks to Protect Agricultural Investments](./notebooks/quickstart/geospatial/assessing_risks_geospatial_bqml.ipynb) | Agriculture | Quickstart | Geospatial | BigQuery, Google Earth Engine, BigFrames, GeoPandas, BigQuery ML |
+| [Creating an Image-Based Home Search Engine](./notebooks/analytics/nive_ebook_home_search_use_case.ipynb) | E-commerce | Analytics | Vector Search | BigQuery, BigQuery ML, Google Cloud Storage, SQL, TensorFlow, PIL, Matplotlib |
 
 
 Google Cloud products quickstarts:
