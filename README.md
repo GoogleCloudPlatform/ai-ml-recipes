@@ -31,8 +31,7 @@ Please refer to each notebooks folder documentation for more information:
 | [Purchase Predictions with PySpark in BigQuery Studio](./notebooks/analytics/purchase_predictions_spark.ipynb) | Retail | Analytics | Purchase Predictions | PySpark, Spark ML, BigQuery, Dataproc, GCS |
 | [Time Series Analysis with TimesFM and ARIMA in BigQuery](./notebooks/forecast/arima_timesfm_bigquery.ipynb) | Retail | Forecast | ARIMA and TimesFM | BigQuery, BigQuery ML, ARIMA, TimesFM, Python, Matplotlib |
 | [Assessing Environmental Risks to Protect Agricultural Investments](./notebooks/quickstart/geospatial/assessing_risks_geospatial_bqml.ipynb) | Agriculture | Quickstart | Geospatial | BigQuery, Google Earth Engine, BigFrames, GeoPandas, BigQuery ML |
-| [A Data Science Approach to Investigating Poor Product Sales Performance](./notebooks/analytics/Investigating Poor Product Sales.ipynb) | Retail | Analytics | Sales Performance Analysis | BigQuery, Vertex AI, Pandas, scikit-learn, XGBoost, Matplotlib, Seaborn |
-| [A Data Science Approach to Investigating Poor Product Sales Performance](./notebooks/analytics/investigating_poor_product_sales.ipynb) | Retail | Analytics | Sales Performance Analysis | BigQuery, Vertex AI, XGBoost, Pandas, Google AI Query Engine, Data Science Agent |
+| [A Data Science Approach to Investigating Poor Product Sales Performance](./notebooks/analytics/investigating_poor_product_sales.ipynb) | Retail | Analytics | Sales Performance Analysis | BigQuery, Vertex AI, XGBoost, Pandas |
 
 
 Google Cloud products quickstarts:
