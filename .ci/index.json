@@ -222,5 +222,13 @@
         "sub_category": "Image Search",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/image_based_home_search.ipynb",
         "created_at": "09-03-2025"
+    },
+    {
+        "title": "Identifying Customer Segments for Targeted Marketing",
+        "description": "This notebook demonstrates a data science approach to identify customer segments for targeted marketing. It addresses the business challenge of optimizing marketing budget allocation and maximizing ROI by moving beyond one-size-fits-all strategies. The notebook combines unsupervised machine learning (K-Means clustering with BigQuery ML) to partition customers based on purchasing behavior (total spend, number of orders, last purchase date) from the 'thelook_ecommerce' dataset. Subsequently, it leverages generative AI (using BigQuery ML's remote model connected to Gemini-2.5-Flash) to automate the interpretation of these segments, programmatically generating concise segment names, summaries, and tailored marketing suggestions. This approach provides actionable insights for more effective and personalized marketing campaigns.",
+        "category": "Analytics",
+        "sub_category": "Identifying Customer Segments",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/identifying_customer_segments.ipynb",
+        "created_at": "09-05-2025"
     }
 ]
