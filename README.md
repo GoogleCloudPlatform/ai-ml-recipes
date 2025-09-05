@@ -33,6 +33,7 @@ Please refer to each notebooks folder documentation for more information:
 | [Assessing Environmental Risks to Protect Agricultural Investments](./notebooks/quickstart/geospatial/assessing_risks_geospatial_bqml.ipynb) | Agriculture | Quickstart | Geospatial | BigQuery, Google Earth Engine, BigFrames, GeoPandas, BigQuery ML |
 | [A Data Science Approach to Investigating Poor Product Sales Performance](./notebooks/analytics/investigating_poor_product_sales.ipynb) | Retail | Analytics | Sales Performance Analysis | BigQuery, Vertex AI, XGBoost, Pandas |
 | [Creating an Image-Based Home Search Engine](./notebooks/analytics/image_based_home_search.ipynb) | Real Estate | Analytics | Image Search | BigQuery, BigQuery ML, Gemini, GCS, SQL, Python |
+| [Identifying Customer Segments for Targeted Marketing](./notebooks/analytics/identifying_customer_segments.ipynb) | Retail | Analytics | Identifying Customer Segments | BigQuery, BigQuery ML, Gemini, Generative AI, SQL, K-Means Clustering |
 
 
 Google Cloud products quickstarts:
