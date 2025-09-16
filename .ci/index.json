@@ -230,5 +230,13 @@
         "sub_category": "Identifying Customer Segments",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/identifying_customer_segments.ipynb",
         "created_at": "09-05-2025"
+    },
+    {
+        "title": "ADK Session with Cloud SQL",
+        "description": "Description: This notebook shows how to build and deploy an Agent Development Kit (ADK) agent that leverages different session services for conversation memory. It demonstrates using a local SQLite database for quick development and testing, and migrating to a production-ready Cloud SQL for PostgreSQL database for robust, scalable session management. The notebook covers setting up the agent with a Gemini model, configuring both session types, and observing how conversation history is stored and retrieved. Main technologies: Google ADK, Gemini, Cloud SQL, Vertex AI, SQLite, GCS.",
+        "category": "Quickstart",
+        "sub_category": "Google Adk",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/google_adk/adk_session_with_cloudsql.ipynb",
+        "created_at": "09-16-2025"
     }
 ]
