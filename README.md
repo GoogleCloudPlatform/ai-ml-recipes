@@ -13,18 +13,10 @@ Please refer to each notebooks folder documentation for more information:
 | Title | Industry | Topic | Sub Topic | Main Technologies |
 |-------|----------|-------|-----------|----------------|
 | [Fine-tuning Gemini to translate multiple languages](./notebooks/generative_ai/finetuning/translation_finetuning.ipynb) | Media & Entertainment | Generative AI | Fine tuning | PySpark, Iceberg. Gemini |
-| [PDF summarization using Gemini](./notebooks/generative_ai/summarization/pdf_contracts_summarization.ipynb) | Financial | Generative AI | Summarization | PySpark, SparkML, Gemini, BigQuery |
-| [Movie Reviews sentiment analysis using Gemini](./notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb) | Media & Entertainment | Generative AI | Sentiment Analysis | PySpark, SparkML, Gemini, BigQuery |
-| [Generate description from videos](./notebooks/generative_ai/content_generation/description_from_video.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
+| [Generate description from videos using PySpark and Gemini](./notebooks/generative_ai/content_generation/description_from_video.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
 | [Product attributes and description from image](./notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
-| [SMS Spam Filtering](./notebooks/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb) | Telecom | Classification | Multilayer Perceptron Classifier | PySpark, Spark ML, GCS |
-| [Predictive Maintenance](./notebooks/classification/linear_support_vector_machine/predictive_maintenance.ipynb) | Manufacturing | Classification | Linear Support Vector Machine | PySpark, Spark ML, GCS |
-| [Wine Quality Classification](./notebooks/classification/logistic_regression/wine_quality_classification_mlr.ipynb) | Retail | Classification | Logistic Regression | PySpark, Spark ML, GCS |
-| [Housing Prices Prediction](./notebooks/regression/decision_tree_regression/housing_prices_prediction.ipynb) | Financial | Regression | Decision Tree Regression | PySpark, Spark ML, GCS |
-| [Bike Trip Duration Prediction](./notebooks/regression/random_forest_regression/bike_trip_duration_prediction.ipynb) | Mobility | Regression | Random Forest Regression | PySpark, Spark ML, BigQuery |
-| [Customer Price Index](./notebooks/sampling/monte_carlo/customer_price_index.ipynb) | Financial | Sampling | Monte Carlo method | PySpark, GCS, NumPy |
-| [Banner advertising understanding](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb) | Retail | Generative AI | Content Generation | BigFrames, GCS, Gemini, BigQuery |
-| [Predict penguim weight](./notebooks/regression/linear_regression/penguim_weight_prediction.ipynb) | Environmental | Regression | Linear Regression | BigFrames, BigQuery |
+| [Customer Price Index forecast using PySpark and Monte Carlo](./notebooks/sampling/monte_carlo/customer_price_index.ipynb) | Financial | Sampling | Monte Carlo method | PySpark, GCS, NumPy |
+| [Banner advertising understanding with Gemini and BigQuery](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb) | Retail | Generative AI | Content Generation | BigFrames, GCS, Gemini, BigQuery |
 | [Toxicity classification using Gemini fine-tuned](./notebooks/generative_ai/classification/toxicity_classification.ipynb) | Gaming | Generative AI | Classification | BigFrames, Gemini, Vertex AI |
 | [Contract Risk and Compliance Review](./notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb) | Financial | Generative AI | Summarization | BigQuery, SQL, Gemini |
 | [Asset Price Forecast using Iceberg and Prophet](./notebooks/forecast/asset_price_forecast.ipynb) | Finance | Forecast | Prophet | PySpark, Dataproc Serverless, Apache Iceberg, Prophet, BigQuery, GCS |
@@ -34,7 +26,14 @@ Please refer to each notebooks folder documentation for more information:
 | [A Data Science Approach to Investigating Poor Product Sales Performance](./notebooks/analytics/investigating_poor_product_sales.ipynb) | Retail | Analytics | Sales Performance Analysis | BigQuery, Vertex AI, XGBoost, Pandas |
 | [Creating an Image-Based Home Search Engine](./notebooks/analytics/image_based_home_search.ipynb) | Real Estate | Analytics | Image Search | BigQuery, BigQuery ML, Gemini, GCS, SQL, Python |
 | [Identifying Customer Segments for Targeted Marketing](./notebooks/analytics/identifying_customer_segments.ipynb) | Retail | Analytics | Identifying Customer Segments | BigQuery, BigQuery ML, Gemini, Generative AI, SQL, K-Means Clustering |
-| [ADK Session with Cloud SQL](./notebooks/quickstart/google_adk/adk_session_with_cloudsql.ipynb) | IT Services | Quickstart | Google Adk | Google ADK, Gemini, Cloud SQL, Vertex AI, SQLite, GCS |
+| [Movie reviews sentiment analysis using PySpark and Gemini](./notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb) | Media & Entertainment | Generative AI | Sentiment Analysis | PySpark, Spark Connect, Gemini, BigQuery |
+| [Housing prices prediction](./notebooks/regression/decision_tree_regression/housing_prices_prediction.ipynb) | Financial | Regression | Decision Tree Regression | PySpark, Spark ML, GCS |
+| [Wine quality classification using Logistic Regression and PySpark](./notebooks/classification/logistic_regression/wine_quality_classification_mlr.ipynb) | Retail | Classification | Logistic Regression | PySpark, Spark ML, GCS |
+| [Predict penguim weight using Linear Regression and Bigframes](./notebooks/regression/linear_regression/penguim_weight_prediction.ipynb) | Environmental | Regression | Linear Regression | BigFrames, BigQuery |
+| [Predictive Maintenance for machines](./notebooks/classification/linear_support_vector_machine/predictive_maintenance.ipynb) | Manufacturing | Classification | Linear Support Vector Machine | PySpark, Spark ML, GCS |
+| [SMS Spam Filtering using PySpark and Spark ML](./notebooks/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb) | Telecom | Classification | Multilayer Perceptron Classifier | PySpark, Spark ML, GCS |
+| [Bike Trip Duration Prediction using PySpark and BigQuery](./notebooks/regression/random_forest_regression/bike_trip_duration_prediction.ipynb) | Mobility | Regression | Random Forest Regression | PySpark, Spark ML, BigQuery |
+| [PDF summarization using Gemini and PySpark](./notebooks/generative_ai/summarization/pdf_contracts_summarization.ipynb) | Financial | Generative AI | Summarization | PySpark, SparkML, Gemini, BigQuery |
 
 
 Google Cloud products quickstarts:
@@ -47,6 +46,7 @@ Google Cloud products quickstarts:
 | [Bigframes Quickstart](./notebooks/quickstart/bigframes/bigframes_quickstart.ipynb) |  Quickstart | Bigframes | BigFrames, BigQuery, Gemini |
 | [Apache Iceberg on BQ Quickstart](./notebooks/quickstart/iceberg/iceberg_quickstart.ipynb) | Quickstart | Iceberg | BigQuery, Apache Iceberg |
 | [Agent2Agent Quickstart](./notebooks/quickstart/agent2agent/a2a_quickstart.ipynb) | Quickstart | Agent2Agent | Gemini, Google ADK, A2A, Vertex AI |
+| [Google ADK Session management with Cloud SQL](./notebooks/quickstart/google_adk/adk_session_with_cloudsql.ipynb) | Quickstart | Google ADK | Gemini, Google ADK, Cloud SQL, SQLite |
 
 ## Public Datasets
 The notebooks read datasets from our public GCS bucket containing several publicly available datasets.

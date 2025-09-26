@@ -1,63 +1,63 @@
 [
     {
-        "title": "Wine Quality Classification",
-        "description": "Description: This notebook shows how to classify wine quality based on wine attributes. Imagine you are a wine specialist who is looking for an automated way to categorize the wines you find based on wine quality data from physicochemical tests. You could use a machine learning algorithm to train a model that would be able to predict the quality of a wine based on its physicochemical properties. This would allow you to quickly and easily categorize new wines that you find, without having to manually taste them. Main technologies: PySpark, Spark ML, GCS. ",
+        "title": "Wine quality classification using Logistic Regression and PySpark",
+        "description": "Description: This notebook demonstrates how to build a wine quality classification model using PySpark's Logistic Regression. It walks through the process of loading the wine quality dataset, performing feature engineering, training a logistic regression model, and evaluating its performance. This provides a practical example of binary classification on a real-world dataset. Main technologies: PySpark, Spark ML, GCS. Industry: Retail.",
         "category": "Classification",
         "sub_category": "Logistic Regression",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/classification/logistic_regression/wine_quality_classification_mlr.ipynb",
         "created_at": "12-14-2023"
     },
     {
-        "title": "SMS Spam Filtering",
-        "description": "Description: This notebook shows how to predict if an SMS is spam or not using SparkML\u2019s Multilayer Perceptron Classifier. Using Spark, it reads the dataset SMS Spam Collection, parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value. Main technologies: PySpark, Spark ML, GCS.",
+        "title": "SMS Spam Filtering using PySpark and Spark ML",
+        "description": "Description: This notebook provides a step-by-step guide to building an SMS spam filter using PySpark and SparkML's Multilayer Perceptron Classifier. It covers text processing, feature extraction, model training, and evaluation, showcasing how to apply deep learning for natural language processing tasks on a large scale. Main technologies: PySpark, Spark ML, GCS. Industry: Telecom.",
         "category": "Classification",
         "sub_category": "Multilayer Perceptron Classifier",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb",
         "created_at": "12-14-2023"
     },
     {
-        "title": "Predictive Maintenance",
-        "description": "Description: This notebook shows how to predict if a machine will fail or not using SparkML\u2019s Linear SVM Classifier. Using Spark, it reads the table AI4I 2020 Predictive Maintenance Dataset, parses process the dataset to choose features and train the ML model (fits the classification model) to predict a target value. Main technologies: PySpark, Spark ML, GCS. ",
+        "title": "Predictive Maintenance for machines",
+        "description": "Description: This notebook demonstrates a predictive maintenance use case, showing how to predict machine failure using SparkML's Linear Support Vector Machine (SVM) classifier. It covers data loading, feature engineering, model training, and evaluation on the AI4I 2020 Predictive Maintenance Dataset, providing a practical example of applying machine learning in an industrial setting. Main technologies: PySpark, Spark ML, GCS. Industry: Manufacturing.",
         "category": "Classification",
         "sub_category": "Linear Support Vector Machine",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/classification/linear_support_vector_machine/predictive_maintenance.ipynb",
         "created_at": "12-14-2023"
     },
     {
-        "title": "Housing Prices Prediction",
-        "description": "Description: This notebook shows how to predict housing prices based on location and other characteristics using Decision Tree Regression. Using Spark, it reads the dataset of the State of Connecticut - Real Estate Sales, it parses process the dataset to choose features and train the ML model (fits the decision tree regression model) to predict a target value. Main technologies: PySpark, Spark ML, GCS. ",
+        "title": "Housing prices prediction",
+        "description": "Description: This notebook shows how to predict housing prices using Decision Tree Regression in PySpark. It uses the Real Estate Sales dataset from the State of Connecticut and demonstrates the process of data preparation, feature engineering, training a decision tree model, and evaluating its predictions. Main technologies: PySpark, Spark ML, GCS. Industry: Financial.",
         "category": "Regression",
         "sub_category": "Decision Tree Regression",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/decision_tree_regression/housing_prices_prediction.ipynb",
         "created_at": "12-14-2023"
     },
     {
-        "title": "Bike Trip Duration Prediction",
-        "description": "Description: This notebook shows how to predict Bike trip duration using SparkML\u2019s Random Forest Regression. Using Spark, it reads the table nyc-citi-bike from the BigQuery public datasets, parses process the dataset to choose features and train the ML model (fits the regression model) to predict a target value. Main technologies: PySpark, Spark ML, BigQuery. ",
+        "title": "Bike Trip Duration Prediction using PySpark and BigQuery",
+        "description": "Description: This notebook demonstrates how to predict the duration of bike trips using Random Forest Regression with PySpark and BigQuery. It reads data from the NYC Citi Bike public dataset in BigQuery, performs feature engineering, trains a random forest model, and evaluates its performance, showcasing a complete machine learning workflow on a large dataset. Main technologies: PySpark, Spark ML, BigQuery. Industry: Mobility.",
         "category": "Regression",
-        "sub_category": "Decision Tree Regression",
+        "sub_category": "Random Forest Regression",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/random_forest_regression/bike_trip_duration_prediction.ipynb",
         "created_at": "12-14-2023"
     },
     {
-        "title": "Customer Price Index",
-        "description": "Description: This notebook shows how to use the Monte Carlo method to simulate the future path of the Consumer Price Index (CPI), and estimate the probability that inflation rate in 2025 would be less than 2%. It uses the Pandas API on Spark (PySpark library that allows users to write code using the familiar Pandas DataFrame API on Spark DataFrames). Main technologies: PySpark, GCS, NumPy. ",
+        "title": "Customer Price Index forecast using PySpark and Monte Carlo",
+        "description": "Description: This notebook illustrates how to use the Monte Carlo simulation method with PySpark to forecast the Consumer Price Index (CPI). It demonstrates how to simulate future CPI paths and estimate the probability of future inflation rates, providing a practical example of using statistical simulation for economic forecasting. Main technologies: PySpark, GCS, NumPy. Industry: Financial.",
         "category": "Sampling",
         "sub_category": "Monte Carlo method",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/sampling/monte_carlo/customer_price_index.ipynb",
         "created_at": "12-14-2023"
     },
     {
-        "title": "PDF summarization using Gemini",
-        "description": "Description: This notebook shows how to perform summarization using Gemini for a large number of contract PDF files in a GCS bucket. Using Spark,it reads a metadata table of the Contract Understanding Atticus Dataset (CUAD), calls Gemini to summarize the text, and saves the output to BigQuery. Main technologies: PySpark, GCS, Gemini, BigQuery. ",
+        "title": "PDF summarization using Gemini and PySpark",
+        "description": "Description: This notebook showcases a scalable solution for summarizing a large number of PDF documents using Gemini and PySpark. It reads contract files from a GCS bucket, uses Gemini to generate summaries, and saves the results to BigQuery, demonstrating a powerful workflow for large-scale document processing and analysis. Main technologies: PySpark, SparkML, Gemini, BigQuery. Industry: Financial.",
         "category": "Generative AI",
         "sub_category": "Summarization",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/pdf_contracts_summarization.ipynb",
         "created_at": "05-25-2025"
     },
     {
-        "title": "Movie Reviews sentiment analysis",
-        "description": "Description: This notebook shows how to perform sentiment analysis on large scale data using LLM. The dataset used is a public dataset from Bigquery Public Datasets. Using Spark, it reads data from Bigquery public dataset bigquery-public-data.imdb.reviews, calls Gemini to find the sentiment of each review (positive vs negative), compare the result side by side and the find accuracy. Main technologies: PySpark, SparkML, Gemini, BigQuery. ",
+        "title": "Movie reviews sentiment analysis using PySpark and Gemini",
+        "description": "Description: This notebook demonstrates how to perform sentiment analysis on a large scale using PySpark and Gemini. It reads movie reviews from a public BigQuery dataset, uses Gemini to determine the sentiment of each review, and evaluates the model's accuracy, providing a practical example of applying large language models for sentiment analysis. Main technologies: PySpark, Spark Connect, Gemini, BigQuery. Industry: Media & Entertainment.",
         "category": "Generative AI",
         "sub_category": "Sentiment Analysis",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb",
@@ -65,23 +65,23 @@
     },
     {
         "title": "Product attributes and description from image",
-        "description": "Description: This notebook shows how to generate attributes and descriptions of products based on product images in a GCS bucket.\nIt uses the Stanford Online Products dataset and uses the Vertex AI Imagen for Captioning & VQA model to generate product attributes and the Gemini to generate product descriptions, using Spark UDFs to parallelize processing. Main technologies: PySpark, GCS, Gemini. ",
+        "description": "Description: This notebook demonstrates how to generate product attributes and descriptions from images using PySpark, Gemini, and the Vertex AI Imagen model. It processes a dataset of product images from GCS, uses Imagen for captioning and VQA to extract attributes, and then leverages Gemini to generate detailed product descriptions in parallel using Spark UDFs. Main technologies: PySpark, GCS, Gemini. Industry: Retail.",
         "category": "Generative AI",
         "sub_category": "Content Generation",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb",
         "created_at": "12-14-2023"
     },
     {
-        "title": "Generate descriptions from videos",
-        "description": "Description: This notebook shows how to generate descriptions of videos in a GCS bucket. It uses the Youtube UGC dataset and uses the Gemini to generate video descriptions for each video. Main technologies: PySpark, GCS, Gemini. ",
+        "title": "Generate description from videos using PySpark and Gemini",
+        "description": "Description: This notebook shows how to generate descriptions for a collection of videos using PySpark and Gemini. It processes video files from a GCS bucket, uses Gemini to generate a descriptive summary for each video, and demonstrates a scalable approach to video content analysis and understanding. Main technologies: PySpark, GCS, Gemini. Industry: Retail.",
         "category": "Generative AI",
         "sub_category": "Content Generation",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/description_from_video.ipynb",
         "created_at": "01-16-2024"
     },
     {
-        "title": "Dataproc Metastore quickstart",
-        "description": "Description: This notebook demonstrates how you can quickly integrate your Spark application with a managed Dataproc Metastore, and additionally, read the available public datasets in our public Dataproc Metastore instance. Main technologies: PySpark, Dataproc Metastore. ",
+        "title": "Dataproc Metastore",
+        "description": "Description: This notebook demonstrates how to quickly integrate a Spark application with a managed Dataproc Metastore. It shows how to connect to the public read-only Dataproc Metastore to query available datasets using PySpark, and provides instructions on how to set up a Dataproc cluster with a Metastore service attached. Main technologies: PySpark, Dataproc Metastore. Industry: IT Services.",
         "category": "Quickstart",
         "sub_category": "Dataproc Metastore",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/dataproc_metastore/metastore_spark_quickstart.ipynb",
@@ -89,31 +89,31 @@
     },
     {
         "title": "Public Datasets in Google Cloud Storage",
-        "description": "Description: This notebook shows the available public datasets available in our public datasets GCS bucket and how you read them using PySpark and BigFrames. Main technologies: PySpark, GCS, BigFrames. ",
+        "description": "Description: This notebook provides an overview of the public datasets available in a public GCS bucket. It includes examples of how to read these datasets using both PySpark and BigFrames, demonstrating how to access data from both GCS and BigQuery public datasets. The notebook also lists the available datasets with their formats and descriptions. Main technologies: PySpark, GCS, BigFrames. Industry: IT Services.",
         "category": "Public Datasets",
         "sub_category": "Google Cloud Storage",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/public_datasets/public_datasets.ipynb",
         "created_at": "02-27-2024"
     },
     {
-        "title": "Banner advertising understanding",
-        "description": "Description: This notebook shows how to process ads banners images and generate enriched information classifications using a taxonomy using Bigframes and Gemini. It reads ads banners images from a GCS bucket and process them using Bigframes and Gemini, leveraging BigQuery's distributed processing capabilities. Main technologies: BigFrames, GCS, Gemini, BigQuery. ",
+        "title": "Banner advertising understanding with Gemini and BigQuery",
+        "description": "Description: This notebook demonstrates how to process and analyze advertising banner images using BigFrames and Gemini. It reads images from a GCS bucket, uses Gemini to generate enriched information and classifications based on a taxonomy, and leverages BigQuery's distributed processing capabilities for scalable analysis. Main technologies: BigFrames, GCS, Gemini, BigQuery. Industry: Retail.",
         "category": "Generative AI",
         "sub_category": "Content Generation",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb",
         "created_at": "04-17-2024"
     },
     {
-        "title": "Delta format in GCS quickstart",
-        "description": "Description: This notebook shows how to configure Spark to read and write files in GCS using the delta format. Main technologies: PySpark, GCS, Delta. ",
+        "title": "Delta format in GCS Quickstart",
+        "description": "Description: This notebook is a quickstart guide to using the Delta Lake format with Spark on Google Cloud Storage. It explains how to configure a Dataproc Serverless runtime with the necessary Delta Lake libraries and demonstrates how to read and write data in Delta format from and to GCS using PySpark. Main technologies: PySpark, GCS, Delta. Industry: IT Services.",
         "category": "Quickstart",
         "sub_category": "Delta",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/delta_format/delta_quickstart.ipynb",
         "created_at": "04-26-2024"
     },
     {
-        "title": "Predict penguim weight using linear regression",
-        "description": "Description: This notebook shows how to use BigQuery Dataframes to train a linear regression model to predict penguin weights. It reads the penguins table from BigQuery Public Datasets and fits a multiple linear regression model that predicts the weight of penguins, evaluating and plotting the results. Main technologies: BigFrames, BigQuery. ",
+        "title": "Predict penguim weight using Linear Regression and Bigframes",
+        "description": "Description: This notebook demonstrates how to train a linear regression model to predict penguin weight using BigQuery Dataframes. It reads the penguins dataset from BigQuery Public Datasets, fits a multiple linear regression model, and evaluates the results, providing a simple and clear example of regression analysis with BigFrames. Main technologies: BigFrames, BigQuery. Industry: Environmental.",
         "category": "Regression",
         "sub_category": "Linear Regression",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/linear_regression/penguim_weight_prediction.ipynb",
@@ -121,7 +121,7 @@
     },
     {
         "title": "Toxicity classification using Gemini fine-tuned",
-        "description": "Description: This notebook shows how to classify human text toxic comments into different Responsible AI harms categories: toxic, severe_toxic, obscene, threat, insult, identity_hate. It reads the Jigsaw Multilingual Toxic Comment Classification dataset, runs predictions using Gemini 2.0, fine-tunes Gemini 1.5 and evaluates F1 scores and Precision scores for both models. Main technologies: BigFrames, BigQuery, Gemini, Vertex AI SFT",
+        "description": "Description: This notebook demonstrates how to classify toxic comments using a fine-tuned Gemini model. It uses the Jigsaw Multilingual Toxic Comment Classification dataset and shows how to perform predictions with a pre-trained Gemini model, fine-tune it on the specific task, and evaluate the performance of both models, providing a comprehensive example of fine-tuning for text classification. Main technologies: BigFrames, Gemini, Vertex AI. Industry: Gaming.",
         "category": "Generative AI",
         "sub_category": "Classification",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/classification/toxicity_classification.ipynb",
@@ -129,7 +129,7 @@
     },
     {
         "title": "Bigframes Quickstart",
-        "description": "Description: This notebooks provides a quickstart for the BigQuery DataFrames (also known as BigFrames) provides a Pythonic DataFrame and machine learning (ML) API powered by the BigQuery engine. Main technologies: BigFrames, BigQuery, Gemini",
+        "description": "Description: This notebook provides a comprehensive introduction to BigQuery DataFrames (BigFrames). It covers creating DataFrames from various sources, using pandas-like APIs for data manipulation, leveraging BigQuery SQL functions, and visualizing data. The notebook also includes a machine learning example with data preparation, model training (Linear Regression), prediction, and evaluation, as well as an introduction to using Generative AI with BigFrames and Gemini. Main technologies: BigFrames, BigQuery, Gemini. Industry: IT Services.",
         "category": "Quickstart",
         "sub_category": "Bigframes",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/bigframes/bigframes_quickstart.ipynb",
@@ -137,31 +137,31 @@
     },
     {
         "title": "Apache Iceberg on BQ Quickstart",
-        "description": "Description: This notebooks provides a quickstart to use BigQuery tables for Apache Iceberg. Main technologies: BigQuery, Apache Iceberg",
+        "description": "Description: This notebook demonstrates how to work with Apache Iceberg tables in BigQuery. It walks through the process of creating a BigQuery-managed Iceberg table, loading data from a Parquet file in GCS into the table, and querying the data using BigQuery SQL. It also shows how to view the DDL for the created Iceberg table. Main technologies: BigQuery, Apache Iceberg. Industry: IT Services.",
         "category": "Quickstart",
         "sub_category": "Iceberg",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/iceberg/iceberg_quickstart.ipynb",
         "created_at": "03-18-2025"
     },
     {
-        "title": "Dataproc cluster insights on BigQuery",
-        "description": "Description: This notebooks provides visibility into Dataproc workflows cluster utilization. Main technologies: BigQuery, Dataproc",
+        "title": "Dataproc cluster insights with BigQuery",
+        "description": "Description: This notebook provides a solution for analyzing Dataproc cluster usage and billing. It uses the Dataproc Python client to retrieve cluster operation metadata and combines it with Cloud Billing data exported to BigQuery. The notebook demonstrates how to prepare the data, explore usage patterns, and visualize the results to gain insights into cluster utilization and costs. Main technologies: BigQuery, Dataproc. Industry: IT Services.",
         "category": "Quickstart",
         "sub_category": "Dataproc",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/dataproc_cluster_insights_bigquery.ipynb",
         "created_at": "03-18-2025"
     },
     {
-        "title": "Fine-tuning Gemini on translation to english",
-        "description": "Description: This notebooks demonstrates how to fine-tune Gemini to perform translation tasks from multiple languages (DE,ES,FR,IT,PL,PT,RU,SV,UK,ZH) to English. It follows the steps: 1) Reads the dataset from a GCS bucket 2) Save it in the Iceberg format using Dataproc Serverless 3) Use Vertex AI Supervised fine-tuning job to fine-tune Gemini with the dataset 4) Register the model in Vertex AI Model Registry. Main technologies: PySpark, Apache Iceberg, Gemini, Vertex AI SFT",
+        "title": "Fine-tuning Gemini to translate multiple languages",
+        "description": "Description: This notebook demonstrates how to fine-tune a Gemini model for translation tasks. It covers the entire workflow, from loading a multilingual dataset from GCS and saving it in Iceberg format, to launching a supervised fine-tuning job in Vertex AI and registering the fine-tuned model in the Vertex AI Model Registry. Main technologies: PySpark, Iceberg. Gemini. Industry: Media & Entertainment.",
         "category": "Generative AI",
-        "sub_category": null,
+        "sub_category": "Fine tuning",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/finetuning/translation_finetuning.ipynb",
         "created_at": "04-17-2025"
     },
     {
         "title": "Agent2Agent Quickstart",
-        "description": "Description: This notebook introduces you to Google's Agent-to-Agent (A2A) protocol, a standardized way for AI agents to communicate and collaborate. You will build a three-agent system that works together to analyze trending topics. Main technologies: Gemini, Google ADK, A2A, Vertex AI",
+        "description": "Description: This notebook introduces Google's Agent-to-Agent (A2A) communication protocol. It guides you through building a multi-agent system with three collaborating agents: one for finding trending topics, one for analyzing them, and a host agent for orchestration. The notebook explains how to create and run these agents as A2A servers and test the complete system. Main technologies: Gemini, Google ADK, A2A, Vertex AI. Industry: IT Services.",
         "category": "Quickstart",
         "sub_category": "Agent2Agent",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/agent2agent/a2a_quickstart.ipynb",
@@ -169,7 +169,7 @@
     },
     {
         "title": "Contract Risk and Compliance Review",
-        "description": "Description: This notebook demonstrates a powerful, scalable solution for automating the analysis of legal contracts using Google BigQuery and Vertex AI's Gemini models. It showcases how to transform thousands of unstructured text documents stored in Google Cloud Storage into a structured, queryable, and insightful dataset directly within BigQuery. The process involves using SQL functions to extract key information, assess risk, generate summaries, and finally, visualize the results to enable data-driven decision-making for legal and compliance teams. Main technologies: BigQuery, SQL, Gemini",
+        "description": "Description: This notebook demonstrates a powerful, scalable solution for automating the analysis of legal contracts using Google BigQuery and Vertex AI's Gemini models. It showcases how to transform thousands of unstructured text documents stored in Google Cloud Storage into a structured, queryable, and insightful dataset directly within BigQuery. The process involves using SQL functions to extract key information, assess risk, generate summaries, and finally, visualize the results to enable data-driven decision-making for legal and compliance teams. Main technologies: BigQuery, SQL, Gemini. Industry: Financial.",
         "category": "Generative AI",
         "sub_category": "Summarization",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb",
@@ -177,7 +177,7 @@
     },
     {
         "title": "Asset Price Forecast using Iceberg and Prophet",
-        "description": "This notebook demonstrates how to build an asset price forecasting solution using Dataproc Serverless Spark Connect with Iceberg tables and the Prophet forecasting library. It covers data loading, preprocessing, model training, prediction, and storing results back into Iceberg.",
+        "description": "Description: This notebook demonstrates how to build an asset price forecasting solution using Dataproc Serverless Spark Connect with Iceberg tables and the Prophet forecasting library. It covers data loading, preprocessing, model training, prediction, and storing results back into Iceberg. Main technologies: PySpark, Dataproc Serverless, Apache Iceberg, Prophet, BigQuery, GCS. Industry: Finance.",
         "category": "Forecast",
         "sub_category": "Prophet",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/forecast/asset_price_forecast.ipynb",
@@ -185,7 +185,7 @@
     },
     {
         "title": "Purchase Predictions with PySpark in BigQuery Studio",
-        "description": "This notebook demonstrates how to build a logistic regression classification model using PySpark to predict whether a user will make a purchase. It leverages PySpark within a Colab Enterprise notebook in BigQuery Studio, utilizing BigQuery data from a hypothetical e-commerce retailer (TheLook). The workflow includes data loading from BigQuery, exploration, feature engineering (deriving features and a binary label from user and order data), model training using Spark ML's Logistic Regression, and model evaluation with AUC-PR, Precision-Recall curve, and a confusion matrix. The results are then written back to BigQuery.",
+        "description": "Description: This notebook demonstrates how to build a logistic regression classification model using PySpark to predict whether a user will make a purchase. It leverages PySpark within a Colab Enterprise notebook in BigQuery Studio, utilizing BigQuery data from a hypothetical e-commerce retailer (TheLook). The workflow includes data loading from BigQuery, exploration, feature engineering (deriving features and a binary label from user and order data), model training using Spark ML's Logistic Regression, and model evaluation with AUC-PR, Precision-Recall curve, and a confusion matrix. The results are then written back to BigQuery. Main technologies: PySpark, Spark ML, BigQuery, Dataproc, GCS. Industry: Retail.",
         "category": "Analytics",
         "sub_category": "Purchase Predictions",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/purchase_predictions_spark.ipynb",
@@ -193,7 +193,7 @@
     },
     {
         "title": "Time Series Analysis with TimesFM and ARIMA in BigQuery",
-        "description": "This notebook demonstrates how to perform scalable and granular demand forecasting directly in BigQuery. It uses the public Iowa Liquor Sales dataset to compare two distinct time series forecasting approaches: training an ARIMA model with BigQuery ML and generating zero-shot predictions using the TimesFM foundation model. The tutorial covers data preparation, model training (for ARIMA), direct forecasting (for TimesFM), and scaling from a single time series to multiple series, finally visualizing and comparing the forecasts.",
+        "description": "Description: This notebook demonstrates how to perform scalable and granular demand forecasting directly in BigQuery. It uses the public Iowa Liquor Sales dataset to compare two distinct time series forecasting approaches: training an ARIMA model with BigQuery ML and generating zero-shot predictions using the TimesFM foundation model. The tutorial covers data preparation, model training (for ARIMA), direct forecasting (for TimesFM), and scaling from a single time series to multiple series, finally visualizing and comparing the forecasts. Main technologies: BigQuery, BigQuery ML, ARIMA, TimesFM, Python, Matplotlib. Industry: Retail.",
         "category": "Forecast",
         "sub_category": "ARIMA and TimesFM",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/forecast/arima_timesfm_bigquery.ipynb",
@@ -201,7 +201,7 @@
     },
     {
         "title": "Assessing Environmental Risks to Protect Agricultural Investments",
-        "description": "This notebook addresses the challenge faced by agribusinesses, financial investors, and insurers in quantifying financial risk from production shortages due to events like fires or droughts. It aims to analyze wine production in Chile to create a dynamic wildfire risk intelligence system. The notebook leverages Google Earth Engine's public satellite imagery and environmental data, available as rasterized data within BigQuery. It accesses Chilean regional data using Overture Maps, explores environmental characteristics like elevation, wildfire history, and water availability, and uses BigQuery's ST_RegionStats() function for raster analysis. The results are visualized using geospatial tools like GeoViz or GeoPandas. Finally, it uses a K-Means clustering model with BigQuery ML to segment land holdings into distinct groups based on environmental characteristics and wine production, providing actionable insights for strategic planning and risk mitigation in agriculture. For example, identifying \"drought-prone\" or \"fire-vulnerable\" clusters to implement targeted prevention programs.",
+        "description": "Description: This notebook addresses the challenge faced by agribusinesses, financial investors, and insurers in quantifying financial risk from production shortages due to events like fires or droughts. It aims to analyze wine production in Chile to create a dynamic wildfire risk intelligence system. The notebook leverages Google Earth Engine's public satellite imagery and environmental data, available as rasterized data within BigQuery. It accesses Chilean regional data using Overture Maps, explores environmental characteristics like elevation, wildfire history, and water availability, and uses BigQuery's ST_RegionStats() function for raster analysis. The results are visualized using geospatial tools like GeoViz or GeoPandas. Finally, it uses a K-Means clustering model with BigQuery ML to segment land holdings into distinct groups based on environmental characteristics and wine production, providing actionable insights for strategic planning and risk mitigation in agriculture. For example, identifying \"drought-prone\" or \"fire-vulnerable\" clusters to implement targeted prevention programs. Main technologies: BigQuery, Google Earth Engine, BigFrames, GeoPandas, BigQuery ML. Industry: Agriculture.",
         "category": "Quickstart",
         "sub_category": "Geospatial",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/geospatial/assessing_risks_geospatial_bqml.ipynb",
@@ -209,7 +209,7 @@
     },
     {
         "title": "A Data Science Approach to Investigating Poor Product Sales Performance",
-        "description": "This notebook presents a data science approach to investigate the lower-than-expected sales performance of a new smart speaker (Quantum AI Speaker 2) for an electronics retailer. It begins by validating the sales shortfall through data exploration and visualization of sales growth trajectories for the new product versus its predecessor. The core of the analysis involves leveraging BigQuery's AI.SCORE function to perform sentiment analysis on unstructured product reviews, categorizing sentiment towards specific product features (AI Assistant Pro, Audio Quality, Seamless Connectivity, Smart Home Integration). This scored data is then joined with demographic, device, and session information into a comprehensive dataset. Finally, an XGBoost classification model is built and trained to determine the most influential factors contributing to shopper non-purchase decisions. The notebook concludes by visualizing feature importance, identifying key actionable insights.",
+        "description": "Description: This notebook presents a data science approach to investigate the lower-than-expected sales performance of a new smart speaker (Quantum AI Speaker 2) for an electronics retailer. It begins by validating the sales shortfall through data exploration and visualization of sales growth trajectories for the new product versus its predecessor. The core of the analysis involves leveraging BigQuery's AI.SCORE function to perform sentiment analysis on unstructured product reviews, categorizing sentiment towards specific product features (AI Assistant Pro, Audio Quality, Seamless Connectivity, Smart Home Integration). This scored data is then joined with demographic, device, and session information into a comprehensive dataset. Finally, an XGBoost classification model is built and trained to determine the most influential factors contributing to shopper non-purchase decisions. The notebook concludes by visualizing feature importance, identifying key actionable insights. Main technologies: BigQuery, Vertex AI, XGBoost, Pandas. Industry: Retail.",
         "category": "Analytics",
         "sub_category": "Sales Performance Analysis",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/investigating_poor_product_sales.ipynb",
@@ -217,7 +217,7 @@
     },
     {
         "title": "Creating an Image-Based Home Search Engine",
-        "description": "This notebook demonstrates how to build an image-based home search engine using BigQuery's native multimodal capabilities and vector embeddings. It addresses the business challenge faced by e-commerce platforms, particularly in real estate, where traditional keyword-based search can be inefficient for visually driven product discovery. The data science approach involves converting product images into high-dimensional vector embeddings using a remote foundation model (Gemini) called from BigQuery ML. A vector index is used for fast querying over these embeddings. When a query image is provided, it's converted into an embedding, and the VECTOR_SEARCH function is used to find and return a ranked list of visually similar items in real-time.",
+        "description": "Description: This notebook demonstrates how to build an image-based home search engine using BigQuery's native multimodal capabilities and vector embeddings. It addresses the business challenge faced by e-commerce platforms, particularly in real estate, where traditional keyword-based search can be inefficient for visually driven product discovery. The data science approach involves converting product images into high-dimensional vector embeddings using a remote foundation model (Gemini) called from BigQuery ML. A vector index is used for fast querying over these embeddings. When a query image is provided, it's converted into an embedding, and the VECTOR_SEARCH function is used to find and return a ranked list of visually similar items in real-time. Main technologies: BigQuery, BigQuery ML, Gemini, GCS, SQL, Python. Industry: Real Estate.",
         "category": "Analytics",
         "sub_category": "Image Search",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/image_based_home_search.ipynb",
@@ -225,15 +225,15 @@
     },
     {
         "title": "Identifying Customer Segments for Targeted Marketing",
-        "description": "This notebook demonstrates a data science approach to identify customer segments for targeted marketing. It addresses the business challenge of optimizing marketing budget allocation and maximizing ROI by moving beyond one-size-fits-all strategies. The notebook combines unsupervised machine learning (K-Means clustering with BigQuery ML) to partition customers based on purchasing behavior (total spend, number of orders, last purchase date) from the 'thelook_ecommerce' dataset. Subsequently, it leverages generative AI (using BigQuery ML's remote model connected to Gemini-2.5-Flash) to automate the interpretation of these segments, programmatically generating concise segment names, summaries, and tailored marketing suggestions. This approach provides actionable insights for more effective and personalized marketing campaigns.",
+        "description": "Description: This notebook demonstrates a data science approach to identify customer segments for targeted marketing. It addresses the business challenge of optimizing marketing budget allocation and maximizing ROI by moving beyond one-size-fits-all strategies. The notebook combines unsupervised machine learning (K-Means clustering with BigQuery ML) to partition customers based on purchasing behavior (total spend, number of orders, last purchase date) from the 'thelook_ecommerce' dataset. Subsequently, it leverages generative AI (using BigQuery ML's remote model connected to Gemini-2.5-Flash) to automate the interpretation of these segments, programmatically generating concise segment names, summaries, and tailored marketing suggestions. This approach provides actionable insights for more effective and personalized marketing campaigns. Main technologies: BigQuery, BigQuery ML, Gemini, Generative AI, SQL, K-Means Clustering. Industry: Retail.",
         "category": "Analytics",
         "sub_category": "Identifying Customer Segments",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/identifying_customer_segments.ipynb",
         "created_at": "09-05-2025"
     },
     {
-        "title": "ADK Session with Cloud SQL",
-        "description": "Description: This notebook shows how to build and deploy an Agent Development Kit (ADK) agent that leverages different session services for conversation memory. It demonstrates using a local SQLite database for quick development and testing, and migrating to a production-ready Cloud SQL for PostgreSQL database for robust, scalable session management. The notebook covers setting up the agent with a Gemini model, configuring both session types, and observing how conversation history is stored and retrieved. Main technologies: Google ADK, Gemini, Cloud SQL, Vertex AI, SQLite, GCS.",
+        "title": "Google ADK Session management with Cloud SQL",
+        "description": "Description: This notebook shows how to build and deploy an Agent Development Kit (ADK) agent that leverages different session services for conversation memory. It demonstrates using a local SQLite database for quick development and testing, and migrating to a production-ready Cloud SQL for PostgreSQL database for robust, scalable session management. The notebook covers setting up the agent with a Gemini model, configuring both session types, and observing how conversation history is stored and retrieved. Main technologies: Google ADK, Gemini, Cloud SQL, Vertex AI, SQLite, GCS. Industry: IT Services.",
         "category": "Quickstart",
         "sub_category": "Google Adk",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/google_adk/adk_session_with_cloudsql.ipynb",
