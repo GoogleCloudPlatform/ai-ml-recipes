@@ -34,6 +34,7 @@ Please refer to each notebooks folder documentation for more information:
 | [SMS Spam Filtering using PySpark and Spark ML](./notebooks/classification/multilayer_perceptron_classifier/sms_spam_filtering.ipynb) | Telecom | Classification | Multilayer Perceptron Classifier | PySpark, Spark ML, GCS |
 | [Bike Trip Duration Prediction using PySpark and BigQuery](./notebooks/regression/random_forest_regression/bike_trip_duration_prediction.ipynb) | Mobility | Regression | Random Forest Regression | PySpark, Spark ML, BigQuery |
 | [PDF summarization using Gemini and PySpark](./notebooks/generative_ai/summarization/pdf_contracts_summarization.ipynb) | Financial | Generative AI | Summarization | PySpark, SparkML, Gemini, BigQuery |
+| [Accelerated Data Analytics with Google Cloud and NVIDIA](./notebooks/analytics/gpu_accelerated_analytics.ipynb) | IT Services | Analytics | Gpu Accelerated Analytics | pandas, cuDF, NVIDIA GPUs, Google Cloud, Colab Enterprise, Google Cloud Storage, pyarrow, Matplotlib, NumPy |
 
 
 Google Cloud products quickstarts:
