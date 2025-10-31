@@ -238,5 +238,13 @@
         "sub_category": "Random Forest Regression",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/random_forest_regression/bike_trip_duration_prediction.ipynb",
         "created_at": "12-14-2023"
+    },
+    {
+        "title": "Accelerated Data Analytics with Google Cloud and NVIDIA",
+        "description": "Description: This notebook demonstrates how to accelerate data analytics workflows on large datasets using NVIDIA GPUs and open-source libraries on Google Cloud. It focuses on optimizing infrastructure and applying GPU acceleration, specifically by accelerating the popular `pandas` data manipulation library with NVIDIA's `cuDF` library. A key feature highlighted is achieving GPU acceleration with zero code changes to existing `pandas` and `scikit-learn` code. The notebook also covers customizing Colab Enterprise runtime environments, profiling code to identify and optimize performance bottlenecks, and integrating with Google Cloud Storage for efficient data handling. It uses the NYC Taxi & Limousine Commission (TLC) Trip Record Data to showcase performance comparisons between CPU and GPU execution. Main technologies: pandas, cuDF, NVIDIA GPUs, Google Cloud, Colab Enterprise, Google Cloud Storage, pyarrow, Matplotlib, NumPy. Industry: IT Services.",
+        "category": "Analytics",
+        "sub_category": "GPU Accelerated Analytics",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/gpu_accelerated_analytics.ipynb",
+        "created_at": "10-30-2025"
     }
 ]
