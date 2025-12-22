@@ -54,4 +54,5 @@ jobs:
       - name: Index validation
         run: |
           echo "Running validation on the fixed files..."
-          python .ci/scripts/validate_entries.py
+          python .ci/scripts/validate_entries.py --file .ci/index.json
+          python .ci/scripts/validate_entries.py --file .ci/samples.json --allow-subset

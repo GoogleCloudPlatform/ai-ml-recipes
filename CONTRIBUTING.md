@@ -68,7 +68,7 @@ This is the easiest way to ensure your contribution is compliant and well-docume
 
 When you create a pull request, our GitHub Actions workflow will automatically perform the following steps:
 
-1.  **Validation**: It first runs the `.ci/scripts/validate_entries.py` script to check if the `index.json` file is valid and contains an entry for every notebook.
+1.  **Validation**: It first runs the `.ci/scripts/validate_entries.py` script to validate `index.json` and `samples.json`.
 2.  **AI-Powered Autofix (If Validation Fails)**: If the validation fails (e.g., you forgot to run the scripts locally), the `autofix-docs` job will be triggered. This job:
     -   Runs the **enhancement script** to standardize your notebook.
     -   Runs the **documentation script** to generate and add the required metadata to `index.json` and `README.md`.
@@ -80,7 +80,7 @@ If you prefer to do things manually, you will need to:
 1.  Add the Apache 2.0 license and the platform links table to your notebook.
 2.  Add a new entry for your notebook to the `.ci/index.json` file.
 3.  Add a new row for your notebook to the table in the `README.md` file.
-4.  Run `.ci/scripts/validate_entries.py` to confirm your changes are valid.
+4.  Run `.ci/scripts/validate_entries.py` to confirm your `index.json` changes are valid.
 
 Type |	Title	| Description  |
 ----- |---------| ------------- |
