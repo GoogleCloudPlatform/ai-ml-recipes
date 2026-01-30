@@ -1,6 +1,6 @@
 [
     {
-        "title": "Identifying Customer Segments for Targeted Marketing",
+        "title": "Customer Segmentation",
         "description": "Description: This notebook demonstrates a data science approach to identify customer segments for targeted marketing. It addresses the business challenge of optimizing marketing budget allocation and maximizing ROI by moving beyond one-size-fits-all strategies. The notebook combines unsupervised machine learning (K-Means clustering with BigQuery ML) to partition customers based on purchasing behavior (total spend, number of orders, last purchase date) from the 'thelook_ecommerce' dataset. Subsequently, it leverages generative AI (using BigQuery ML's remote model connected to Gemini-2.5-Flash) to automate the interpretation of these segments, programmatically generating concise segment names, summaries, and tailored marketing suggestions. This approach provides actionable insights for more effective and personalized marketing campaigns. Main technologies: BigQuery, BigQuery ML, Gemini, Generative AI, SQL, K-Means Clustering. Industry: Retail.",
         "category": "Analytics",
         "sub_category": "Identifying Customer Segments",
@@ -8,7 +8,7 @@
         "created_at": "09-05-2025"
     },
     {
-        "title": "Creating an Image-Based Home Search Engine",
+        "title": "Vector Search and embeddings",
         "description": "Description: This notebook demonstrates how to build an image-based home search engine using BigQuery's native multimodal capabilities and vector embeddings. It addresses the business challenge faced by e-commerce platforms, particularly in real estate, where traditional keyword-based search can be inefficient for visually driven product discovery. The data science approach involves converting product images into high-dimensional vector embeddings using a remote foundation model (Gemini) called from BigQuery ML. A vector index is used for fast querying over these embeddings. When a query image is provided, it's converted into an embedding, and the VECTOR_SEARCH function is used to find and return a ranked list of visually similar items in real-time. Main technologies: BigQuery, BigQuery ML, Gemini, GCS, SQL, Python. Industry: Real Estate.",
         "category": "Analytics",
         "sub_category": "Image Search",
@@ -16,7 +16,7 @@
         "created_at": "09-03-2025"
     },
     {
-        "title": "A Data Science Approach to Investigating Poor Product Sales Performance",
+        "title": "Exploratory Data Analysis",
         "description": "Description: This notebook presents a data science approach to investigate the lower-than-expected sales performance of a new smart speaker (Quantum AI Speaker 2) for an electronics retailer. It begins by validating the sales shortfall through data exploration and visualization of sales growth trajectories for the new product versus its predecessor. The core of the analysis involves leveraging BigQuery's AI.SCORE function to perform sentiment analysis on unstructured product reviews, categorizing sentiment towards specific product features (AI Assistant Pro, Audio Quality, Seamless Connectivity, Smart Home Integration). This scored data is then joined with demographic, device, and session information into a comprehensive dataset. Finally, an XGBoost classification model is built and trained to determine the most influential factors contributing to shopper non-purchase decisions. The notebook concludes by visualizing feature importance, identifying key actionable insights. Main technologies: BigQuery, Vertex AI, XGBoost, Pandas. Industry: Retail.",
         "category": "Analytics",
         "sub_category": "Sales Performance Analysis",
@@ -24,15 +24,15 @@
         "created_at": "09-02-2025"
     },
     {
-        "title": "Assessing Environmental Risks to Protect Agricultural Investments",
+        "title": "Data Engineering with GeoSpacial data",
         "description": "Description: This notebook addresses the challenge faced by agribusinesses, financial investors, and insurers in quantifying financial risk from production shortages due to events like fires or droughts. It aims to analyze wine production in Chile to create a dynamic wildfire risk intelligence system. The notebook leverages Google Earth Engine's public satellite imagery and environmental data, available as rasterized data within BigQuery. It accesses Chilean regional data using Overture Maps, explores environmental characteristics like elevation, wildfire history, and water availability, and uses BigQuery's ST_RegionStats() function for raster analysis. The results are visualized using geospatial tools like GeoViz or GeoPandas. Finally, it uses a K-Means clustering model with BigQuery ML to segment land holdings into distinct groups based on environmental characteristics and wine production, providing actionable insights for strategic planning and risk mitigation in agriculture. For example, identifying \"drought-prone\" or \"fire-vulnerable\" clusters to implement targeted prevention programs. Main technologies: BigQuery, Google Earth Engine, BigFrames, GeoPandas, BigQuery ML. Industry: Agriculture.",
-        "category": "Quickstart",
+        "category": "Analytics",
         "sub_category": "Geospatial",
-        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/quickstart/geospatial/assessing_risks_geospatial_bqml.ipynb",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/assessing_risks_geospatial_bqml.ipynb",
         "created_at": "08-28-2025"
     },
     {
-        "title": "Time Series Analysis with TimesFM and ARIMA in BigQuery",
+        "title": "Time Series Forecast",
         "description": "Description: This notebook demonstrates how to perform scalable and granular demand forecasting directly in BigQuery. It uses the public Iowa Liquor Sales dataset to compare two distinct time series forecasting approaches: training an ARIMA model with BigQuery ML and generating zero-shot predictions using the TimesFM foundation model. The tutorial covers data preparation, model training (for ARIMA), direct forecasting (for TimesFM), and scaling from a single time series to multiple series, finally visualizing and comparing the forecasts. Main technologies: BigQuery, BigQuery ML, ARIMA, TimesFM, Python, Matplotlib. Industry: Retail.",
         "category": "Forecast",
         "sub_category": "ARIMA and TimesFM",
@@ -40,7 +40,7 @@
         "created_at": "08-26-2025"
     },
     {
-        "title": "Purchase Predictions with PySpark in BigQuery Studio",
+        "title": "Propensity Modeling & Churn Predictions",
         "description": "Description: This notebook demonstrates how to build a logistic regression classification model using PySpark to predict whether a user will make a purchase. It leverages PySpark within a Colab Enterprise notebook in BigQuery Studio, utilizing BigQuery data from a hypothetical e-commerce retailer (TheLook). The workflow includes data loading from BigQuery, exploration, feature engineering (deriving features and a binary label from user and order data), model training using Spark ML's Logistic Regression, and model evaluation with AUC-PR, Precision-Recall curve, and a confusion matrix. The results are then written back to BigQuery. Main technologies: PySpark, Spark ML, BigQuery, Dataproc, GCS. Industry: Retail.",
         "category": "Analytics",
         "sub_category": "Purchase Predictions",
@@ -56,7 +56,7 @@
         "created_at": "08-18-2025"
     },
     {
-        "title": "Contract Risk and Compliance Review",
+        "title": "Unstructured document analysis with AI",
         "description": "Description: This notebook demonstrates a powerful, scalable solution for automating the analysis of legal contracts using Google BigQuery and Vertex AI's Gemini models. It showcases how to transform thousands of unstructured text documents stored in Google Cloud Storage into a structured, queryable, and insightful dataset directly within BigQuery. The process involves using SQL functions to extract key information, assess risk, generate summaries, and finally, visualize the results to enable data-driven decision-making for legal and compliance teams. Main technologies: BigQuery, SQL, Gemini. Industry: Financial.",
         "category": "Generative AI",
         "sub_category": "Summarization",
@@ -64,7 +64,7 @@
         "created_at": "08-15-2025"
     },
     {
-        "title": "Fine-tuning Gemini to translate multiple languages",
+        "title": "Fine-tuning Gemini for Domain Specificity",
         "description": "Description: This notebook demonstrates how to fine-tune a Gemini model for translation tasks. It covers the entire workflow, from loading a multilingual dataset from GCS and saving it in Iceberg format, to launching a supervised fine-tuning job in Vertex AI and registering the fine-tuned model in the Vertex AI Model Registry. Main technologies: PySpark, Iceberg. Gemini. Industry: Media & Entertainment.",
         "category": "Generative AI",
         "sub_category": "Fine tuning",
@@ -72,7 +72,7 @@
         "created_at": "04-17-2025"
     },
     {
-        "title": "Banner advertising understanding with Gemini and BigQuery",
+        "title": "Multimodal content enrichment",
         "description": "Description: This notebook demonstrates how to process and analyze advertising banner images using BigFrames and Gemini. It reads images from a GCS bucket, uses Gemini to generate enriched information and classifications based on a taxonomy, and leverages BigQuery's distributed processing capabilities for scalable analysis. Main technologies: BigFrames, GCS, Gemini, BigQuery. Industry: Retail.",
         "category": "Generative AI",
         "sub_category": "Content Generation",

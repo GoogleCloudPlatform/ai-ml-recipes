@@ -12,20 +12,20 @@ Please refer to each notebooks folder documentation for more information:
 
 | Title | Industry | Topic | Sub Topic | Main Technologies |
 |-------|----------|-------|-----------|----------------|
-| [Fine-tuning Gemini to translate multiple languages](./notebooks/generative_ai/finetuning/translation_finetuning.ipynb) | Media & Entertainment | Generative AI | Fine tuning | PySpark, Iceberg. Gemini |
+| [Fine-tuning Gemini for Domain Specificity](./notebooks/generative_ai/finetuning/translation_finetuning.ipynb) | Media & Entertainment | Generative AI | Fine tuning | PySpark, Iceberg. Gemini |
 | [Generate description from videos using PySpark and Gemini](./notebooks/generative_ai/content_generation/description_from_video.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
 | [Product attributes and description from image](./notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
 | [Customer Price Index forecast using PySpark and Monte Carlo](./notebooks/sampling/monte_carlo/customer_price_index.ipynb) | Financial | Sampling | Monte Carlo method | PySpark, GCS, NumPy |
-| [Banner advertising understanding with Gemini and BigQuery](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb) | Retail | Generative AI | Content Generation | BigFrames, GCS, Gemini, BigQuery |
+| [Multimodal content enrichment](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb) | Retail | Generative AI | Content Generation | BigFrames, GCS, Gemini, BigQuery |
 | [Toxicity classification using Gemini fine-tuned](./notebooks/generative_ai/classification/toxicity_classification.ipynb) | Gaming | Generative AI | Classification | BigFrames, Gemini, Vertex AI |
-| [Contract Risk and Compliance Review](./notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb) | Financial | Generative AI | Summarization | BigQuery, SQL, Gemini |
+| [Unstructured document analysis with AI](./notebooks/generative_ai/summarization/automated_contract_risk_and_compliance_review.ipynb) | Financial | Generative AI | Summarization | BigQuery, SQL, Gemini |
 | [Asset Price Forecast using Iceberg and Prophet](./notebooks/forecast/asset_price_forecast.ipynb) | Finance | Forecast | Prophet | PySpark, Dataproc Serverless, Apache Iceberg, Prophet, BigQuery, GCS |
-| [Purchase Predictions with PySpark in BigQuery Studio](./notebooks/analytics/purchase_predictions_spark.ipynb) | Retail | Analytics | Purchase Predictions | PySpark, Spark ML, BigQuery, Dataproc, GCS |
-| [Time Series Analysis with TimesFM and ARIMA in BigQuery](./notebooks/forecast/arima_timesfm_bigquery.ipynb) | Retail | Forecast | ARIMA and TimesFM | BigQuery, BigQuery ML, ARIMA, TimesFM, Python, Matplotlib |
-| [Assessing Environmental Risks to Protect Agricultural Investments](./notebooks/quickstart/geospatial/assessing_risks_geospatial_bqml.ipynb) | Agriculture | Quickstart | Geospatial | BigQuery, Google Earth Engine, BigFrames, GeoPandas, BigQuery ML |
-| [A Data Science Approach to Investigating Poor Product Sales Performance](./notebooks/analytics/investigating_poor_product_sales.ipynb) | Retail | Analytics | Sales Performance Analysis | BigQuery, Vertex AI, XGBoost, Pandas |
-| [Creating an Image-Based Home Search Engine](./notebooks/analytics/image_based_home_search.ipynb) | Real Estate | Analytics | Image Search | BigQuery, BigQuery ML, Gemini, GCS, SQL, Python |
-| [Identifying Customer Segments for Targeted Marketing](./notebooks/analytics/identifying_customer_segments.ipynb) | Retail | Analytics | Identifying Customer Segments | BigQuery, BigQuery ML, Gemini, Generative AI, SQL, K-Means Clustering |
+| [Propensity Modeling & Churn Predictions](./notebooks/analytics/purchase_predictions_spark.ipynb) | Retail | Analytics | Purchase Predictions | PySpark, Spark ML, BigQuery, Dataproc, GCS |
+| [Time Series Forecast](./notebooks/forecast/arima_timesfm_bigquery.ipynb) | Retail | Forecast | ARIMA and TimesFM | BigQuery, BigQuery ML, ARIMA, TimesFM, Python, Matplotlib |
+| [Data Engineering with GeoSpacial data](./notebooks/analytics/assessing_risks_geospatial_bqml.ipynb) | Agriculture | Analytics | Geospatial | BigQuery, Google Earth Engine, BigFrames, GeoPandas, BigQuery ML |
+| [Exploratory Data Analysis](./notebooks/analytics/investigating_poor_product_sales.ipynb) | Retail | Analytics | Sales Performance Analysis | BigQuery, Vertex AI, XGBoost, Pandas |
+| [Vector Search and embeddings](./notebooks/analytics/image_based_home_search.ipynb) | Real Estate | Analytics | Image Search | BigQuery, BigQuery ML, Gemini, GCS, SQL, Python |
+| [Customer Segmentation](./notebooks/analytics/identifying_customer_segments.ipynb) | Retail | Analytics | Identifying Customer Segments | BigQuery, BigQuery ML, Gemini, Generative AI, SQL, K-Means Clustering |
 | [Movie reviews sentiment analysis using PySpark and Gemini](./notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb) | Media & Entertainment | Generative AI | Sentiment Analysis | PySpark, Spark Connect, Gemini, BigQuery |
 | [Housing prices prediction](./notebooks/regression/decision_tree_regression/housing_prices_prediction.ipynb) | Financial | Regression | Decision Tree Regression | PySpark, Spark ML, GCS |
 | [Wine quality classification using Logistic Regression and PySpark](./notebooks/classification/logistic_regression/wine_quality_classification_mlr.ipynb) | Retail | Classification | Logistic Regression | PySpark, Spark ML, GCS |
