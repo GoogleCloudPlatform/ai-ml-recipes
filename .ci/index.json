@@ -246,5 +246,13 @@
         "sub_category": "GPU Accelerated Analytics",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/gpu_accelerated_analytics.ipynb",
         "created_at": "10-30-2025"
+    },
+    {
+        "title": "GPU Accelerated Data Science with NVIDIA and Google Cloud",
+        "description": "This notebook demonstrates how to significantly accelerate data science and machine learning workflows, particularly regression tasks, on large datasets using NVIDIA CUDA-X open-source libraries within Google Cloud's Colab Enterprise. It tackles the business challenge of optimizing performance for computationally intensive ML pipelines by leveraging GPUs. The data science approach involves building a machine learning pipeline to predict NYC taxi tip amounts, using models such as XGBoost, Linear Regression, and Random Forest. A key highlight is the seamless GPU acceleration achieved with **zero code changes** to existing `pandas` and `scikit-learn` code by utilizing NVIDIA's `cuDF` and `cuML` libraries. The notebook covers setting up a GPU-enabled runtime, performing data loading, cleaning, and feature engineering with GPU acceleration, and training various regression models on the GPU. It also provides a comprehensive comparison of CPU versus GPU performance and introduces profiling tools to identify bottlenecks.",
+        "category": "Regression",
+        "sub_category": "GPU Accelerated Regression",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/gpu_accelerated_regression/gpu_accelerated_regression.ipynb",
+        "created_at": "02-10-2026"
     }
 ]
