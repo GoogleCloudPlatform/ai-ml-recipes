@@ -36,6 +36,7 @@ Please refer to each notebooks folder documentation for more information:
 | [PDF summarization using Gemini and PySpark](./notebooks/generative_ai/summarization/pdf_contracts_summarization.ipynb) | Financial | Generative AI | Summarization | PySpark, SparkML, Gemini, BigQuery |
 | [Accelerated Data Analytics with Google Cloud and NVIDIA](./notebooks/analytics/gpu_accelerated_analytics.ipynb) | IT Services | Analytics | GPU Accelerated Analytics | pandas, cuDF, NVIDIA GPUs, Google Cloud, Colab Enterprise, Google Cloud Storage, pyarrow, Matplotlib, NumPy |
 | [Accelerated Data Science with Google Cloud and NVIDIA](./notebooks/regression/gpu_accelerated_regression/gpu_accelerated_regression.ipynb) | Mobility | Regression | GPU Accelerated Regression | NVIDIA CUDA-X, cuDF, cuML, XGBoost, pandas, scikit-learn, Google Cloud, Colab Enterprise, Google Cloud Storage |
+| [Data Science with PySpark and Distributed XGBoost](./notebooks/regression/distributed_pyspark_xgboost/distributed_pyspark_xgboost.ipynb) | Mobility | Regression | Distributed Pyspark Xgboost | PySpark, Apache Spark, XGBoost, Spark MLlib, Spark SQL, GCS, Pandas |
 
 
 Google Cloud products quickstarts:
