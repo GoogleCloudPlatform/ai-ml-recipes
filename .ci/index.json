@@ -246,5 +246,21 @@
         "sub_category": "GPU Accelerated Analytics",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/gpu_accelerated_analytics.ipynb",
         "created_at": "10-30-2025"
+    },
+    {
+        "title": "GPU Accelerated Data Science with NVIDIA and Google Cloud",
+        "description": "This notebook demonstrates how to significantly accelerate data science and machine learning workflows, particularly regression tasks, on large datasets using NVIDIA CUDA-X open-source libraries within Google Cloud's Colab Enterprise. It tackles the business challenge of optimizing performance for computationally intensive ML pipelines by leveraging GPUs. The data science approach involves building a machine learning pipeline to predict NYC taxi tip amounts, using models such as XGBoost, Linear Regression, and Random Forest. A key highlight is the seamless GPU acceleration achieved with **zero code changes** to existing `pandas` and `scikit-learn` code by utilizing NVIDIA's `cuDF` and `cuML` libraries. The notebook covers setting up a GPU-enabled runtime, performing data loading, cleaning, and feature engineering with GPU acceleration, and training various regression models on the GPU. It also provides a comprehensive comparison of CPU versus GPU performance and introduces profiling tools to identify bottlenecks.",
+        "category": "Regression",
+        "sub_category": "GPU Accelerated Regression",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/gpu_accelerated_regression/gpu_accelerated_regression.ipynb",
+        "created_at": "02-10-2026"
+    },
+    {
+        "title": "Data Science with PySpark and Distributed XGBoost",
+        "description": "Description: This notebook demonstrates how to parallelize and scale data science and machine learning workflows on large datasets using distributed computing with PySpark. It addresses the business challenge of efficiently building predictive models for large-scale data by constructing an end-to-end machine learning pipeline to predict NYC taxi tip amounts. The data science approach involves loading and cleaning the NYC Taxi & Limousine Commission (TLC) Trip Record Data from Google Cloud Storage, performing extensive feature engineering using PySpark DataFrames and Spark SQL, training baseline regression models with PySpark MLlib (Linear Regression and Random Forest), and finally, implementing and training a distributed XGBoost model via the PySpark Estimator API. The notebook concludes with evaluating and comparing the predictive performance of the trained models. Main technologies: PySpark, Apache Spark, XGBoost, Spark MLlib, Spark SQL, GCS, Pandas. Industry: Mobility.",
+        "category": "Regression",
+        "sub_category": "Distributed Pyspark Xgboost",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/distributed_pyspark_xgboost/distributed_pyspark_xgboost.ipynb",
+        "created_at": "02-23-2026"
     }
 ]
