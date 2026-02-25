@@ -14,7 +14,7 @@ Please refer to each notebooks folder documentation for more information:
 |-------|----------|-------|-----------|----------------|
 | [Fine-tuning Gemini for Domain Specificity](./notebooks/generative_ai/finetuning/translation_finetuning.ipynb) | Media & Entertainment | Generative AI | Fine tuning | PySpark, Iceberg. Gemini |
 | [Generate description from videos using PySpark and Gemini](./notebooks/generative_ai/content_generation/description_from_video.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
-| [Product attributes and description from image](./notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
+| [Processing images with generative AI](./notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb) | Retail | Generative AI | Content Generation | PySpark, GCS, Gemini |
 | [Customer Price Index forecast using PySpark and Monte Carlo](./notebooks/sampling/monte_carlo/customer_price_index.ipynb) | Financial | Sampling | Monte Carlo method | PySpark, GCS, NumPy |
 | [Multimodal content enrichment](./notebooks/generative_ai/content_generation/banner_advertising_understanding.ipynb) | Retail | Generative AI | Content Generation | BigFrames, GCS, Gemini, BigQuery |
 | [Toxicity classification using Gemini fine-tuned](./notebooks/generative_ai/classification/toxicity_classification.ipynb) | Gaming | Generative AI | Classification | BigFrames, Gemini, Vertex AI |

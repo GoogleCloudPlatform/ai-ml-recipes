@@ -94,5 +94,13 @@
         "sub_category": "Distributed Pyspark Xgboost",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/distributed_pyspark_xgboost/distributed_pyspark_xgboost.ipynb",
         "created_at": "02-23-2026"
+    },
+    {
+        "title": "Processing images with generative AI",
+        "description": "Description: This notebook demonstrates how to generate product attributes and descriptions from images using PySpark, Gemini, and the Vertex AI Imagen model. It processes a dataset of product images from GCS, uses Imagen for captioning and VQA to extract attributes, and then leverages Gemini to generate detailed product descriptions in parallel using Spark UDFs. Main technologies: PySpark, GCS, Gemini. Industry: Retail.",
+        "category": "Generative AI",
+        "sub_category": "Content Generation",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb",
+        "created_at": "12-14-2023"
     }
 ]
