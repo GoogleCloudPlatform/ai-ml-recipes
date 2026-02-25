@@ -192,7 +192,7 @@
         "created_at": "12-14-2023"
     },
     {
-        "title": "Product attributes and description from image",
+        "title": "Processing images with generative AI",
         "description": "Description: This notebook demonstrates how to generate product attributes and descriptions from images using PySpark, Gemini, and the Vertex AI Imagen model. It processes a dataset of product images from GCS, uses Imagen for captioning and VQA to extract attributes, and then leverages Gemini to generate detailed product descriptions in parallel using Spark UDFs. Main technologies: PySpark, GCS, Gemini. Industry: Retail.",
         "category": "Generative AI",
         "sub_category": "Content Generation",
