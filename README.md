@@ -23,7 +23,7 @@ Please refer to each notebooks folder documentation for more information:
 | [Propensity Modeling & Churn Predictions](./notebooks/analytics/purchase_predictions_spark.ipynb) | Retail | Analytics | Purchase Predictions | PySpark, Spark ML, BigQuery, Dataproc, GCS |
 | [Time Series Forecast](./notebooks/forecast/arima_timesfm_bigquery.ipynb) | Retail | Forecast | ARIMA and TimesFM | BigQuery, BigQuery ML, ARIMA, TimesFM, Python, Matplotlib |
 | [Data Engineering with GeoSpacial data](./notebooks/analytics/assessing_risks_geospatial_bqml.ipynb) | Agriculture | Analytics | Geospatial | BigQuery, Google Earth Engine, BigFrames, GeoPandas, BigQuery ML |
-| [Exploratory Data Analysis](./notebooks/analytics/investigating_poor_product_sales.ipynb) | Retail | Analytics | Sales Performance Analysis | BigQuery, Vertex AI, XGBoost, Pandas |
+| [Product Data Analysis using BigQuery](./notebooks/analytics/investigating_poor_product_sales.ipynb) | Retail | Analytics | Performance Analysis | BigQuery, Vertex AI, XGBoost, Pandas |
 | [Vector Search and embeddings](./notebooks/analytics/image_based_home_search.ipynb) | Real Estate | Analytics | Image Search | BigQuery, BigQuery ML, Gemini, GCS, SQL, Python |
 | [Customer Segmentation](./notebooks/analytics/identifying_customer_segments.ipynb) | Retail | Analytics | Identifying Customer Segments | BigQuery, BigQuery ML, Gemini, Generative AI, SQL, K-Means Clustering |
 | [Movie reviews sentiment analysis using PySpark and Gemini](./notebooks/generative_ai/sentiment_analysis/sentiment_analysis_movie_reviews.ipynb) | Media & Entertainment | Generative AI | Sentiment Analysis | PySpark, Spark Connect, Gemini, BigQuery |
@@ -37,7 +37,7 @@ Please refer to each notebooks folder documentation for more information:
 | [Accelerated Data Analytics with Google Cloud and NVIDIA](./notebooks/analytics/gpu_accelerated_analytics.ipynb) | IT Services | Analytics | GPU Accelerated Analytics | pandas, cuDF, NVIDIA GPUs, Google Cloud, Colab Enterprise, Google Cloud Storage, pyarrow, Matplotlib, NumPy |
 | [Accelerated Data Science with Google Cloud and NVIDIA](./notebooks/regression/gpu_accelerated_regression/gpu_accelerated_regression.ipynb) | Mobility | Regression | GPU Accelerated Regression | NVIDIA CUDA-X, cuDF, cuML, XGBoost, pandas, scikit-learn, Google Cloud, Colab Enterprise, Google Cloud Storage |
 | [Data Science with PySpark and Distributed XGBoost](./notebooks/regression/distributed_pyspark_xgboost/distributed_pyspark_xgboost.ipynb) | Mobility | Regression | Distributed Pyspark Xgboost | PySpark, Apache Spark, XGBoost, Spark MLlib, Spark SQL, GCS, Pandas |
-| [Customer Insights: Investigating Declining Sales with PySpark and Gemini](./notebooks/analytics/investigating_poor_product_sales_pyspark.ipynb) | Retail | Analytics | Sales Performance Analysis | PySpark, Gemini, XGBoost, Vertex AI, Spark ML, GCS, Matplotlib, Pandas |
+| [Product Data Analysis using PySpark and Gemini](./notebooks/analytics/investigating_poor_product_sales_pyspark.ipynb) | Retail | Analytics | Performance Analysis | PySpark, Gemini, XGBoost, Vertex AI, Spark ML, GCS, Matplotlib, Pandas |
 
 
 Google Cloud products quickstarts:

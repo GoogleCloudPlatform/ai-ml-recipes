@@ -16,10 +16,10 @@
         "created_at": "09-03-2025"
     },
     {
-        "title": "Exploratory Data Analysis",
+        "title": "Product Data Analysis using BigQuery",
         "description": "Description: This notebook presents a data science approach to investigate the lower-than-expected sales performance of a new smart speaker (Quantum AI Speaker 2) for an electronics retailer. It begins by validating the sales shortfall through data exploration and visualization of sales growth trajectories for the new product versus its predecessor. The core of the analysis involves leveraging BigQuery's AI.SCORE function to perform sentiment analysis on unstructured product reviews, categorizing sentiment towards specific product features (AI Assistant Pro, Audio Quality, Seamless Connectivity, Smart Home Integration). This scored data is then joined with demographic, device, and session information into a comprehensive dataset. Finally, an XGBoost classification model is built and trained to determine the most influential factors contributing to shopper non-purchase decisions. The notebook concludes by visualizing feature importance, identifying key actionable insights. Main technologies: BigQuery, Vertex AI, XGBoost, Pandas. Industry: Retail.",
         "category": "Analytics",
-        "sub_category": "Sales Performance Analysis",
+        "sub_category": "Performance Analysis",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/investigating_poor_product_sales.ipynb",
         "created_at": "09-02-2025"
     },
@@ -102,5 +102,13 @@
         "sub_category": "Content Generation",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb",
         "created_at": "12-14-2023"
+    },
+    {
+        "title": "Product Data Analysis using PySpark and Gemini",
+        "description": "Description: This notebook demonstrates a comprehensive data science approach to investigate declining product sales using Apache Spark (PySpark) and Vertex AI Gemini. It addresses the business challenge of understanding the root causes behind the lower-than-expected sales of a product, such as the 'Quantum AI Speaker 2'. The notebook validates the sales shortfall using Spark DataFrames and Matplotlib, then analyzes customer sentiment at scale by leveraging Gemini (via Spark UDFs) to score product reviews for specific features. Finally, it predicts customer conversion factors using a distributed XGBoost model for Spark, integrating session data, user demographics, and sentiment scores. This workflow combines distributed data processing with AI-powered sentiment analysis and machine learning to uncover actionable business intelligence for faster, more intelligent decisions. Main technologies: PySpark, Gemini, XGBoost, Vertex AI, Spark ML, GCS, Matplotlib, Pandas. Industry: Retail.",
+        "category": "Analytics",
+        "sub_category": "Performance Analysis",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/investigating_poor_product_sales_pyspark.ipynb",
+        "created_at": "02-26-2026"
     }
 ]
