@@ -262,5 +262,13 @@
         "sub_category": "Distributed Pyspark Xgboost",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/distributed_pyspark_xgboost/distributed_pyspark_xgboost.ipynb",
         "created_at": "02-23-2026"
+    },
+    {
+        "title": "Customer Insights: Investigating Declining Sales with PySpark and Gemini",
+        "description": "Description: This notebook demonstrates a comprehensive data science approach to investigate declining product sales using Apache Spark (PySpark) and Vertex AI Gemini. It addresses the business challenge of understanding the root causes behind the lower-than-expected sales of a product, such as the 'Quantum AI Speaker 2'. The notebook validates the sales shortfall using Spark DataFrames and Matplotlib, then analyzes customer sentiment at scale by leveraging Gemini (via Spark UDFs) to score product reviews for specific features. Finally, it predicts customer conversion factors using a distributed XGBoost model for Spark, integrating session data, user demographics, and sentiment scores. This workflow combines distributed data processing with AI-powered sentiment analysis and machine learning to uncover actionable business intelligence for faster, more intelligent decisions. Main technologies: PySpark, Gemini, XGBoost, Vertex AI, Spark ML, GCS, Matplotlib, Pandas. Industry: Retail.",
+        "category": "Analytics",
+        "sub_category": "Sales Performance Analysis",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/investigating_poor_product_sales_pyspark.ipynb",
+        "created_at": "02-26-2026"
     }
 ]
