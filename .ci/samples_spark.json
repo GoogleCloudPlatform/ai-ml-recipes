@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Propensity Modeling & Churn Predictions",
+        "description": "Description: This notebook demonstrates how to build a logistic regression classification model using PySpark to predict whether a user will make a purchase. It leverages PySpark within a Colab Enterprise notebook in BigQuery Studio, utilizing BigQuery data from a hypothetical e-commerce retailer (TheLook). The workflow includes data loading from BigQuery, exploration, feature engineering (deriving features and a binary label from user and order data), model training using Spark ML's Logistic Regression, and model evaluation with AUC-PR, Precision-Recall curve, and a confusion matrix. The results are then written back to BigQuery. Main technologies: PySpark, Spark ML, BigQuery, Dataproc, GCS. Industry: Retail.",
+        "category": "Analytics",
+        "sub_category": "Purchase Predictions",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/purchase_predictions_spark.ipynb",
+        "created_at": "08-22-2025"
+    },
+    {
+        "title": "Fine-tuning Gemini for Domain Specificity",
+        "description": "Description: This notebook demonstrates how to fine-tune a Gemini model for translation tasks. It covers the entire workflow, from loading a multilingual dataset from GCS and saving it in Iceberg format, to launching a supervised fine-tuning job in Vertex AI and registering the fine-tuned model in the Vertex AI Model Registry. Main technologies: PySpark, Iceberg. Gemini. Industry: Media & Entertainment.",
+        "category": "Generative AI",
+        "sub_category": "Fine tuning",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/finetuning/translation_finetuning.ipynb",
+        "created_at": "04-17-2025"
+    },
+    {
+        "title": "Generate description from videos using PySpark and Gemini",
+        "description": "Description: This notebook shows how to generate descriptions for a collection of videos using PySpark and Gemini. It processes video files from a GCS bucket, uses Gemini to generate a descriptive summary for each video, and demonstrates a scalable approach to video content analysis and understanding. Main technologies: PySpark, GCS, Gemini. Industry: Retail.",
+        "category": "Generative AI",
+        "sub_category": "Content Generation",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/description_from_video.ipynb",
+        "created_at": "01-16-2024"
+    },
+    {
+        "title": "Data Science with PySpark and Distributed XGBoost",
+        "description": "Description: This notebook demonstrates how to parallelize and scale data science and machine learning workflows on large datasets using distributed computing with PySpark. It addresses the business challenge of efficiently building predictive models for large-scale data by constructing an end-to-end machine learning pipeline to predict NYC taxi tip amounts. The data science approach involves loading and cleaning the NYC Taxi & Limousine Commission (TLC) Trip Record Data from Google Cloud Storage, performing extensive feature engineering using PySpark DataFrames and Spark SQL, training baseline regression models with PySpark MLlib (Linear Regression and Random Forest), and finally, implementing and training a distributed XGBoost model via the PySpark Estimator API. The notebook concludes with evaluating and comparing the predictive performance of the trained models. Main technologies: PySpark, Apache Spark, XGBoost, Spark MLlib, Spark SQL, GCS, Pandas. Industry: Mobility.",
+        "category": "Regression",
+        "sub_category": "Distributed Pyspark Xgboost",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/regression/distributed_pyspark_xgboost/distributed_pyspark_xgboost.ipynb",
+        "created_at": "02-23-2026"
+    },
+    {
+        "title": "Processing images with generative AI",
+        "description": "Description: This notebook demonstrates how to generate product attributes and descriptions from images using PySpark, Gemini, and the Vertex AI Imagen model. It processes a dataset of product images from GCS, uses Imagen for captioning and VQA to extract attributes, and then leverages Gemini to generate detailed product descriptions in parallel using Spark UDFs. Main technologies: PySpark, GCS, Gemini. Industry: Retail.",
+        "category": "Generative AI",
+        "sub_category": "Content Generation",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/generative_ai/content_generation/product_attributes_from_image.ipynb",
+        "created_at": "12-14-2023"
+    },
+    {
+        "title": "Product Data Analysis using PySpark and Gemini",
+        "description": "Description: This notebook demonstrates a comprehensive data science approach to investigate declining product sales using Apache Spark (PySpark) and Vertex AI Gemini. It addresses the business challenge of understanding the root causes behind the lower-than-expected sales of a product, such as the 'Quantum AI Speaker 2'. The notebook validates the sales shortfall using Spark DataFrames and Matplotlib, then analyzes customer sentiment at scale by leveraging Gemini (via Spark UDFs) to score product reviews for specific features. Finally, it predicts customer conversion factors using a distributed XGBoost model for Spark, integrating session data, user demographics, and sentiment scores. This workflow combines distributed data processing with AI-powered sentiment analysis and machine learning to uncover actionable business intelligence for faster, more intelligent decisions. Main technologies: PySpark, Gemini, XGBoost, Vertex AI, Spark ML, GCS, Matplotlib, Pandas. Industry: Retail.",
+        "category": "Analytics",
+        "sub_category": "Performance Analysis",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/analytics/investigating_poor_product_sales_pyspark.ipynb",
+        "created_at": "02-26-2026"
+    }
+]

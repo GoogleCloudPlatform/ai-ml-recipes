@@ -68,7 +68,7 @@ This is the easiest way to ensure your contribution is compliant and well-docume
 
 When you create a pull request, our GitHub Actions workflow will automatically perform the following steps:
 
-1.  **Validation**: It first runs the `.ci/scripts/validate_entries.py` script to validate `index.json` and `samples.json`.
+1.  **Validation**: It first runs the `.ci/scripts/validate_entries.py` script to validate `index.json` and `samples_*.json`.
 2.  **AI-Powered Autofix (If Validation Fails)**: If the validation fails (e.g., you forgot to run the scripts locally), the `autofix-docs` job will be triggered. This job:
     -   Runs the **enhancement script** to standardize your notebook.
     -   Runs the **documentation script** to generate and add the required metadata to `index.json` and `README.md`.
