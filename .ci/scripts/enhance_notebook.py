@@ -58,25 +58,6 @@ def get_changed_notebooks():
         print("Error: git command not found. Is git installed and in your PATH?")
         return []
 
-def generate_platform_links_html(notebook_path):
-    """Generates the HTML table for platform links."""
-    base_url = "https://github.com/GoogleCloudPlatform/ai-ml-recipes/blob/main/"
-    raw_base_url = "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/"
-    
-    colab_url = f"https://colab.research.google.com/github/GoogleCloudPlatform/ai-ml-recipes/blob/main/{notebook_path}"
-    github_url = f"{base_url}{notebook_path}"
-    vertex_url = f"https://console.cloud.google.com/vertex-ai/workbench/deploy-notebook?download_url={raw_base_url}{notebook_path}"
-    bq_studio_url = f"https://console.cloud.google.com/bigquery/import?url={github_url}"
-    colab_enterprise_url = f"https://console.cloud.google.com/vertex-ai/colab/import/https:%2F%2Fraw.githubusercontent.com%2FGoogleCloudPlatform%2Fai-ml-recipes%2Fmain%2F{notebook_path}"
-
-    return f"""<table align="left">
-  <td><a href="{colab_url}"><img src="https://avatars.githubusercontent.com/u/33467679?s=200&v=4" width="32px" alt="Colab logo"> Run in Colab</a></td>
-  <td><a href="{github_url}"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" width="32px" alt="GitHub logo"> View on GitHub</a></td>
-  <td><a href="{vertex_url}"><img src="https://lh3.googleusercontent.com/UiNooY4LUgW_oTvpsNhPpQzsstV5W8F7rYgxgGBD85cWJoLmrOzhVs_ksK_vgx40SHs7jCqkTkCk=e14-rj-sc0xffffff-h130-w32" alt="Vertex AI logo"> Open in Vertex AI Workbench</a></td>
-  <td><a href="{bq_studio_url}"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW1gvOovVlbZAIZylUtf5Iu8-693qS1w5NJw&s" alt="BQ logo" width="35"> Open in BQ Studio</a></td>
-  <td><a href="{colab_enterprise_url}"><img width="32px" src="https://lh3.googleusercontent.com/JmcxdQi-qOpctIvWKgPtrzZdJJK-J3sWE1RsfjZNwshCFgE_9fULcNpuXYTilIR2hjwN" alt="Google Cloud Colab Enterprise logo"> Open in Colab Enterprise</a></td>
-</table>"""
-
 def enhance_notebook(notebook_path):
     """Reads, enhances, and overwrites a notebook file."""
     print(f"--- Starting enhancement for {notebook_path} ---")
@@ -89,8 +70,6 @@ def enhance_notebook(notebook_path):
         return
 
     original_content_str = json.dumps(original_notebook_json, indent=2)
-    standard_links_html = generate_platform_links_html(notebook_path)
-    print("  - Generated dynamic platform links HTML.")
 
     prompt = f"""
     Analyze the following Jupyter notebook content. Your task is to ensure it meets our repository's standards.
@@ -98,11 +77,7 @@ def enhance_notebook(notebook_path):
         ```python
         {APACHE_LICENSE_TEXT}
         ```
-    2.  **Standard Links**: Check if a markdown cell containing the standard platform links table exists, and it correctly references the notebook. If not, only in this situation, add the following HTML block as a markdown cell after the license cell.
-        ```markdown
-        {standard_links_html}
-        ```
-    3.  **Documentation Quality**: Review the entire notebook. Ensure that every code cell is preceded by a markdown cell that clearly explains what the code does.
+    2.  **Documentation Quality**: Review the entire notebook. Ensure that every code cell is preceded by a markdown cell that clearly explains what the code does.
     If you find code cells without proper explanation, generate and insert a concise, well-written markdown cell before them.
     
     If not, and only then, add documentation markdown cells:
