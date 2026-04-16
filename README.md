@@ -5,7 +5,7 @@ AI/ML Recipes for Vertex AI, Serverless Spark and BigQuery open-source project i
 We are release a set of machine learning focused notebooks, for you to adapt, extend, and use to solve your use cases using your own data.  
 You can easily clone the repo and start executing the notebooks right way using your Dataproc cluster or Dataproc Serverless Runtime for the PySpark notebooks, and any environment for the [BigQuery Dataframes](https://cloud.google.com/python/docs/reference/bigframes/latest) (Bigframes) notebooks.
 
-[![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor)
+[![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.svg)](http://shell.cloud.google.com/?cloudshell_git_repo=https://github.com/GoogleCloudPlatform/ai-ml-recipes.git)
 
 ## Notebooks
 Please refer to each notebooks folder documentation for more information:
