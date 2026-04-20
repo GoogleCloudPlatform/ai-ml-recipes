@@ -22,6 +22,7 @@ Please refer to each notebooks folder documentation for more information:
 | [Asset Price Forecast using Iceberg and Prophet](./notebooks/forecast/asset_price_forecast.ipynb) | Finance | Forecast | Prophet | PySpark, Dataproc Serverless, Apache Iceberg, Prophet, BigQuery, GCS |
 | [Propensity Modeling & Churn Predictions](./notebooks/analytics/purchase_predictions_spark.ipynb) | Retail | Analytics | Purchase Predictions | PySpark, Spark ML, BigQuery, Dataproc, GCS |
 | [Time Series Forecast](./notebooks/forecast/arima_timesfm_bigquery.ipynb) | Retail | Forecast | ARIMA and TimesFM | BigQuery, BigQuery ML, ARIMA, TimesFM, Python, Matplotlib |
+| [Time Series Forecast (Antigravity)](./notebooks/forecast/arima_timesfm_bigquery_ag.ipynb) | Retail | Forecast | ARIMA and TimesFM | BigQuery, BigQuery ML, ARIMA, TimesFM, Python, Matplotlib |
 | [Data Engineering with GeoSpacial data](./notebooks/analytics/assessing_risks_geospatial_bqml.ipynb) | Agriculture | Analytics | Geospatial | BigQuery, Google Earth Engine, BigFrames, GeoPandas, BigQuery ML |
 | [Product Data Analysis using BigQuery](./notebooks/analytics/investigating_poor_product_sales.ipynb) | Retail | Analytics | Performance Analysis | BigQuery, Vertex AI, XGBoost, Pandas |
 | [Vector Search and embeddings](./notebooks/analytics/image_based_home_search.ipynb) | Real Estate | Analytics | Image Search | BigQuery, BigQuery ML, Gemini, GCS, SQL, Python |
