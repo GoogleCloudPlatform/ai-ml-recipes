@@ -59,6 +59,12 @@ The notebooks read datasets from our public GCS bucket containing several public
 In this [doc](./public_datasets/public_datasets.ipynb) you can see the list of available datasets, which are located in [gs://dataproc-metastore-public-binaries](https://console.cloud.google.com/storage/browser/dataproc-metastore-public-binaries).  
 The documentation above has details about the datasets, and links to their original pages, containing their LICENSES, etc.
 
+### Antigravity <img src="docs/images/google_data_cloud/antigravity-color.svg" height="24" style="vertical-align: middle;"/> Data Cloud extension
+
+These notebooks (Spark and BigQuery) are available from your Antigravity when using the [Google Cloud Data Cloud Extension](https://docs.cloud.google.com/data-cloud-extension/antigravity/install):
+
+<img src="docs/images/google_data_cloud/data-cloud-extension.png" alt="drawing" width="1400"/>
+
 ### Cloud Code VSCode extension
 
 These notebooks are available from your VSCode IDE when using the [Cloud Code extension](https://cloud.google.com/code/docs/vscode). You can go to **Notebook Templates** and download each template to your environment:
