@@ -1,0 +1,30 @@
+name: Validate Orchestration & dbt Pipelines (dev / staging / prod)
+
+on:
+  pull_request:
+    branches: [develop, staging, main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        environment: [dev, staging, prod]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: "${{ secrets.GCP_SA_KEY }}"
+      - uses: google-github-actions/setup-gcloud@v2
+      - uses: astral-sh/setup-uv@v7
+
+      - name: Validate dbt Models & Tests (${{ matrix.environment }})
+        run: |
+          uvx --from dbt-core --with dbt-spark dbt parse --profiles-dir . --target ${{ matrix.environment }}
+
+      - name: Validate Orchestration Pipeline (${{ matrix.environment }})
+        run: |
+          gcloud beta orchestration-pipelines validate \
+            --pipeline-paths=dev-pipeline.yaml \
+            --environment=${{ matrix.environment }} \
+            --quiet

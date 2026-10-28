@@ -1,74 +1,129 @@
 -- ============================================================================
--- DEMO 51: DBT PIPELINES ON MANAGED SPARK
+-- DEMO 51: THREE-TIER MEDALLION PIPELINES ON MANAGED SERVERLESS SPARK
 -- ============================================================================
 
-
--- Step 0: Prepare the production orders & raw Black Friday Iceberg tables
-CREATE OR REPLACE TEMPORARY VIEW raw_orders
-USING bigquery
-OPTIONS (
-  table "bigquery-public-data.thelook_ecommerce.orders"
-);
-
-USE lakehouse_samples;
-
+-- ============================================================================
+-- 1. BRONZE LAYER: Raw Ingestion Tables (Untrusted Source Material)
+-- ============================================================================
 CREATE NAMESPACE IF NOT EXISTS ecommerce;
 
-CREATE TABLE IF NOT EXISTS ecommerce.orion_orders
-USING iceberg
-AS SELECT * FROM raw_orders WHERE created_at < '2023-11-01';
+CREATE OR REPLACE TABLE ecommerce.bronze_orders USING iceberg AS 
+SELECT * FROM `bigquery-public-data.thelook_ecommerce.orders`;
 
-CREATE TABLE IF NOT EXISTS ecommerce.raw_blackfriday_orders
-USING iceberg
-AS SELECT * FROM raw_orders WHERE created_at >= '2023-11-01' AND created_at < '2023-12-01';
+CREATE OR REPLACE TABLE ecommerce.bronze_order_items USING iceberg AS 
+SELECT * FROM `bigquery-public-data.thelook_ecommerce.order_items`;
 
--- Step 1: Staging dbt model — standardize raw Black Friday promotional orders
--- File: models/staging/stg_blackfriday_orders.sql (materialized='view')
+CREATE OR REPLACE TABLE ecommerce.bronze_products USING iceberg AS 
+SELECT * FROM `bigquery-public-data.thelook_ecommerce.products`;
+
+
+-- ============================================================================
+-- 2. SILVER LAYER: Cleaned & Standardized Views
+-- ============================================================================
+
+-- File: models/silver/sil_products.sql (materialized='view')
 SELECT
-    CAST(order_id AS INT)           AS order_id,
-    TRIM(username)                  AS username,
-    TRIM(status)                    AS status,
-    CAST(order_quantity AS INT)     AS order_quantity,
-    CAST(created_at AS TIMESTAMP)   AS created_at
-FROM ecommerce.raw_blackfriday_orders
-WHERE created_at >= '2023-11-01'
-  AND created_at <  '2023-12-01';
+    id                              AS product_id,
+    TRIM(name)                      AS product_name,
+    TRIM(category)                  AS raw_category,
+    ROUND(retail_price, 2)          AS retail_price,
+    ROUND(cost, 2)                  AS unit_cost,
+    TRIM(brand)                     AS brand
+FROM ecommerce.bronze_products;
 
--- Step 2: Incremental dbt model — merge validated records into main Iceberg table
--- File: models/marts/orion_orders.sql (materialized='incremental', incremental_strategy='merge', unique_key='order_id')
-SELECT
-    order_id,
-    username,
-    status,
-    order_quantity,
-    created_at
-FROM ecommerce.stg_blackfriday_orders
-WHERE created_at > (SELECT MAX(created_at) FROM ecommerce.orion_orders);
 
--- Step 3: Automated dbt data quality audit gates
--- File: tests/assert_valid_order_quantity.sql (+ unique, not_null, accepted_values in models/schema.yml)
+-- File: models/silver/sil_orders.sql (materialized='view')
 SELECT
     order_id,
-    username,
-    order_quantity
-FROM ecommerce.stg_blackfriday_orders
-WHERE order_quantity <= 0
-   OR order_quantity IS NULL;
+    user_id,
+    TRIM(status)                    AS order_status,
+    gender                          AS customer_gender,
+    CAST(created_at AS TIMESTAMP)   AS order_timestamp,
+    CAST(shipped_at AS TIMESTAMP)   AS shipping_timestamp,
+    num_of_item                     AS items_count
+FROM ecommerce.bronze_orders
+WHERE status != 'Test_Account'; -- Filter out internal sandbox test accounts
 
--- Step 4: Execute staging model, quality audits, and Iceberg MERGE in a single command
--- Terminal: dbt build --select +orion_orders
-MERGE INTO ecommerce.orion_orders AS target
-USING ecommerce.stg_blackfriday_orders AS source
-ON target.order_id = source.order_id
-WHEN MATCHED THEN UPDATE SET *
-WHEN NOT MATCHED THEN INSERT *;
 
--- Step 5: Confirm all Black Friday promotional orders are live in production
--- File: verify_orders.sql
-USE lakehouse_samples;
+-- ============================================================================
+-- 3. GOLD LAYER: Business-Level Dimensions & Incremental Facts
+-- ============================================================================
 
-SELECT 
-    'production_orion_orders' AS target_table,
-    COUNT(*) AS total_production_orders,
-    COUNT_IF(created_at >= '2023-11-01') AS merged_blackfriday_orders
-FROM ecommerce.orion_orders;
+-- File: models/gold/gold_dim_products.sql (materialized='table')
+-- Maps e-commerce categories directly to Orionis DIY CubeSat Subsystems
+SELECT
+    product_id,
+    product_name,
+    brand,
+    retail_price,
+    unit_cost,
+    CASE 
+        WHEN raw_category IN ('Active', 'Outerwear', 'Sweaters') THEN 'EPS (Electrical Power Systems)'
+        WHEN raw_category IN ('Jeans', 'Pants', 'Shorts') THEN 'ADCS (Attitude Determination & Control)'
+        WHEN raw_category IN ('Accessories', 'Swim') THEN 'OBDH (On-Board Data Handling)'
+        WHEN raw_category IN ('Underwear', 'Sleepwear') THEN 'Structure & Thermal'
+        ELSE 'Payload & Scientific Instrumentation'
+    END AS cubesat_subsystem
+FROM {{ ref('sil_products') }};
+
+
+-- File: models/gold/gold_fct_orders.sql (materialized='incremental', unique_key='order_item_id')
+-- Computes key financial performance metrics per order item incrementally
+SELECT
+    oi.id                           AS order_item_id,
+    oi.order_id                     AS order_id,
+    oi.user_id                      AS customer_id,
+    o.order_timestamp,
+    p.cubesat_subsystem,
+    ROUND(oi.sale_price, 2)         AS gross_revenue,
+    p.unit_cost,
+    ROUND(oi.sale_price - p.unit_cost, 2) AS net_profit_margin
+FROM ecommerce.bronze_order_items oi
+JOIN {{ ref('sil_orders') }} o ON oi.order_id = o.order_id
+JOIN {{ ref('gold_dim_products') }} p ON oi.product_id = p.product_id
+
+{% if is_incremental() %}
+  -- Only process new orders loaded since the last pipeline run
+  WHERE o.order_timestamp > (SELECT MAX(order_timestamp) FROM {{ this }})
+{% endif %};
+
+
+-- ============================================================================
+-- 4. AUTOMATED DATA QUALITY AUDITS (Gold Quality Gatekeeper)
+-- ============================================================================
+
+-- File: tests/assert_positive_profit_margin.sql
+-- Ensure unit economics are sound and we aren't selling parts at a loss
+SELECT
+    order_item_id,
+    gross_revenue,
+    unit_cost,
+    net_profit_margin
+FROM {{ ref('gold_fct_orders') }}
+WHERE net_profit_margin < 0.00;
+
+
+-- ============================================================================
+-- 5. RUNTIME COMMAND & BUSINESS INTELLIGENCE VERIFICATION
+-- ============================================================================
+
+-- Terminal command to execute the pipeline:
+-- dbt build
+
+-- Behind the scenes, Managed Serverless Spark executes this high-speed Iceberg MERGE:
+-- MERGE INTO ecommerce.gold_fct_orders AS target
+-- USING temp_incremental_gold_fct_orders AS source
+-- ON target.order_item_id = source.order_item_id
+-- WHEN MATCHED THEN UPDATE SET *
+-- WHEN NOT MATCHED THEN INSERT *;
+
+
+-- Verify results & fetch business metrics:
+SELECT
+    cubesat_subsystem,
+    COUNT(DISTINCT order_id) AS total_orders,
+    ROUND(SUM(gross_revenue), 2) AS total_revenue_usd,
+    ROUND(AVG(net_profit_margin), 2) AS avg_item_margin_usd
+FROM ecommerce.gold_fct_orders
+GROUP BY cubesat_subsystem
+ORDER BY total_revenue_usd DESC;

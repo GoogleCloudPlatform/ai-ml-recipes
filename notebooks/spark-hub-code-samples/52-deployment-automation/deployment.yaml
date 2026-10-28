@@ -1,0 +1,48 @@
+environments:
+  dev:
+    project: "devx-customer-demos"
+    region: "us-central1"
+    composer_environment: "dev-scheduler"
+    artifact_storage:
+      bucket: "devx-demos"
+      path_prefix: "pipelines/dev"
+    variables:
+      env_name: "dev"
+      dbt_target: "dev"
+      iceberg_schema: "ecommerce_dev"
+      service_account: "314898483753-compute@developer.gserviceaccount.com"
+      network_uri: "projects/devx-customer-demos/global/networks/default"
+    pipelines:
+      - source: "dev-pipeline.yaml"
+
+  staging:
+    project: "devx-customer-demos"
+    region: "us-central1"
+    composer_environment: "dev-scheduler"
+    artifact_storage:
+      bucket: "devx-demos"
+      path_prefix: "pipelines/staging"
+    variables:
+      env_name: "staging"
+      dbt_target: "staging"
+      iceberg_schema: "ecommerce_staging"
+      service_account: "314898483753-compute@developer.gserviceaccount.com"
+      network_uri: "projects/devx-customer-demos/global/networks/default"
+    pipelines:
+      - source: "dev-pipeline.yaml"
+
+  prod:
+    project: "devx-customer-demos"
+    region: "us-central1"
+    composer_environment: "dev-scheduler"
+    artifact_storage:
+      bucket: "devx-demos"
+      path_prefix: "pipelines/prod"
+    variables:
+      env_name: "prod"
+      dbt_target: "prod"
+      iceberg_schema: "ecommerce"
+      service_account: "314898483753-compute@developer.gserviceaccount.com"
+      network_uri: "projects/devx-customer-demos/global/networks/default"
+    pipelines:
+      - source: "dev-pipeline.yaml"

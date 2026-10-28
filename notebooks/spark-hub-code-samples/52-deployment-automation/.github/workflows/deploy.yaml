@@ -1,0 +1,50 @@
+name: Deploy Orchestration & dbt Pipeline (dev -> staging -> prod)
+
+on:
+  push:
+    branches: [develop, staging, main]
+
+jobs:
+  deploy-dev:
+    name: Deploy Bundle to Dev
+    if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: "${{ secrets.GCP_SA_KEY }}"
+      - uses: google-github-actions/setup-gcloud@v2
+      - name: Deploy Bundle to Dev
+        run: gcloud beta orchestration-pipelines deploy --environment=dev --quiet
+
+  deploy-staging:
+    name: Promote Bundle to Staging
+    needs: deploy-dev
+    if: github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: "${{ secrets.GCP_SA_KEY }}"
+      - uses: google-github-actions/setup-gcloud@v2
+      - name: Deploy Bundle to Staging
+        run: gcloud beta orchestration-pipelines deploy --environment=staging --quiet
+
+  deploy-prod:
+    name: Promote Bundle to Prod
+    needs: deploy-staging
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: "${{ secrets.GCP_SA_KEY }}"
+      - uses: google-github-actions/setup-gcloud@v2
+      - name: Deploy Bundle to Prod
+        run: gcloud beta orchestration-pipelines deploy --environment=prod --quiet
