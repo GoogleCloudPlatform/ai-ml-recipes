@@ -6,5 +6,13 @@
         "sub_category": "Prophet",
         "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/forecast/asset_price_forecast.ipynb",
         "created_at": "08-18-2025"
+    },
+    {
+        "title": "Managed Spark session starter notebook",
+        "description": "Description: Starter notebook for the \"New notebook\" action on the Managed Service for Apache Spark overview page in the Google Cloud console. It installs the Spark Connect client and creates a ManagedSparkSession against a Serverless Spark Runtime Profile, ready for PySpark code. Main technologies: PySpark, Spark Connect, Managed Service for Apache Spark (Serverless), Cloud Shell Editor. Industry: Cross-industry.",
+        "category": "Quickstart",
+        "sub_category": "Spark Hub Code Samples",
+        "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/ai-ml-recipes/main/notebooks/spark-hub-code-samples/new-notebook/demo.ipynb",
+        "created_at": "10-28-2026"
     }
 ]

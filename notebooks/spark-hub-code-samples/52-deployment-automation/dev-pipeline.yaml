@@ -1,0 +1,67 @@
+pipelineId: orionis-cubesat-medallion-pipeline
+description: "Orionis Industries Three-Tier Medallion dbt Pipeline (Bronze -> Silver -> Gold Iceberg tables on Managed Serverless Spark)"
+runner: "airflow"
+owner: "orionis-analytics-eng"
+modelVersion: "1.0"
+tags:
+  - "job:datacloud:serverless-spark"
+
+defaults:
+  projectId: "{{ project }}"
+  location: "{{ region }}"
+  executionConfig:
+    retries: 1
+
+triggers:
+  - schedule:
+      interval: "0 2 * * *"  # Runs automatically every night at 2:00 AM UTC
+      startTime: "2026-10-27T00:00:00"
+      endTime: "2027-10-27T00:00:00"
+      catchup: false
+      timezone: "UTC"
+
+actions:
+  # Step 1: Refresh Bronze Iceberg landing tables on Managed Serverless Spark
+  - sql:
+      name: ingest_bronze_ecommerce_tables
+      engine:
+        dataprocServerless:
+          location: "{{ region }}"
+          resourceProfile:
+            inline:
+              runtime_config:
+                version: "2.2"
+                properties:
+                  spark.sql.defaultCatalog: "lakehouse_samples"
+      query:
+        path: "setup_bronze_layer.sql"
+
+  # Step 2: Run modular Silver & Gold dbt models + 21 automated data quality tests
+  - pipeline:
+      name: build_orionis_medallion_dbt_models
+      dependsOn:
+        - ingest_bronze_ecommerce_tables
+      framework:
+        dbt:
+          airflowWorker:
+            projectDirectoryPath: "."
+      params:
+        dbt_target: "{{ dbt_target }}"
+        iceberg_schema: "{{ iceberg_schema }}"
+
+  # Step 3: Verify Gold CubeSat subsystem margins post-merge
+  - sql:
+      name: verify_gold_cubesat_metrics
+      dependsOn:
+        - build_orionis_medallion_dbt_models
+      engine:
+        dataprocServerless:
+          location: "{{ region }}"
+          resourceProfile:
+            inline:
+              runtime_config:
+                version: "2.2"
+                properties:
+                  spark.sql.defaultCatalog: "lakehouse_samples"
+      query:
+        path: "verify_metrics.sql"
