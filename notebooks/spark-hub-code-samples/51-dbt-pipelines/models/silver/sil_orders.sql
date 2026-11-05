@@ -12,3 +12,4 @@ SELECT
     num_of_item                     AS items_count
 FROM ecommerce.bronze_orders
 WHERE status != 'Test_Account' -- Filter out internal sandbox test accounts
+

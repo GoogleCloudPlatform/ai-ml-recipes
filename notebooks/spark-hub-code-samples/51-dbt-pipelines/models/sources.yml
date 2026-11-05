@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: ecommerce
+    schema: ecommerce
+    description: "Bronze Layer: Untrusted raw operational e-commerce tables ingested into Iceberg."
+    tables:
+      - name: bronze_orders
+        description: "Raw customer orders ingested from operational e-commerce system."
+      - name: bronze_order_items
+        description: "Raw line-item transaction records for customer orders."
+      - name: bronze_products
+        description: "Raw product catalog with retail prices and unit costs."
+
