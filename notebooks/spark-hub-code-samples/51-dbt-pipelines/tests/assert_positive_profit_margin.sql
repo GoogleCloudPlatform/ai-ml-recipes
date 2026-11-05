@@ -6,3 +6,4 @@ SELECT
     net_profit_margin
 FROM {{ ref('gold_fct_orders') }}
 WHERE net_profit_margin < 0.00
+

@@ -10,3 +10,4 @@ SELECT
     ROUND(cost, 2)                  AS unit_cost,
     TRIM(brand)                     AS brand
 FROM ecommerce.bronze_products
+

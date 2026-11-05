@@ -23,3 +23,4 @@ JOIN {{ ref('gold_dim_products') }} p ON oi.product_id = p.product_id
   -- Only process new orders loaded since the last pipeline run
   WHERE o.order_timestamp > (SELECT MAX(order_timestamp) FROM {{ this }})
 {% endif %}
+

@@ -1,0 +1,13 @@
+# Connects dbt to Google Cloud Managed Serverless Spark via Spark Connect
+orionis_lakehouse:
+  target: prod
+  outputs:
+    prod:
+      type: spark
+      method: session
+      host: us-central1-dataproc.googleapis.com
+      schema: ecommerce
+      threads: 8
+      server_side_parameters:
+        spark.sql.defaultCatalog: lakehouse_samples
+        spark.sql.extensions: org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions

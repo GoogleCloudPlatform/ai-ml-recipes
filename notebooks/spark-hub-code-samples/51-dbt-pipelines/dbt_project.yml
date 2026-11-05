@@ -1,0 +1,17 @@
+name: 'orionis_lakehouse'
+version: '1.0.0'
+config-version: 2
+
+profile: 'orionis_lakehouse'
+
+model-paths: ["models"]
+test-paths: ["tests"]
+
+models:
+  orionis_lakehouse:
+    +file_format: iceberg
+    silver:
+      +materialized: view
+    gold:
+      +materialized: table
+

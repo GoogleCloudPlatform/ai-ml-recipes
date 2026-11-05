@@ -1,0 +1,87 @@
+version: 2
+
+models:
+  - name: sil_products
+    description: "Silver Layer: Cleaned and standardized product catalog view."
+    columns:
+      - name: product_id
+        description: "Unique identifier for each product"
+        tests:
+          - unique
+          - not_null
+      - name: product_name
+        description: "Trimmed product name"
+        tests:
+          - not_null
+      - name: raw_category
+        description: "Trimmed raw e-commerce category"
+        tests:
+          - not_null
+
+  - name: sil_orders
+    description: "Silver Layer: Cleaned and standardized orders view with sandbox test accounts filtered out."
+    columns:
+      - name: order_id
+        description: "Unique identifier for each order"
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        description: "Customer identifier"
+        tests:
+          - not_null
+      - name: order_status
+        description: "Standardized order fulfillment status"
+        tests:
+          - not_null
+      - name: order_timestamp
+        description: "Standardized order creation timestamp"
+        tests:
+          - not_null
+
+  - name: gold_dim_products
+    description: "Gold Layer: Product dimension mapping raw categories into Orionis DIY CubeSat subsystems."
+    columns:
+      - name: product_id
+        description: "Primary key for CubeSat component products"
+        tests:
+          - unique
+          - not_null
+      - name: cubesat_subsystem
+        description: "Target Orionis DIY CubeSat subsystem classification"
+        tests:
+          - not_null
+
+  - name: gold_fct_orders
+    description: "Gold Layer: Incremental fact table calculating gross revenue, unit costs, and profit margins per order item."
+    columns:
+      - name: order_item_id
+        description: "Primary key for order line items"
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        description: "Foreign key to sil_orders"
+        tests:
+          - not_null
+      - name: customer_id
+        description: "Customer identifier"
+        tests:
+          - not_null
+      - name: cubesat_subsystem
+        description: "Orionis CubeSat subsystem"
+        tests:
+          - not_null
+      - name: gross_revenue
+        description: "Gross sale revenue in USD"
+        tests:
+          - not_null
+      - name: unit_cost
+        description: "Component unit cost in USD"
+        tests:
+          - not_null
+      - name: net_profit_margin
+        description: "Calculated net profit margin per item (gross_revenue - unit_cost)"
+        tests:
+          - not_null
+

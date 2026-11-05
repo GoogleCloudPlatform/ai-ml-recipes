@@ -10,7 +10,7 @@ SELECT
     brand,
     retail_price,
     unit_cost,
-    CASE
+    CASE 
         WHEN raw_category IN ('Active', 'Outerwear', 'Sweaters') THEN 'EPS (Electrical Power Systems)'
         WHEN raw_category IN ('Jeans', 'Pants', 'Shorts') THEN 'ADCS (Attitude Determination & Control)'
         WHEN raw_category IN ('Accessories', 'Swim') THEN 'OBDH (On-Board Data Handling)'
@@ -18,3 +18,4 @@ SELECT
         ELSE 'Payload & Scientific Instrumentation'
     END AS cubesat_subsystem
 FROM {{ ref('sil_products') }}
+
