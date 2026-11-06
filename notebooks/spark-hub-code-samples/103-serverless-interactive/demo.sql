@@ -2,9 +2,7 @@
 {
   "version": 1,
   "service": "SPARK",
-  "connectionInfo": {
-    "sessionTemplate": "interactive-runtime"
-  },
+  "connectionInfo": {},
   "dialect": "ANSI_SQL"
 }
 */

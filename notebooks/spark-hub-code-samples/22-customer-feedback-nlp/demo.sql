@@ -1,3 +1,12 @@
+/* @datacloud.settings
+{
+  "version": 1,
+  "service": "SPARK",
+  "connectionInfo": {},
+  "dialect": "ANSI_SQL"
+}
+*/
+
 -- ============================================================================
 -- DEMO 22: REAL-TIME NLP & SENTIMENT TRIAGE PIPELINE (KAFKA SOURCE)
 -- ============================================================================
