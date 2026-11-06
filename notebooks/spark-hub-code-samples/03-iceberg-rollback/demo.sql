@@ -1,3 +1,12 @@
+/* @datacloud.settings
+{
+  "version": 1,
+  "service": "SPARK",
+  "connectionInfo": {},
+  "dialect": "ANSI_SQL"
+}
+*/
+
 -- ============================================================================
 -- DEMO 3: DISASTER RECOVERY VIA METADATA ROLLBACK
 -- ============================================================================

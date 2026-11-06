@@ -1,3 +1,12 @@
+/* @datacloud.settings
+{
+  "version": 1,
+  "service": "SPARK",
+  "connectionInfo": {},
+  "dialect": "ANSI_SQL"
+}
+*/
+
 -- ============================================================================
 -- DEMO 1: WRITE-AUDIT-PUBLISH (WAP) VIA ICEBERG BRANCHING
 -- ============================================================================
