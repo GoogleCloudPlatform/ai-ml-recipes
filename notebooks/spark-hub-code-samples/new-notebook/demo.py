@@ -6,8 +6,8 @@ from google.cloud.managed_spark_connect import ManagedSparkSession
 
 spark = (
     ManagedSparkSession.builder
-    .projectId("devx-customer-demos")
-    .location("us-east4")
-    .sessionTemplate("dsml")  # replace this with your Runtime Profile name
+    .projectId("YOUR_PROJECT_ID")
+    .location("YOUR_REGION")
+    .sessionTemplate("YOUR_RUNTIME_PROFILE")  # replace this with your Runtime Profile name
     .getOrCreate()
 )
