@@ -65,19 +65,24 @@ def get_or_create_serverless_spark():
     except ImportError:
         from google.cloud.managed_spark_connect import ManagedSparkSession as ServerlessSparkSession
 
-    project_id = os.environ.get("GCP_PROJECT", "google.com:hadoop-cloud-dev")
+    project_id = os.environ.get("GCP_PROJECT", "YOUR_PROJECT_ID")
     region = os.environ.get("GCP_REGION", "us-central1")
-    bucket_name = os.environ.get("BUCKET_NAME", "sglodha-iceberg-wap")
-    subnetwork_uri = os.environ.get("SUBNETWORK_URI", "default-auto")
+    bucket_name = os.environ.get("BUCKET_NAME", "YOUR_GCS_BUCKET")
+    subnetwork_uri = os.environ.get("SUBNETWORK_URI", "YOUR_SUBNETWORK_URI")
     service_account = os.environ.get(
         "SPARK_SERVICE_ACCOUNT",
-        "dataproc-service-account@hadoop-cloud-dev.google.com.iam.gserviceaccount.com",
+        "YOUR_SERVICE_ACCOUNT@YOUR_PROJECT_ID.iam.gserviceaccount.com",
     )
     session_id = os.environ.get("S8S_SESSION_ID", "orionis-dbt-s8s")
 
     session_config = Session()
-    session_config.environment_config.execution_config.subnetwork_uri = subnetwork_uri
-    session_config.environment_config.execution_config.service_account = service_account
+    if subnetwork_uri and subnetwork_uri != "YOUR_SUBNETWORK_URI":
+        session_config.environment_config.execution_config.subnetwork_uri = subnetwork_uri
+    if (
+        service_account
+        and service_account != "YOUR_SERVICE_ACCOUNT@YOUR_PROJECT_ID.iam.gserviceaccount.com"
+    ):
+        session_config.environment_config.execution_config.service_account = service_account
     session_config.environment_config.execution_config.idle_ttl = {"seconds": 3600}
     session_config.runtime_config.properties.update(
         {
@@ -104,13 +109,12 @@ def get_or_create_serverless_spark():
                 sc.delete_session(name=sess_name).result(timeout=60)
         except Exception:
             pass
-        spark = (
-            ServerlessSparkSession.builder.projectId(project_id)
-            .location(region)
-            .dataprocSessionId(session_id)
-            .dataprocSessionConfig(session_config)
-            .getOrCreate()
-        )
+        builder = ServerlessSparkSession.builder.projectId(project_id).location(region)
+        if hasattr(builder, "sessionId"):
+            builder = builder.sessionId(session_id).sessionConfig(session_config)
+        else:
+            builder = builder.dataprocSessionId(session_id).dataprocSessionConfig(session_config)
+        spark = builder.getOrCreate()
 
     _wrap_spark_sql_for_iceberg_views(spark)
     _ACTIVE_SPARK_SESSION = spark
