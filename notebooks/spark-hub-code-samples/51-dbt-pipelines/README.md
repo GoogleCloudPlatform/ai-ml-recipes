@@ -43,13 +43,13 @@ pip install -r requirements.txt
 ### 2. Configure Your GCP Environment Variables
 Set your Google Cloud project, region, GCS bucket (for Iceberg warehouse storage), and Dataproc service account:
 ```bash
-export GCP_PROJECT="your-gcp-project-id"
+export GCP_PROJECT="YOUR_PROJECT_ID"
 export GCP_REGION="us-central1"
-export BUCKET_NAME="your-gcs-warehouse-bucket"
-export SPARK_SERVICE_ACCOUNT="your-service-account@your-project.iam.gserviceaccount.com"
+export BUCKET_NAME="YOUR_GCS_BUCKET"
+export SPARK_SERVICE_ACCOUNT="YOUR_SERVICE_ACCOUNT@YOUR_PROJECT_ID.iam.gserviceaccount.com"
 export S8S_SESSION_ID="orionis-dbt-s8s"
 ```
-*(If omitted, `dbt_wrapper.py` defaults to `google.com:hadoop-cloud-dev`, `us-central1`, `sglodha-iceberg-wap`, and `orionis-dbt-s8s`).*
+*(Replace `YOUR_PROJECT_ID`, `YOUR_GCS_BUCKET`, and `YOUR_SERVICE_ACCOUNT@YOUR_PROJECT_ID.iam.gserviceaccount.com` with your Google Cloud project ID, Cloud Storage bucket, and service account before running).*
 
 ### 3. Run the End-to-End Demo
 ```bash
